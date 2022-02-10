@@ -1,6 +1,5 @@
 $(document).ready(function () {
     // When checkbox is checked display different text
-
     // Card 1
     // TODO This needs to be cleaned and made DRY
     $('#nl-selector1').click(function() {
