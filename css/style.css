@@ -1,0 +1,504 @@
+/* FONTS */
+@font-face {
+  font-family: MenoBannerCondensedRegular;
+  src: url("../assets/fonts/Meno%20Banner%20Condensed%20Regular.otf");
+}
+@font-face {
+  font-family: MenoBannerCondensedItalic;
+  src: url("../assets/fonts/Meno%20Banner%20Condensed%20Italic.otf");
+}
+@font-face {
+  font-family: MenoBannerRegular;
+  src: url("../assets/fonts/Meno%20Banner%20Regular.otf");
+}
+@font-face {
+  font-family: MenoBannerItalic;
+  src: url("../assets/fonts/Meno%20Banner%20Italic.otf");
+}
+@font-face {
+  font-family: Larsseit-Bold-italic;
+  src: url("../assets/fonts/Larsseit%20Bold%20Italic.otf");
+}
+@font-face {
+  font-family: Larsseit-Bold;
+  src: url("../assets/fonts/Larsseit%20Bold.otf");
+}
+@font-face {
+  font-family: Larsseit-ExtraBold-italic;
+  src: url("../assets/fonts/Larsseit%20ExtraBold%20Italic.otf");
+}
+@font-face {
+  font-family: Larsseit-ExtraBold;
+  src: url("../assets/fonts/Larsseit%20ExtraBold.otf");
+}
+@font-face {
+  font-family: Larsseit-Light-italic;
+  src: url("../assets/fonts/Larsseit%20Light%20Italic.otf");
+}
+@font-face {
+  font-family: Larsseit-Light;
+  src: url("../assets/fonts/Larsseit%20Light.otf");
+}
+@font-face {
+  font-family: Larsseit-Medium-italic;
+  src: url("../assets/fonts/Larsseit%20Medium%20Italic.otf");
+}
+@font-face {
+  font-family: Larsseit-Medium;
+  src: url("../assets/fonts/Larsseit%20Medium.otf");
+}
+@font-face {
+  font-family: Larsseit-Regular-italic;
+  src: url("../assets/fonts/Larsseit%20Regular%20Italic.otf");
+}
+@font-face {
+  font-family: Larsseit-Regular;
+  src: url("../assets/fonts/Larsseit%20Regular.otf");
+}
+@font-face {
+  font-family: Larsseit-Thin-italic;
+  src: url("../assets/fonts/Larsseit%20Thin%20Italic.otf");
+}
+@font-face {
+  font-family: Larsseit-Thin;
+  src: url("../assets/fonts/Larsseit%20Thin.otf");
+}
+
+/* MAIN SETTINGS */
+.container-xlg {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.container-lg {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.container-m {
+  width: 70%;
+  margin: 0 auto;
+}
+
+.container-s {
+  width: 60%;
+  margin: 0 auto;
+}
+
+.container-xs {
+  width: 50%;
+  margin: 0 auto;
+}
+
+.border-bottom {
+  border-bottom: 1px solid #F1F1F1;
+}
+
+.text-dark {color: #333333 !important;}
+
+.text-white {color: #FFFFFF !important;}
+
+.text-red {color: #E50046 !important;}
+
+.text-grey {color: #7C7C7C !important;}
+
+.bg-dark {background-color: #333333 !important;}
+
+.bg-white {background-color: #FFFFFF !important;}
+
+.bg-red {background-color: #E50046 !important;}
+
+.bg-grey {background-color: #7C7C7C !important;}
+
+.bg-light-grey {background-color: #F1F1F1 !important;}
+
+
+/* CUSTOM LAYOUT */
+body {
+  font-family: 'Larsseit-Regular';
+  color: #333;
+}
+
+.navbar {
+  color: #333333 !important;
+} 
+
+
+
+/* Hero Content */
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60vh
+}
+
+.main-header-container {
+  max-width: 725px;
+  flex-direction: column;
+}
+
+.main-header-text {
+  font-family: 'MenoBannerCondensedRegular';
+  font-size: 65px;
+  line-height: 85.8px;
+  text-align: center;
+}
+
+.main-header-body {
+  font-size: 28px;
+  line-height: 36.96px;
+  text-align: center;
+  margin-top: 18px;
+}
+
+.mm-underline {
+  background-image: url("../assets/underline-thik.svg");
+  background-repeat: no-repeat, repeat;
+  background-position: 0% 85%;
+}
+
+/* Sub-nav (tabs) */
+
+.subnav-main {
+  border-bottom: 1px solid #333;
+  margin-bottom: 51px;
+}
+
+.subnav {
+  display: flex;
+  max-width: 100%;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 50px;
+  font-size: 28px;
+  line-height: 35px;
+}
+
+.subnav a {
+  text-decoration: none;
+  display: inline-block;
+}
+
+.subnav li {
+  text-align: center;
+  line-height: 80px;
+  width: 300px;
+}
+
+.active-tab {
+  background-image: url("../assets/rounded.svg");
+  background-repeat: no-repeat, repeat;
+  background-size: 200px;
+  background-position: center;
+}
+
+.header-container {
+  max-width: 80%;
+  margin: auto;
+  margin-bottom: 51px;
+}
+
+.header-text {
+  font-family: 'Larsseit-Bold';
+}
+
+.italicized {
+  font-family: 'Larsseit-Bold-italic';
+}
+
+.header-body {
+  font-size: 26px;
+  line-height: 32.5px;
+}
+
+/* CARDS */
+.grid-container {
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-column-gap: 0;
+  width: 80vw;
+}
+
+.hashtag-list {
+  list-style: none;
+  display: flex;
+  font-family: Larsseit-Light-italic;
+  font-size: 14px;
+}
+
+.subscribed-card {
+  border: 2px solid #E50046;
+}
+
+.card-title {
+  font-family: MenoBannerCondensedRegular;
+  font-size: 31px;
+  line-height: 40.92px;
+}
+
+form {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* ! CHECKBOX STYLING */
+/* hide original checkbox */
+.sub-checkbox{
+  opacity: 0;
+}
+
+.added {
+  outline: 2px solid #E50046;
+}
+
+/* style new checkbox */
+.sub-checkbox + label{
+  position: relative;
+  padding-left: 10px;
+  cursor: pointer;
+  display: inline-block;
+  color: #333;
+  font-size: 18px;
+}
+
+/* change text color on check */
+.sub-checkbox:checked + label{
+  position: relative;
+  padding-left: 10px;
+  cursor: pointer;
+  display: inline-block;
+  color: #E50046;
+  font-size: 18px;
+}
+
+/* using bg image */
+/* style & position checkbox */
+.sub-checkbox + label::before{
+  content: "";
+  position: absolute;
+  left: -35px;
+  top: -5px;
+  width: 30px;
+  height: 30px;
+  border: 2px solid #333;
+  border-radius: 50%;
+  background-image: url(../assets/mm-plus.svg);
+  background-repeat: no-repeat;
+  background-size: 15px;
+  background-position: center;
+}
+
+/* change checkbox on checked */
+.sub-checkbox:checked + label::before{
+  content: "";
+  position: absolute;
+  left: -38px;
+  top: -5px;
+  width: 30px;
+  height: 30px;
+  border: 2px solid #E50046;
+  border-radius: 50%;
+  background-image: url(../assets/mm-dash.svg);
+  background-repeat: no-repeat;
+  background-size: 15px;
+  background-position: center;
+}
+
+/* change checkbox on checked */
+.sub-checkbox:checked + label::after{
+  content: "";
+  position: absolute;
+  left: -38px;
+  top: -5px;
+  width: 30px;
+  height: 30px;
+  border: 2px solid #E50046;
+  border-radius: 50%;
+  background-image: url(../assets/mm-dash.svg);
+  background-repeat: no-repeat;
+  background-size: 15px;
+  background-position: center;
+}
+
+.view-ex {
+  color: #7c7c7c;
+}
+
+.view-ex:hover {
+  color: #7c7c7c;
+}
+
+/* Footer Styling */
+footer {
+  width: 100%;
+  height: 526px;
+  margin-top: 50px;
+  padding-top: 50px;
+  background-color: #f1f1f1;
+}
+
+.footer-ctas {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 50px;
+}
+
+.left-content {
+  width: 339px;
+}
+
+.right-content {
+  display: flex;
+}
+
+.footer-headings {
+  font-size: 24px;
+  line-height: 36px;
+}
+
+.footer-btn {
+  background-color: #fff;
+  outline: 1px solid #E50046;
+  border-radius: 8px;
+  margin-top: 50px;
+  font-size: 14px;
+  line-height: 17.5px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #E50046;
+}
+
+.right-side-left {
+  width: 240px;
+  margin-right: 103px;
+}
+
+.footer-img {
+  width: 229px;
+}
+
+.footer-fineprint {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 57px;
+}
+
+.footer-group {
+  display: flex;
+  align-items: center;
+}
+
+.mm-logo {
+  width: 99px;
+  margin-right: 20px;
+}
+
+.fine-print {
+  font-size: 14px;
+  width: 572px;
+  line-height: 18px;
+  margin-top: 15px;
+}
+
+.socials-list {
+  list-style: none;
+  display: flex;
+}
+
+.socials {
+  margin-left: 20px;
+}
+
+.mm-bottom-nav {
+  box-shadow: 0px -4px 10px #999;
+  border-radius: 0;
+}
+
+.mm-dropup-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.mm-dropup-left {
+  width: 325px;
+  display: flex;
+  align-items: center;
+}
+
+.dropup-header {
+  font-family: Larsseit-Bold;
+  font-size: 28px;
+  margin-left: 34px;
+  line-height: 36.96px;
+}
+
+.mm-email-section {
+  display: flex;
+  flex-direction: column;
+  width: 359px;
+}
+
+.mm-button-dropup {
+  height: 38px;
+  width: 350px;
+  align-self: flex-end;
+  border: 1px solid #E50046;
+  border-radius: 8px;
+  background-color: #E50046;
+
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 17.5px;
+  letter-spacing: 2px;
+}
+
+.dropup-form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.dropup-rows {
+  display: flex;
+  justify-content: space-between;
+}
+
+input[type=text] {
+  border-style: none;
+  border-bottom: 1px solid #999;
+  height: 38px;
+}
+
+.mm-inputs {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  width: 80%;
+}
+
+.country-select {
+  border-style: none;
+  border-bottom: 1px solid #999;
+  height: 38px;
+}
+
+#mm-privacy + label {
+  margin-left: 10px;
+  font-size: 10px;
+  line-height: 12.5px;
+  width: 310px;
+}
+
+.form-end-container {
+  display: flex;
+  flex-direction: column;
+  align-self: flex-end;
+  margin-top: 25px;
+}
