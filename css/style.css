@@ -123,8 +123,9 @@ body {
   color: #333333 !important;
 } 
 
+/* Reducing width to eliminate overflow on mbpro */
 .dropdown-menu {
-  min-width:100px;
+  min-width:100px !important;
 }
 
 input[type=text]:focus { 
@@ -148,7 +149,7 @@ button:focus {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 60vh
+  height: 63vh
 }
 
 .main-header-container {
@@ -347,14 +348,6 @@ form {
   background-position: center;
 }
 
-.view-ex {
-  color: #7c7c7c;
-}
-
-.view-ex:hover {
-  color: #7c7c7c;
-}
-
 /* Footer Styling */
 footer {
   width: 100%;
@@ -530,4 +523,163 @@ input[type=text] {
   flex-direction: column;
   align-self: flex-end;
   margin-top: 25px;
+}
+
+/* ********** ////////// MEDIA QUERIES \\\\\\\\\\ ********** */
+/* ! XL SCREENS */ 
+/* Not needed for main */
+
+@media screen and (min-width: 600px) {
+  .short-txt {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 599px) {
+  .long-txt {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 950px) {
+  .subnav {
+    margin-top: 25px;
+    font-size: 21px;
+    line-height: 35px;
+  }
+
+  .subnav li {
+    line-height: 60px;
+    width: 200px;
+  }
+
+  .active-tab {
+    background-size: 175px;
+  }
+
+  .header-text {
+    font-size: 28px;
+  }
+  
+  .italicized {
+    font-family: 'Larsseit-Bold-italic';
+    font-size: 28px;
+  }
+  
+  .header-body {
+    font-size: 21px;
+    line-height: 32.5px;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .hero {
+    max-height: 50vh
+  }
+
+  .main-header-text {
+    font-size: 54px;
+    line-height: 80px;
+  }
+
+  .main-header-body {
+    font-size: 24px;
+    line-height: 34px;
+  }
+
+  .subnav li {
+    line-height: 60px;
+    width: 175px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .active-tab {
+    background-size: 150px;
+  }
+
+  .subnav li {
+    line-height: 60px;
+    width: 150px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .main-header-text {
+    font-size: 48px;
+    line-height: 60px;
+  }
+
+  .main-header-body {
+    font-size: 21px;
+    line-height: 30px;
+    padding: 0 20px;
+  }
+
+  .active-tab {
+    background-size: 125px;
+  }
+
+  .subnav {
+    font-family: 'Larsseit-Bold';
+    justify-content: space-between;
+    font-size: 18px;
+  }
+
+  .header-text {
+    font-size: 21px;
+  }
+  
+  .italicized {
+    font-size: 21px;
+  }
+  
+  .header-body {
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .subnav li {
+    line-height: 60px;
+    width: 125px;
+  }
+
+  .active-tab {
+    background-size: 100px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .hero {
+    max-height: 45vh
+  }
+
+  .main-header-text {
+    font-size: 42px;
+    line-height: 50px;
+  }
+
+  .main-header-body {
+    font-size: 18px;
+    line-height: 30px;
+  }
+
+  .subnav li {
+    line-height: 60px;
+    width: 100px;
+  }
+
+  .header-text {
+    font-size: 18px;
+  }
+  
+  .italicized {
+    font-size: 18px;
+  }
+  
+  .header-body {
+    font-size: 16px;
+
+  }
 }
