@@ -279,6 +279,10 @@ form {
   transition: 0.1s;
 }
 
+.checkbox-txt {
+  width: 75px;
+}
+
 /* style new checkbox */
 .sub-checkbox + label{
   position: relative;
@@ -441,6 +445,20 @@ footer {
   border-radius: 0;
 }
 
+.mobile-header {
+  font-family: Larsseit-Bold;
+  font-size: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.mobile-header p {
+  margin: 0;
+  margin-left: 20px;
+  padding-top: 10px;
+}
+
 .mm-dropup-content {
   display: flex;
   align-items: center;
@@ -529,6 +547,12 @@ input[type=text] {
 /* ! XL SCREENS */ 
 /* Not needed for main */
 
+@media screen and (min-width: 751px) {
+  .mobile-header {
+    display: none;
+  }
+}
+
 @media screen and (min-width: 600px) {
   .short-txt {
     display: none;
@@ -538,6 +562,54 @@ input[type=text] {
 @media screen and (max-width: 599px) {
   .long-txt {
     display: none;
+  }
+}
+
+@media screen and (max-width: 1500px) {
+  .grid-container {
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 20px;
+  }
+}
+
+@media screen and (max-width: 1300px) {
+  .mm-button-dropup {
+    width: 250px;
+  }
+}
+
+@media screen and (max-width: 1150px) {
+  .mm-email-section {
+    width: 275px;
+  }
+}
+
+@media screen and (max-width: 1124px) {
+  .grid-container {
+    grid-template-columns: 1fr 1fr;
+    place-items: center;
+    column-gap: 0;
+  }
+}
+
+@media screen and (max-width: 1050px) {
+  .right-side-right {
+    display: none;
+  }
+
+  .mm-mail {
+    width: 75px;
+  }
+
+  .dropup-header {
+    font-size: 21px;
+    margin-left: 20px;
+    line-height: 30px;
+  }
+
+  .mm-email-section {
+    font-size: 18px;
+    margin-bottom: 0;
   }
 }
 
@@ -570,6 +642,18 @@ input[type=text] {
     font-size: 21px;
     line-height: 32.5px;
   }
+
+  .mm-email-section {
+    width: 250px;
+  }
+
+  .mm-button-dropup {
+    width: 200px;
+  }
+
+  .fine-print {
+    width: 500px;
+  }
 }
 
 @media screen and (max-width: 850px) {
@@ -591,6 +675,20 @@ input[type=text] {
     line-height: 60px;
     width: 175px;
   }
+
+  .mm-mail {
+    width: 50px;
+  }
+
+  .dropup-header {
+    font-size: 18px;
+    line-height: 20px;
+  }
+
+  .fine-print {
+    width: 400px;
+  }
+
 }
 
 @media screen and (max-width: 800px) {
@@ -601,6 +699,42 @@ input[type=text] {
   .subnav li {
     line-height: 60px;
     width: 150px;
+  }
+
+  .grid-container {
+    column-gap: 20px;
+  }
+
+  .right-side-left {
+    margin-right: 0;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .mm-dropup-left {
+    display: none;
+  }
+
+  .mm-form-placeholder1 {
+    max-width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .mm-email-section {
+    width: 250px;
+  }
+
+  .mm-button-dropup {
+    width: 250px;
+  }
+
+  .fine-print {
+    width: 300px;
+  }
+
+  footer {
+    height: 575px;
   }
 }
 
@@ -637,6 +771,76 @@ input[type=text] {
   .header-body {
     font-size: 18px;
   }
+
+  .grid-container {
+    column-gap: 0;
+    row-gap: 20px;
+    grid-template-columns: 1fr;
+  }
+
+  .footer-headings {
+    font-size: 21px;
+    line-height: 25px;
+  }
+
+  .footer-btn {
+    margin-top: 25px;
+  }
+
+  .footer-ctas {
+    flex-direction: column-reverse;
+  }
+
+  .left-content {
+    margin-top: 50px;
+  }
+
+  .right-content {
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .right-side-right {
+    display: inline-block;
+  }
+
+  .fine-print {
+    width: 300px;
+  }
+
+  footer {
+    height: 725px;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .footer-fineprint {
+    flex-direction: column-reverse;
+  }
+  
+  .socials-list {
+    padding: 0;
+  }
+
+  .socials img {
+    height: 35px;
+  }
+
+  .fine-print {
+    width: 400px;
+  }
+
+  .li-right {
+    margin-right: 50px;
+  }
+
+  .ig-left {
+    margin-left: 50px;
+  }
+
+  footer {
+    height: 800px;
+  }
 }
 
 @media screen and (max-width: 600px) {
@@ -649,6 +853,13 @@ input[type=text] {
     background-size: 100px;
   }
 }
+
+@media screen and (max-width: 550px) {
+  .footer-img {
+    width: 200px;
+  }
+}
+
 
 @media screen and (max-width: 500px) {
   .hero {
@@ -680,6 +891,18 @@ input[type=text] {
   
   .header-body {
     font-size: 16px;
+  }
 
+  .mobile-header {
+    font-size: 24px;
+    margin-bottom: 25px;
+  }
+
+  .footer-img {
+    width: 150px;
+  }
+
+  .fine-print {
+    width: 300px;
   }
 }
