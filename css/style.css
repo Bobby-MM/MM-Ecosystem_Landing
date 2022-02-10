@@ -123,6 +123,10 @@ body {
   color: #333333 !important;
 } 
 
+.dropdown-menu {
+  min-width:100px;
+}
+
 input[type=text]:focus { 
   border: none !important;
   border-radius: 8px;
@@ -271,6 +275,7 @@ form {
 
 .added {
   outline: 2px solid #E50046;
+  transition: 0.1s;
 }
 
 /* style new checkbox */
@@ -314,7 +319,7 @@ form {
 .sub-checkbox:checked + label::before{
   content: "";
   position: absolute;
-  left: -38px;
+  left: -35px;
   top: -5px;
   width: 30px;
   height: 30px;
@@ -330,7 +335,7 @@ form {
 .sub-checkbox:checked + label::after{
   content: "";
   position: absolute;
-  left: -38px;
+  left: -35px;
   top: -5px;
   width: 30px;
   height: 30px;
