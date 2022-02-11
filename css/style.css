@@ -121,7 +121,20 @@ body {
 
 .navbar {
   color: #333333 !important;
-} 
+}
+
+.mm-button {
+  height: 38px;
+  width: 350px;
+  border: 1px solid #E50046;
+  border-radius: 8px;
+  background-color: #E50046;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 17.5px;
+  letter-spacing: 2px;
+}
 
 /* Reducing width to eliminate overflow on mbpro */
 .dropdown-menu {
@@ -238,7 +251,7 @@ button:focus {
 
 /* CARDS */
 .grid-container {
-  margin: auto;
+  margin: 50px 0 50px 0;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr;
@@ -485,24 +498,14 @@ footer {
 }
 
 .mm-button-dropup {
-  height: 38px;
-  width: 350px;
   align-self: flex-end;
-  border: 1px solid #E50046;
-  border-radius: 8px;
-  background-color: #E50046;
-
-  color: #fff;
-  text-transform: uppercase;
-  font-size: 14px;
-  line-height: 17.5px;
-  letter-spacing: 2px;
 }
 
 .dropup-form {
   display: flex;
   flex-direction: column;
   width: 100%;
+  margin-top: 50px;
 }
 
 .dropup-rows {
@@ -573,7 +576,7 @@ input[type=text] {
 }
 
 @media screen and (max-width: 1300px) {
-  .mm-button-dropup {
+  .mm-button {
     width: 250px;
   }
 }
@@ -611,6 +614,10 @@ input[type=text] {
     font-size: 18px;
     margin-bottom: 0;
   }
+
+  .mm-inputs {
+    font-size: 18px;
+  }
 }
 
 @media screen and (max-width: 950px) {
@@ -647,7 +654,7 @@ input[type=text] {
     width: 250px;
   }
 
-  .mm-button-dropup {
+  .mm-button {
     width: 200px;
   }
 
@@ -725,7 +732,7 @@ input[type=text] {
     width: 250px;
   }
 
-  .mm-button-dropup {
+  .mm-button {
     width: 250px;
   }
 
