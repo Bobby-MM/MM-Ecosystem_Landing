@@ -4,22 +4,37 @@ $(document).ready(function () {
     // TODO This needs to be cleaned and made DRY
     $('#nl-selector1').click(function() {
         if ($(this).is(':checked')) {
-            $(this).siblings('label').html('Retirer');
-            $(".card1").addClass("added");
+            $(".mag-card1").addClass("added");
         } else {
-            $(this).siblings('label').html('Ajouter');
-            $(".card1").removeClass("added");
+            $(".mag-card1").removeClass("added");
         }
     });
 
     $('#nl-selector2').click(function() {
         if ($(this).is(':checked')) {
-            $(this).siblings('label').html('Retirer');
-            $(".card2").addClass("added");
+            $(".mag-card2").addClass("added");
         } else {
-            $(this).siblings('label').html('Ajouter');
-            $(".card2").removeClass("added");
+            $(".mag-card2").removeClass("added");
         }
     });
+
+    // OLD
+    // $('#nl-selector1').click(function() {
+    //     if ($(this).is(':checked')) {
+    //         $(".card1").addClass("added");
+    //     } else {
+    //         $(this).siblings('label').html('Ajouter');
+    //         $(".card1").removeClass("added");
+    //     }
+    // });
+
+    // $('#nl-selector2').click(function() {
+    //     if ($(this).is(':checked')) {
+    //         $(".card2").addClass("added");
+    //     } else {
+    //         $(this).siblings('label').html('Ajouter');
+    //         $(".card2").removeClass("added");
+    //     }
+    // });
 });
 

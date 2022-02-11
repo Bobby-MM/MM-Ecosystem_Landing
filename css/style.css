@@ -357,15 +357,32 @@ input[type=text] {
   width: 80vw;
 }
 
-.subscribed-card {
-  border: 2px solid #E50046;
+.mag-card-template {
+height: 310px;
+width: 275px;
+outline: 2px solid #333;
+display: flex;
+flex-direction: column;
 }
 
-.card-title {
-  font-family: MenoBannerCondensedRegular;
-  font-size: 31px;
-  line-height: 40.92px;
+.mag-card-row1 {
+  display: flex;
 }
+
+/* thumbnail img styling */
+.img-wrapper {
+  height: 96px;
+  width: 96px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+}
+
+.card-img-top {
+  height: 96px;
+  width: auto;
+}
+/* end img styling */
 
 /* ! CHECKBOX STYLING */
 /* hide original checkbox */
@@ -375,7 +392,6 @@ input[type=text] {
 
 .added {
   outline: 2px solid #E50046;
-  transition: 0.1s;
 }
 
 .checkbox-txt {
@@ -395,11 +411,8 @@ input[type=text] {
 /* change text color on check */
 .sub-checkbox:checked + label{
   position: relative;
-  padding-left: 20px;
   cursor: pointer;
   display: inline-block;
-  color: #E50046;
-  font-size: 18px;
 }
 
 /* using bg image */
@@ -407,8 +420,8 @@ input[type=text] {
 .sub-checkbox + label::before{
   content: "";
   position: absolute;
-  left: -20px;
-  top: -5px;
+  right: -15px;
+  top: -8px;
   width: 30px;
   height: 30px;
   border: 2px solid #333;
@@ -423,8 +436,8 @@ input[type=text] {
 .sub-checkbox:checked + label::before{
   content: "";
   position: absolute;
-  left: -20px;
-  top: -5px;
+  right: -15px;
+  top: -8px;
   width: 30px;
   height: 30px;
   border: 2px solid #E50046;
@@ -434,21 +447,17 @@ input[type=text] {
   background-size: 15px;
   background-position: center;
 }
+/* End checkbox styling */
 
-/* change checkbox on checked */
-.sub-checkbox:checked + label::after{
-  content: "";
-  position: absolute;
-  left: -20px;
-  top: -5px;
-  width: 30px;
-  height: 30px;
-  border: 2px solid #E50046;
-  border-radius: 50%;
-  background-image: url(../assets/mm-dash.svg);
-  background-repeat: no-repeat;
-  background-size: 15px;
-  background-position: center;
+.card-title {
+  font-family: MenoBannerCondensedRegular;
+  font-size: 26px;
+}
+
+.card-body {
+  font-size: 16px;
+  padding: 0;
+  margin: 0;
 }
 /* End cards styling */
 
