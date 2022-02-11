@@ -112,7 +112,6 @@
 
 .bg-light-grey {background-color: #F1F1F1 !important;}
 
-
 /* CUSTOM LAYOUT */
 body {
   font-family: 'Larsseit-Regular';
@@ -121,6 +120,12 @@ body {
 
 .navbar {
   color: #333333 !important;
+  cursor: default !important;
+}
+
+/* Reducing width to eliminate overflow on mbpro */
+.dropdown-menu {
+  min-width:100px !important;
 }
 
 .mm-button {
@@ -136,11 +141,11 @@ body {
   letter-spacing: 2px;
 }
 
-/* Reducing width to eliminate overflow on mbpro */
-.dropdown-menu {
-  min-width:100px !important;
+.italicized {
+  font-family: 'Larsseit-Bold-italic';
 }
 
+/* Changing the focus color on inputs */
 input[type=text]:focus { 
   border: none !important;
   border-radius: 8px;
@@ -157,307 +162,31 @@ button:focus {
   outline: none !important;
 }
 
-/* Hero Content */
-.hero {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 63vh
-}
-
-.main-header-container {
-  max-width: 725px;
-  flex-direction: column;
-}
-
-.main-header-text {
-  font-family: 'MenoBannerCondensedRegular';
-  font-size: 65px;
-  line-height: 85.8px;
-  text-align: center;
-}
-
-.main-header-body {
-  font-size: 28px;
-  line-height: 36.96px;
-  text-align: center;
-  margin-top: 18px;
-}
-
-.mm-underline {
-  background-image: url("../assets/underline-thik.svg");
-  background-repeat: no-repeat, repeat;
-  background-position: 0% 85%;
-}
-
-/* Sub-nav (tabs) */
-
-.subnav-main {
-  border-bottom: 1px solid #333;
-  margin-bottom: 51px;
-}
-
-.subnav {
-  display: flex;
-  max-width: 100%;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
-  margin-top: 50px;
-  font-size: 28px;
-  line-height: 35px;
-}
-
-.subnav a {
-  text-decoration: none;
-}
-
-.subnav a:hover {
-  color: #E50046 !important;
-  transition: .3s;
-}
-
-.subnav li {
-  text-align: center;
-  line-height: 80px;
-  width: 300px;
-}
-
-.active-tab {
-  background-image: url("../assets/rounded.svg");
-  background-repeat: no-repeat, repeat;
-  background-size: 200px;
-  background-position: center;
-}
-
-.header-container {
-  max-width: 80%;
-  margin: auto;
-  margin-bottom: 51px;
-}
-
-.header-text {
-  font-family: 'Larsseit-Bold';
-}
-
-.italicized {
-  font-family: 'Larsseit-Bold-italic';
-}
-
-.header-body {
-  font-size: 26px;
-  line-height: 32.5px;
-}
-
-/* CARDS */
-.grid-container {
-  margin: 50px 0 50px 0;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr;
-  grid-column-gap: 0;
-  width: 80vw;
-}
-
-.hashtag-list {
-  list-style: none;
-  display: flex;
-  font-family: Larsseit-Light-italic;
-  font-size: 14px;
-}
-
-.subscribed-card {
-  border: 2px solid #E50046;
-}
-
-.card-title {
-  font-family: MenoBannerCondensedRegular;
-  font-size: 31px;
-  line-height: 40.92px;
-}
-
-form {
-  display: flex;
-  justify-content: space-between;
-}
-
-/* ! CHECKBOX STYLING */
-/* hide original checkbox */
-.sub-checkbox{
-  opacity: 0;
-}
-
-.added {
-  outline: 2px solid #E50046;
-  transition: 0.1s;
-}
-
-.checkbox-txt {
-  width: 75px;
-}
-
-/* style new checkbox */
-.sub-checkbox + label{
-  position: relative;
-  padding-left: 10px;
-  cursor: pointer;
-  display: inline-block;
-  color: #333;
-  font-size: 18px;
-}
-
-/* change text color on check */
-.sub-checkbox:checked + label{
-  position: relative;
-  padding-left: 10px;
-  cursor: pointer;
-  display: inline-block;
-  color: #E50046;
-  font-size: 18px;
-}
-
-/* using bg image */
-/* style & position checkbox */
-.sub-checkbox + label::before{
-  content: "";
-  position: absolute;
-  left: -35px;
-  top: -5px;
-  width: 30px;
-  height: 30px;
-  border: 2px solid #333;
-  border-radius: 50%;
-  background-image: url(../assets/mm-plus.svg);
-  background-repeat: no-repeat;
-  background-size: 15px;
-  background-position: center;
-}
-
-/* change checkbox on checked */
-.sub-checkbox:checked + label::before{
-  content: "";
-  position: absolute;
-  left: -35px;
-  top: -5px;
-  width: 30px;
-  height: 30px;
-  border: 2px solid #E50046;
-  border-radius: 50%;
-  background-image: url(../assets/mm-dash.svg);
-  background-repeat: no-repeat;
-  background-size: 15px;
-  background-position: center;
-}
-
-/* change checkbox on checked */
-.sub-checkbox:checked + label::after{
-  content: "";
-  position: absolute;
-  left: -35px;
-  top: -5px;
-  width: 30px;
-  height: 30px;
-  border: 2px solid #E50046;
-  border-radius: 50%;
-  background-image: url(../assets/mm-dash.svg);
-  background-repeat: no-repeat;
-  background-size: 15px;
-  background-position: center;
-}
-
-/* Footer Styling */
-footer {
-  width: 100%;
-  height: 526px;
-  margin-top: 50px;
-  padding-top: 50px;
-  background-color: #f1f1f1;
-}
-
-.footer-ctas {
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 50px;
-}
-
-.left-content {
-  width: 339px;
-}
-
-.right-content {
-  display: flex;
-}
-
-.footer-headings {
-  font-size: 24px;
-  line-height: 36px;
-}
-
-.footer-btn {
-  background-color: #fff;
-  outline: 1px solid #E50046;
-  border-radius: 8px;
-  margin-top: 50px;
-  font-size: 14px;
-  line-height: 17.5px;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-  color: #E50046;
-}
-
-.footer-btn:hover {
-  background-color: #E50046;
-  color: #FFFFFF;
-  transition: 0.3s;
-}
-
-.right-side-left {
-  width: 240px;
-  margin-right: 103px;
-}
-
-.footer-img {
-  width: 229px;
-}
-
-.footer-fineprint {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-top: 57px;
-}
-
-.footer-group {
-  display: flex;
-  align-items: center;
-}
-
-.mm-logo {
-  width: 99px;
-  margin-right: 20px;
-}
-
-.fine-print {
-  font-size: 14px;
-  width: 572px;
-  line-height: 18px;
-  margin-top: 15px;
-}
-
-.socials-list {
-  list-style: none;
-  display: flex;
-}
-
-.socials {
-  margin-left: 20px;
-}
-
+/* DropUP menu styling */
 .mm-bottom-nav {
+  cursor: default;
   box-shadow: 0px -4px 10px #999;
   border-radius: 0;
 }
 
+.bottom-vis {
+  display: grid;
+  grid-template-columns: 2fr 2fr;
+}
+
+.mm-dropup-left {
+  display: flex;
+  align-items: center;
+}
+
+.dropup-header {
+  font-family: Larsseit-Bold;
+  width: 320px;
+  font-size: 28px;
+  line-height: 36.96px;
+}
+
+/* Hidden on desktop */
 .mobile-header {
   font-family: Larsseit-Bold;
   font-size: 28px;
@@ -465,40 +194,23 @@ footer {
   align-items: center;
   justify-content: center;
 }
+/* end hidden */
 
-.mobile-header p {
-  margin: 0;
-  margin-left: 20px;
-  padding-top: 10px;
-}
-
-.mm-dropup-content {
+.mm-form-top {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-}
-
-.mm-dropup-left {
-  width: 325px;
-  display: flex;
-  align-items: center;
-}
-
-.dropup-header {
-  font-family: Larsseit-Bold;
-  font-size: 28px;
-  margin-left: 34px;
-  line-height: 36.96px;
 }
 
 .mm-email-section {
   display: flex;
   flex-direction: column;
-  width: 359px;
+  justify-content: center;
+  width: 350px;
 }
 
 .mm-button-dropup {
   align-self: flex-end;
+  align-self: center;
 }
 
 .dropup-form {
@@ -544,6 +256,281 @@ input[type=text] {
   flex-direction: column;
   align-self: flex-end;
   margin-top: 25px;
+}
+
+/* Hero Styling */
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50vh
+}
+
+.main-header-container {
+  max-width: 725px;
+  flex-direction: column;
+}
+
+.main-header-text {
+  font-family: 'MenoBannerCondensedRegular';
+  font-size: 65px;
+  line-height: 85.8px;
+  text-align: center;
+}
+
+.main-header-body {
+  font-size: 28px;
+  line-height: 36.96px;
+  text-align: center;
+  margin-top: 18px;
+}
+
+.mm-underline {
+  background-image: url("../assets/underline-thik.svg");
+  background-repeat: no-repeat, repeat;
+  background-position: 0% 85%;
+}
+/* End Hero Styling */
+
+/* Sub-nav Styling (tabs) */
+.subnav-main {
+  border-bottom: 1px solid #333;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.subnav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  font-size: 28px;
+  line-height: 35px;
+}
+
+.subnav li {
+  text-align: center;
+  line-height: 80px;
+  width: 300px;
+}
+
+.subnav a {
+  text-decoration: none;
+}
+
+.subnav a:hover {
+  color: #E50046 !important;
+  transition: .3s;
+}
+
+.active-tab {
+  background-image: url("../assets/rounded.svg");
+  background-repeat: no-repeat, repeat;
+  background-size: 200px;
+  background-position: center;
+}
+/* End Sub-nav styling */
+
+/* Cards-section styling */
+.header-container {
+  max-width: 80%;
+  margin: auto;
+  margin-bottom: 51px;
+}
+
+.header-text {
+  font-family: 'Larsseit-Bold';
+  font-size: 26px;
+}
+
+.header-body {
+  font-size: 26px;
+  line-height: 32.5px;
+}
+
+/* CARDS */
+.grid-container {
+  margin: 40px 0 50px 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-column-gap: 0;
+  width: 80vw;
+}
+
+.subscribed-card {
+  border: 2px solid #E50046;
+}
+
+.card-title {
+  font-family: MenoBannerCondensedRegular;
+  font-size: 31px;
+  line-height: 40.92px;
+}
+
+/* ! CHECKBOX STYLING */
+/* hide original checkbox */
+.sub-checkbox{
+  opacity: 0;
+}
+
+.added {
+  outline: 2px solid #E50046;
+  transition: 0.1s;
+}
+
+.checkbox-txt {
+  width: 100px;
+}
+
+/* style new checkbox */
+.sub-checkbox + label{
+  position: relative;
+  padding-left: 25px;
+  cursor: pointer;
+  display: inline-block;
+  color: #333;
+  font-size: 18px;
+}
+
+/* change text color on check */
+.sub-checkbox:checked + label{
+  position: relative;
+  padding-left: 20px;
+  cursor: pointer;
+  display: inline-block;
+  color: #E50046;
+  font-size: 18px;
+}
+
+/* using bg image */
+/* style & position checkbox */
+.sub-checkbox + label::before{
+  content: "";
+  position: absolute;
+  left: -20px;
+  top: -5px;
+  width: 30px;
+  height: 30px;
+  border: 2px solid #333;
+  border-radius: 50%;
+  background-image: url(../assets/mm-plus.svg);
+  background-repeat: no-repeat;
+  background-size: 15px;
+  background-position: center;
+}
+
+/* change checkbox on checked */
+.sub-checkbox:checked + label::before{
+  content: "";
+  position: absolute;
+  left: -20px;
+  top: -5px;
+  width: 30px;
+  height: 30px;
+  border: 2px solid #E50046;
+  border-radius: 50%;
+  background-image: url(../assets/mm-dash.svg);
+  background-repeat: no-repeat;
+  background-size: 15px;
+  background-position: center;
+}
+
+/* change checkbox on checked */
+.sub-checkbox:checked + label::after{
+  content: "";
+  position: absolute;
+  left: -20px;
+  top: -5px;
+  width: 30px;
+  height: 30px;
+  border: 2px solid #E50046;
+  border-radius: 50%;
+  background-image: url(../assets/mm-dash.svg);
+  background-repeat: no-repeat;
+  background-size: 15px;
+  background-position: center;
+}
+/* End cards styling */
+
+/* Footer Styling */
+footer {
+  width: 100%;
+  height: 70vh;
+  margin-top: 50px;
+  padding-top: 50px;
+}
+
+.footer-ctas {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  margin-bottom: 50px;
+}
+
+.left-content {
+  width: 340px;
+}
+
+.right-side-left {
+  width: 240px;
+  justify-self: end;
+}
+
+.right-side-right {
+  justify-self: end;
+}
+
+.footer-headings {
+  font-size: 24px;
+  line-height: 36px;
+}
+
+.footer-btn {
+  outline: 1px solid #E50046;
+  border-radius: 8px;
+  margin-top: 50px;
+  font-size: 14px;
+  line-height: 17.5px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #E50046;
+}
+
+.footer-btn:hover {
+  background-color: #E50046;
+  color: #FFFFFF;
+  transition: 0.3s;
+}
+
+.footer-img {
+  width: 235px;
+}
+
+.footer-fineprint {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 40px;
+}
+
+.footer-group {
+  display: flex;
+  align-items: center;
+}
+
+.mm-logo {
+  width: 100px;
+}
+
+.fine-print {
+  font-size: 14px;
+  max-width: 60%;
+  line-height: 18px;
+  margin-top: 15px;
+}
+
+.socials-list {
+  list-style: none;
+  display: flex;
 }
 
 /* ********** ////////// MEDIA QUERIES \\\\\\\\\\ ********** */
@@ -722,7 +709,7 @@ input[type=text] {
     display: none;
   }
 
-  .mm-form-placeholder1 {
+  .mm-form-top {
     max-width: 100%;
     display: flex;
     justify-content: space-between;
