@@ -76,83 +76,99 @@
 		</header>
 
         <!-- ? START OF FIXED BOTTOM NAV ? -->
-        <nav class="navbar fixed-bottom navbar-light bg-white navbar-toggler pt-2 pb-2 mm-bottom-nav">
+        <nav class="navbar fixed-bottom navbar-light bg-white navbar-toggler pt-2 pb-2 mm-bottom-nav" id="bottom-navbar">
             <div class="container-xlg">
-                <div class="bottom-vis">
-                    <div class="mm-dropup-left">
-                        <img class="mm-mail" src="/assets/mailbox.svg" alt="">
-                        <h7 class="dropup-header ml-4">Dernière étape pour valider</h7>
-                    </div>
-
-                    <!-- Hidden on desktop -->
-                    <div class="mobile-header">
-                        <img class="mm-mail" src="/assets/mailbox.svg" alt="">
-                        <p class="">Dernière étape pour valider</p>
-                    </div>
-                    <!-- end hidden -->
-
-                    <form class="mm-form-top">
-                        <div class="mm-email-section">
-                            <label for="mm-email">Votre e-mail</label>
-                            <input id="mm-email" type="text" data-toggle="collapse" data-target="#navbarSupportedContent2"
-                            aria-controls="navbarSupportedContent2" aria-expanded="false" aria-label="Toggle navigation">
+                <div class="hidden-content pt-4">
+                    <div class="bottom-vis">
+                        <div class="mm-dropup-left">
+                            <img class="mm-mail" src="/assets/mailbox.svg" alt="">
+                            <h7 class="dropup-header ml-4">Dernière étape pour valider</h7>
                         </div>
-                        <button class="mm-button mm-button-dropup ml-5 mt-4" type="button">Valider</button>
-                    </form>
+
+                        <!-- Hidden on desktop -->
+                        <div class="mobile-header">
+                            <img class="mm-mail" src="/assets/mailbox.svg" alt="">
+                            <p class="">Dernière étape pour valider</p>
+                        </div>
+                        <!-- end hidden -->
+
+                        <form class="mm-form-top" data-toggle="collapse" data-target="#navbarSupportedContent2"
+                        aria-controls="navbarSupportedContent2" aria-expanded="false" aria-label="Toggle navigation">
+                            <div class="mm-email-section">
+                                <label for="mm-email">Votre e-mail</label>
+                                <input id="mm-email" type="text">
+                            </div>
+                            <button class="mm-button mm-button-dropup ml-5 mt-4" type="button">Abonnez-vous ici</button>
+                        </form>
+                    </div>
                 </div>
 
-                <div class="collapse navbar-collapse" id="navbarSupportedContent2">
+                <div class="collapse navbar-collapse pt-5" id="navbarSupportedContent2">
 
-                    <form action="" class="dropup-form pb-5 container-xlg">
+                    <div class="dropup-heading">
+                        <h7 class="dropup-header2">Dernière étape pour valider</h7>
+                        <img class="collapse-arrow" src="/assets/collaps.svg" alt="" data-toggle="collapse" data-target="#navbarSupportedContent2"
+                        aria-controls="navbarSupportedContent2" aria-expanded="false" aria-label="Toggle navigation">
+                    </div>
+                    <form action="" class="bottom-navigation">
 
-                        <div class="dropup-rows">
+                        <div class="top-grid pb-4 mb-4">
                             <div class="mm-inputs">
-                                <label for="first-name">Prénom</label>
-                                <input id="first-name" type="text">
+                                <input type="email" placeholder="Email professionel*">
+                                <sub class="mt-2 italicized mm-subtext">Pour l'envoi des newsletters</sub>
                             </div>
-                            <div class="mm-inputs ml-5">
-                                <label for="last-name">Nom</label>
-                                <input id="last-name" type="text">
-                            </div>
-                            <div class="mm-inputs ml-5">
-                                <label for="society">Société</label>
-                                <input id="society" type="text">
-                            </div>
-                        </div>
-
-                        <div class="dropup-rows">
                             <div class="mm-inputs">
-                                <label for="email">E-mail professionel</label>
-                                <input id="email" type="text">
+                                <input type="email" placeholder="Email privé">
+                                <sub class="mt-2 italicized mm-subtext">Utilisé uniquement comme back up</sub>
                             </div>
-                            <div class="mm-inputs ml-5">
-                                <label for="phone">Téléphone (optionnel)</label>
-                                <input id="phone" type="text">
-                            </div>
-                            <div class="mm-inputs ml-5">
-                                <label for="function">Fonction</label>
-                                <input id="function" type="text">
-                            </div>
-                        </div>
+                            <div class="empty-div"></div>
 
-                        <div class="dropup-rows">
                             <div class="mm-inputs">
-                                <label for="street">Rue et numéro</label>
-                                <input id="street" type="text">
+                                <input type="text" placeholder="Nom">
                             </div>
-                            <div class="mm-inputs ml-5">
-                                <label for="postcode">Code postal</label>
-                                <input id="postcode" type="text">
-                            </div>
-                            <div class="mm-inputs ml-5">
-                                <label for="country">Pays</label>
-                                <select class="country-select" name="country" id="country">
-                                    <option value="Luxembourg">Luxembourg</option>
+                            <div class="mm-inputs">
+                                <input type="text" placeholder="Prénom">
+                            </div>                            
+                            <div class="mm-inputs">
+                                <select name="sex" id="sex">
+                                    <option value="" disabled selected hidden>Sexe</option>
+                                    <option>male</option>
+                                    <option>female</option>
+                                    <option>other</option>
                                 </select>
                             </div>
                         </div>
 
-                        <div class="form-end-container">
+                    <h7 class="dropup-header">Seulement pour les abonnements</h7>
+
+                        <div class="bottom-grid">
+                            <div class="mm-inputs">
+                                <input type="text" placeholder="Société">
+                            </div>
+                            <div class="mm-inputs">
+                                <input type="text" placeholder="Fonction">
+                            </div>
+                            <div class="empty-div"></div>
+
+                            <div class="mm-inputs">
+                                <input type="text" placeholder="N° et rue">
+                            </div>
+                            <div class="mm-inputs2-parent">
+                                <div class="mm-inputs2">
+                                    <input type="number" placeholder="Code Postal">
+                                    <select name="location" id="location" class="mm-select">
+                                        <option value="Localité">Localité</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="mm-inputs select">
+                                <select name="country" id="country" class="mm-select">
+                                    <option value="Pays">Pays</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="form-end-container mt-5">
                             <div class="privacy-container">
                                 <input type="checkbox" id="mm-privacy" name="mm-privacy">
                                 <label for="mm-privacy">J'ai lu et accepte la politique de confidentialité (https://www.maisonmoderne.com/privacy-policy)</label>
@@ -171,7 +187,7 @@
 			<!-- HERO -->
 			<section class="hero mt-5">
 				<div class="main-header-container p-3">
-					<h1 class="main-header-text">Mieux connaître <span class="mm-underline">l'écosystème</span><br>de Paperjam + Delano.</h1>
+					<h1 class="main-header-text">Mieux connaître <span class="mm-underline">l<span class="apostrophe">`</span>écosystème</span><br>de Paperjam + Delano.</h1>
 					<p class=main-header-body>Mieux comprendre le Luxembourg. Business, Place financière, Politique et Culture, déclinés en Print, Digital, Club et Communication.</p>
 				</div>
 			</section>
@@ -187,7 +203,7 @@
 			</section>
 
 			<!-- Section Heading -->
-			<section class="header-container">
+			<section class="header-container container-xlg">
 				<h2 class="header-text">Abonnement découverte</h2>
 				<p class="header-body">Sans engagement et sans achate ...</p>
 			</section>
@@ -209,7 +225,6 @@
                         </div>
                         <div class="mag-card-content">
                             <h5 class="card-title mt-2">Paperjam</h5>
-                            <p class="card-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Magna dignissim dui varius sollicitudin pellentesque.</p>
                         </div>
                         <a href="#" class="view-ex text-grey mt-2">Voir un exemple</a>
                     </div>
@@ -227,7 +242,6 @@
                         </div>
                         <div class="mag-card-content">
                             <h5 class="card-title mt-2">Delano</h5>
-                            <p class="card-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Magna dignissim dui varius sollicitudin pellentesque.</p>
                         </div>
                         <a href="#" class="view-ex text-grey mt-2">Voir un exemple</a>
                     </div>
@@ -240,11 +254,11 @@
                 <section class="footer-ctas container-xlg">
                     <div class="left-content">
 						<h6 class="footer-headings">Pour contacter les rédactions de <span>Paperjam + Delano</span></h6>
-						<button type="button" class="btn btn-block footer-btn bg-white">Contacter les Rédactions (FR)</button>
+						<button type="button" class="btn btn-block footer-btn">Contacter les Rédactions (FR)</button>
 					</div>
                     <div class="right-side-left">
                         <h6 class="footer-headings">Découvrez <br>les « Évolutionnaires »</span></h6>
-                        <button type="button" class="btn btn-block footer-btn bg-white">Les Évolutionnaires</button>
+                        <button type="button" class="btn btn-block footer-btn">Les Évolutionnaires</button>
                     </div>
                     <div class="right-side-right">
                         <a href="#"><img class="footer-img" src="/assets/evolutionaries.png" alt=""></a>
@@ -278,4 +292,3 @@
 		<script src="../js/script.js"></script>
 	</body>
 </html>
-

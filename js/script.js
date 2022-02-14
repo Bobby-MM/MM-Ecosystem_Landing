@@ -10,6 +10,7 @@ $(document).ready(function () {
         }
     });
 
+    // Card 2
     $('#nl-selector2').click(function() {
         if ($(this).is(':checked')) {
             $(".mag-card2").addClass("added");
@@ -18,23 +19,17 @@ $(document).ready(function () {
         }
     });
 
-    // OLD
-    // $('#nl-selector1').click(function() {
-    //     if ($(this).is(':checked')) {
-    //         $(".card1").addClass("added");
-    //     } else {
-    //         $(this).siblings('label').html('Ajouter');
-    //         $(".card1").removeClass("added");
-    //     }
-    // });
+    // * Hide fixed nav content on click
+    $('.mm-form-top').click(function() {
+        $(".hidden-content").toggleClass("navbar-hide");
+        $(".mm-bottom-nav").toggleClass("mm-border-top");
+    });
 
-    // $('#nl-selector2').click(function() {
-    //     if ($(this).is(':checked')) {
-    //         $(".card2").addClass("added");
-    //     } else {
-    //         $(this).siblings('label').html('Ajouter');
-    //         $(".card2").removeClass("added");
-    //     }
-    // });
+    // * Drop dropup menu
+    $(".collapse-arrow").click(function(){
+        $(".hidden-content").removeClass("navbar-hide");
+        $(".mm-bottom-nav").toggleClass("mm-border-top");
+    });
+
 });
 

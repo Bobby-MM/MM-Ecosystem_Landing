@@ -102,6 +102,8 @@
 
 .text-grey {color: #7C7C7C !important;}
 
+.text-lt-grey {color: #CCCCCC !important;}
+
 .bg-dark {background-color: #333333 !important;}
 
 .bg-white {background-color: #FFFFFF !important;}
@@ -113,6 +115,12 @@
 .bg-light-grey {background-color: #F1F1F1 !important;}
 
 /* CUSTOM LAYOUT */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 body {
   font-family: 'Larsseit-Regular';
   color: #333;
@@ -139,14 +147,31 @@ body {
   font-size: 14px;
   line-height: 17.5px;
   letter-spacing: 2px;
+  padding: 8px;
 }
 
 .italicized {
   font-family: 'Larsseit-Bold-italic';
 }
 
+.italicized-lt {
+  font-family: 'Larsseit-italic';
+}
+
 /* Changing the focus color on inputs */
 input[type=text]:focus { 
+  border: none !important;
+  border-radius: 8px;
+  outline: 2px solid #E50046;
+}
+
+input[type=email]:focus { 
+  border: none !important;
+  border-radius: 8px;
+  outline: 2px solid #E50046;
+}
+
+input[type=number]:focus { 
   border: none !important;
   border-radius: 8px;
   outline: 2px solid #E50046;
@@ -163,10 +188,34 @@ button:focus {
 }
 
 /* DropUP menu styling */
+.navbar-hide {
+  display: none;
+}
+
 .mm-bottom-nav {
   cursor: default;
   box-shadow: 0px -4px 10px #999;
   border-radius: 0;
+}
+
+.collapse-arrow {
+  width: 30px;
+  cursor: pointer;
+}
+
+.dropup-heading {
+  display: flex;
+  justify-content: space-between;
+}
+
+.mm-subtext {
+  font-size: 10px;
+  color: #333;
+}
+
+.mm-border-top {
+  border-top: 5px solid #e50046;
+  box-shadow: none;
 }
 
 .bottom-vis {
@@ -184,6 +233,12 @@ button:focus {
   width: 320px;
   font-size: 28px;
   line-height: 36.96px;
+}
+
+.dropup-header2 {
+  font-family: Larsseit-Bold;
+  width: 350px;
+  font-size: 28px;
 }
 
 /* Hidden on desktop */
@@ -205,12 +260,30 @@ button:focus {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  width: 350px;
+  width: 360px;
 }
 
 .mm-button-dropup {
   align-self: flex-end;
   align-self: center;
+}
+
+/* ! Grid Styling in dropup */
+.top-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  /* border-bottom: 1px solid #333; */
+  grid-column-gap: 50px;
+  grid-row-gap: 20px;
+}
+
+.bottom-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-column-gap: 50px;
+  grid-row-gap: 20px;
 }
 
 .dropup-form {
@@ -225,23 +298,49 @@ button:focus {
   justify-content: space-between;
 }
 
-input[type=text] {
+input[type=text], input[type=email], input[type=number] {
   border-style: none;
-  border-bottom: 1px solid #999;
+  border-bottom: 1px solid #CCC;
   height: 38px;
+  color: #E50046;
+  font-size: 20px;
 }
 
 .mm-inputs {
   display: flex;
   flex-direction: column;
   margin-top: 20px;
-  width: 80%;
+  width: 100%;
 }
 
-.country-select {
+.mm-inputs2-parent {
+  display: flex;
+  align-self: end;
+}
+
+.mm-inputs2 {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.mm-inputs2 input {
+  width: 45%;
+}
+
+.mm-inputs2 select {
+  width: 45%;
+}
+
+::placeholder {
+  color: #CCC;
+}
+
+select {
   border-style: none;
-  border-bottom: 1px solid #999;
+  border-bottom: 1px solid #CCC;
   height: 38px;
+  color: #E50046;
 }
 
 #mm-privacy + label {
@@ -252,10 +351,9 @@ input[type=text] {
 }
 
 .form-end-container {
-  display: flex;
-  flex-direction: column;
-  align-self: flex-end;
-  margin-top: 25px;
+  display: grid;
+  justify-content: end;
+  margin-bottom: 40px;
 }
 
 /* Hero Styling */
@@ -267,28 +365,35 @@ input[type=text] {
 }
 
 .main-header-container {
-  max-width: 725px;
+  max-width: 1000px;
   flex-direction: column;
 }
 
 .main-header-text {
   font-family: 'MenoBannerCondensedRegular';
-  font-size: 65px;
+  font-size: 75px;
   line-height: 85.8px;
   text-align: center;
 }
 
 .main-header-body {
-  font-size: 28px;
+  font-size: 24px;
   line-height: 36.96px;
   text-align: center;
+  margin: 0 auto;
   margin-top: 18px;
+  width: 75%;
+}
+
+.apostrophe {
+/* font-family: Arial, Helvetica, sans-serif; */
+font-family:'Arial Narrow', Arial, sans-serif;
 }
 
 .mm-underline {
   background-image: url("../assets/underline-thik.svg");
   background-repeat: no-repeat, repeat;
-  background-position: 0% 85%;
+  background-position: 0% 90%;
 }
 /* End Hero Styling */
 
@@ -332,9 +437,8 @@ input[type=text] {
 
 /* Cards-section styling */
 .header-container {
-  max-width: 80%;
   margin: auto;
-  margin-bottom: 51px;
+  margin-bottom: 15px;
 }
 
 .header-text {
@@ -358,8 +462,9 @@ input[type=text] {
 }
 
 .mag-card-template {
-height: 310px;
-width: 275px;
+height: 276px;
+width: 276px;
+padding: 20px;
 outline: 2px solid #333;
 display: flex;
 flex-direction: column;
@@ -371,15 +476,15 @@ flex-direction: column;
 
 /* thumbnail img styling */
 .img-wrapper {
-  height: 96px;
-  width: 96px;
+  height: 150px;
+  width: 150px;
   overflow: hidden;
   display: flex;
   justify-content: center;
 }
 
 .card-img-top {
-  height: 96px;
+  height: 150px;
   width: auto;
 }
 /* end img styling */
@@ -420,10 +525,10 @@ flex-direction: column;
 .sub-checkbox + label::before{
   content: "";
   position: absolute;
-  right: -15px;
-  top: -8px;
-  width: 30px;
-  height: 30px;
+  right: 0px;
+  top: -30px;
+  width: 40px;
+  height: 40px;
   border: 2px solid #333;
   border-radius: 50%;
   background-image: url(../assets/mm-plus.svg);
@@ -436,10 +541,10 @@ flex-direction: column;
 .sub-checkbox:checked + label::before{
   content: "";
   position: absolute;
-  right: -15px;
-  top: -8px;
-  width: 30px;
-  height: 30px;
+  right: 0px;
+  top: -30px;
+  width: 40px;
+  height: 40px;
   border: 2px solid #E50046;
   border-radius: 50%;
   background-image: url(../assets/mm-dash.svg);
@@ -451,7 +556,7 @@ flex-direction: column;
 
 .card-title {
   font-family: MenoBannerCondensedRegular;
-  font-size: 26px;
+  font-size: 32px;
 }
 
 .card-body {
@@ -464,8 +569,8 @@ flex-direction: column;
 /* Footer Styling */
 footer {
   width: 100%;
-  height: 70vh;
-  margin-top: 50px;
+  height: 63vh;
+  margin-top: 75px;
   padding-top: 50px;
 }
 
@@ -495,10 +600,11 @@ footer {
 
 .footer-btn {
   outline: 1px solid #E50046;
+  background-color: #fff;
   border-radius: 8px;
   margin-top: 50px;
+  padding: 8px;
   font-size: 14px;
-  line-height: 17.5px;
   letter-spacing: 2px;
   text-transform: uppercase;
   color: #E50046;
@@ -601,7 +707,7 @@ footer {
   }
 
   .dropup-header {
-    font-size: 21px;
+    font-size: 28px;
     margin-left: 20px;
     line-height: 30px;
   }
