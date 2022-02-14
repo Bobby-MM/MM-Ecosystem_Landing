@@ -400,8 +400,6 @@ font-family:'Arial Narrow', Arial, sans-serif;
 /* Sub-nav Styling (tabs) */
 .subnav-main {
   border-bottom: 1px solid #333;
-  margin-top: 40px;
-  margin-bottom: 40px;
 }
 
 .subnav {
@@ -409,13 +407,11 @@ font-family:'Arial Narrow', Arial, sans-serif;
   flex-direction: row;
   justify-content: space-around;
   font-size: 28px;
-  line-height: 35px;
 }
 
 .subnav li {
   text-align: center;
-  line-height: 80px;
-  width: 300px;
+  width: 120px;
 }
 
 .subnav a {
@@ -427,18 +423,17 @@ font-family:'Arial Narrow', Arial, sans-serif;
   transition: .3s;
 }
 
-.active-tab {
+.print-tab {
   background-image: url("../assets/rounded.svg");
   background-repeat: no-repeat, repeat;
-  background-size: 200px;
   background-position: center;
+  background-size: contain;
 }
 /* End Sub-nav styling */
 
 /* Cards-section styling */
 .header-container {
   margin: auto;
-  margin-bottom: 15px;
 }
 
 .header-text {
