@@ -2,7 +2,7 @@ $(document).ready(function () {
     // When checkbox is checked display different text
     // Card 1
     // TODO This needs to be cleaned and made DRY
-    $('#nl-selector1').click(function() {
+    $('#mag-selector1').click(function() {
         if ($(this).is(':checked')) {
             $(".mag-card1").addClass("added");
         } else {
@@ -11,11 +11,31 @@ $(document).ready(function () {
     });
 
     // Card 2
-    $('#nl-selector2').click(function() {
+    $('#mag-selector2').click(function() {
         if ($(this).is(':checked')) {
             $(".mag-card2").addClass("added");
         } else {
             $(".mag-card2").removeClass("added");
+        }
+    });
+
+    // For Newsletters
+        // Newsletter 1
+    // TODO This needs to be cleaned and made DRY
+    $('#nl-selector1').click(function() {
+        if ($(this).is(':checked')) {
+            $(".nl-card1").addClass("added");
+        } else {
+            $(".nl-card1").removeClass("added");
+        }
+    });
+
+    // Newsletter 2
+    $('#nl-selector2').click(function() {
+        if ($(this).is(':checked')) {
+            $(".nl-card2").addClass("added");
+        } else {
+            $(".nl-card2").removeClass("added");
         }
     });
 

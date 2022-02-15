@@ -1,0 +1,120 @@
+/* Card Styling */
+.nl-grid-container {
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    column-gap: 20px;
+    row-gap: 20px;
+    justify-items: center;
+  }
+
+.nl-card-template {
+    height: 357px;
+    width: 275px;
+    padding: 20px;
+    outline: 2px solid #333;
+    display: flex;
+    flex-direction: column;
+    padding: 20px 20px 10px 20px;
+}
+
+.nl-card-row1 {
+    display: flex;
+}
+
+/* thumbnail img styling */
+.img-wrapper {
+    height: 96px;
+    width: 96px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+}
+
+.card-img-top {
+    height: 96px;
+    width: auto;
+}
+
+.card-title {
+    font-size: 26px;
+}
+
+.nl-freq {
+    font-family: Larsseit-Light-italic;
+    margin-top: 10px;
+}
+
+.nl-desc {
+    margin: 0;
+}
+
+.view-ex {
+    margin-top: auto;
+}
+
+/* ! CHECKBOX STYLING */
+/* hide original checkbox */
+.sub-checkbox{
+    opacity: 0;
+  }
+  
+  .added {
+    outline: 2px solid #E50046;
+  }
+  
+  .checkbox-txt {
+    width: 100px;
+  }
+  
+  /* style new checkbox */
+  .sub-checkbox + label{
+    position: relative;
+    padding-left: 25px;
+    cursor: pointer;
+    display: inline-block;
+    color: #333;
+    font-size: 18px;
+  }
+  
+  /* change text color on check */
+  .sub-checkbox:checked + label{
+    position: relative;
+    cursor: pointer;
+    display: inline-block;
+  }
+  
+  /* using bg image */
+  /* style & position checkbox */
+  .sub-checkbox + label::before{
+    content: "";
+    position: absolute;
+    right: -20px;
+    top: 0px;
+    width: 40px;
+    height: 40px;
+    border: 2px solid #333;
+    border-radius: 50%;
+    background-image: url(../assets/mm-plus.svg);
+    background-repeat: no-repeat;
+    background-size: 15px;
+    background-position: center;
+  }
+  
+  /* change checkbox on checked */
+  .sub-checkbox:checked + label::before{
+    content: "";
+    position: absolute;
+    right: -20px;
+    top: 0px;
+    width: 40px;
+    height: 40px;
+    border: 2px solid #E50046;
+    border-radius: 50%;
+    background-image: url(../assets/mm-dash.svg);
+    background-repeat: no-repeat;
+    background-size: 15px;
+    background-position: center;
+  }
+  /* End checkbox styling */

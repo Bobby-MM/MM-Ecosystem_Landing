@@ -19,6 +19,7 @@
 		
 		<!--====== Style CSS ======-->
 		<link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="css/digital.css">
 		<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css'>
 
 		<!-- OG Meta -->
@@ -48,13 +49,12 @@
 
 	<body>
 		<header class="border-bottom">
-
 			<!-- START NAVBAR -->
 			<div class="container-xlg">
 				<nav class="navbar navbar-expand-lg navbar-light bg-white">
 
-					<a class="navbar-brand" href="index.html">
-						<img src="assets/logo-ecosystem.svg" alt="Maison Moderne x Paperjam+Delano">
+					<a class="navbar-brand" href="welcome.html">
+						<img class="mm-top-logo" src="assets/logo-ecosysteme.svg" alt="Maison Moderne x Paperjam+Delano">
 					</a>
 					<button class="navbar-toggler mt-3 mb-2" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 						<span class="navbar-toggler-icon"></span>
@@ -63,9 +63,9 @@
 					<div class="collapse navbar-collapse" id="navbarSupportedContent">
 						<ul class="navbar-nav ml-auto">
 							<li class="nav-item dropdown">
-								<a class="nav-link dropdown-toggle text-dark pl-4" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">EN</a>
+								<a class="nav-link dropdown-toggle text-dark pl-4" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">FR</a>
 								<div class="dropdown-menu" aria-labelledby="navbarDropdown">
-									<a class="dropdown-item text-dark" href="#">FR</a>
+									<a class="dropdown-item text-dark" href="#">EN</a>
 								</div>
 							</li>
 						</ul>
@@ -74,189 +74,403 @@
 			</div>
 			<!-- END NAVBAR -->
 
-			<!-- ? START OF FIXED BOTTOM NAV ? -->
-			<nav class="navbar fixed-bottom navbar-light bg-white navbar-toggler pt-4 pb-2 mm-bottom-nav">
-				<div class="container-xlg">
-					<div class="mobile-header">
-						<img class="mm-mail" src="/assets/mailbox.svg" alt="">
-						<p>Dernière étape pour valider</p>
-					</div>
-					<div class="mm-dropup-content">
-						<div class="mm-dropup-left">
-							<img class="mm-mail" src="/assets/mailbox.svg" alt="">
-							<h7 class="dropup-header">Dernière étape pour valider</h7>
-						</div>
-						<form class="mm-form-placeholder1">
-							<div class="mm-email-section">
-								<label for="mm-email">Votre e-mail</label>
-								<input id="mm-email" type="text" data-toggle="collapse" data-target="#navbarSupportedContent2"
-								aria-controls="navbarSupportedContent2" aria-expanded="false" aria-label="Toggle navigation">
-							</div>
-							<button class="mm-button mm-button-dropup ml-5" type="button">Valider</button>
-						</form>
-					</div>
-
-					<div class="collapse navbar-collapse" id="navbarSupportedContent2">
-
-						<form action="" class="dropup-form pb-5 container-xlg">
-
-							<div class="dropup-rows">
-								<div class="mm-inputs">
-									<label for="first-name">Prénom</label>
-									<input id="first-name" type="text">
-								</div>
-								<div class="mm-inputs ml-5">
-									<label for="last-name">Nom</label>
-									<input id="last-name" type="text">
-								</div>
-								<div class="mm-inputs ml-5">
-									<label for="society">Société</label>
-									<input id="society" type="text">
-								</div>
-							</div>
-
-							<div class="dropup-rows">
-								<div class="mm-inputs">
-									<label for="email">E-mail professionel</label>
-									<input id="email" type="text">
-								</div>
-								<div class="mm-inputs ml-5">
-									<label for="phone">Téléphone (optionnel)</label>
-									<input id="phone" type="text">
-								</div>
-								<div class="mm-inputs ml-5">
-									<label for="function">Fonction</label>
-									<input id="function" type="text">
-								</div>
-							</div>
-
-							<div class="dropup-rows">
-								<div class="mm-inputs">
-									<label for="street">Rue et numéro</label>
-									<input id="street" type="text">
-								</div>
-								<div class="mm-inputs ml-5">
-									<label for="postcode">Code postal</label>
-									<input id="postcode" type="text">
-								</div>
-								<div class="mm-inputs ml-5">
-									<label for="country">Pays</label>
-									<select class="country-select" name="country" id="country">
-										<option value="Luxembourg">Luxembourg</option>
-									</select>
-								</div>
-							</div>
-
-							<div class="form-end-container">
-								<div class="privacy-container">
-									<input type="checkbox" id="mm-privacy" name="mm-privacy">
-									<label for="mm-privacy">J'ai lu et accepte la politique de confidentialité (https://www.maisonmoderne.com/privacy-policy)</label>
-								</div>
-								<button class="mm-button mm-button-dropup m-0 mt-1" type="button">Valider</button>
-							</div>
-
-						</form>
-
-					</div>
-				</div>
-			</nav>
-			<!-- ? END OF FIXED BOTTOM NAV ? -->
-
 		</header>
 
-		<container class="container-xlg">
+        <!-- ? START OF FIXED BOTTOM NAV ? -->
+        <nav class="navbar fixed-bottom navbar-light bg-white navbar-toggler pt-2 pb-2 mm-bottom-nav" id="bottom-navbar">
+            <div class="container-xlg">
+                <div class="hidden-content pt-2">
+                    <div class="bottom-vis">
+                        <div class="mm-dropup-left">
+                            <img class="mm-mail" src="/assets/mailbox.svg" alt="">
+                            <h7 class="dropup-header ml-4">Dernière étape pour valider</h7>
+                        </div>
 
+                        <form class="mm-form-top" data-toggle="collapse" data-target="#navbarSupportedContent2"
+                        aria-controls="navbarSupportedContent2" aria-expanded="false" aria-label="Toggle navigation">
+                            <div class="mm-email-section">
+                                <label for="mm-email">Votre e-mail</label>
+                                <input id="mm-email" type="text">
+                            </div>
+                            <button class="mm-button mm-button-dropup mt-4" type="button">Abonnez-vous ici</button>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="collapse navbar-collapse pt-4 navbar-push" id="navbarSupportedContent2">
+
+                    <div class="dropup-heading">
+                        <h7 class="dropup-header2">Dernière étape pour valider</h7>
+                        <img class="collapse-arrow" src="/assets/collapse.svg" alt="" data-toggle="collapse" data-target="#navbarSupportedContent2"
+                        aria-controls="navbarSupportedContent2" aria-expanded="false" aria-label="Toggle navigation">
+                    </div>
+                    <form action="" class="bottom-navigation">
+
+                        <div class="top-grid pb-4 mb-4">
+                            <div class="mm-inputs">
+                                <input type="email" placeholder="Email professionel*">
+                                <sub class="mt-2 mm-subtext">Pour l'envoi des newsletters</sub>
+                            </div>
+                            <div class="mm-inputs">
+                                <input type="email" placeholder="Email privé">
+                                <sub class="mt-2 mm-subtext">Utilisé uniquement comme back up</sub>
+                            </div>
+                            <div class="empty-div"></div>
+
+                            <div class="mm-inputs">
+                                <input type="text" placeholder="Nom">
+                            </div>
+                            <div class="mm-inputs">
+                                <input type="text" placeholder="Prénom">
+                            </div>                            
+                            <div class="mm-inputs">
+                                <select name="sex" id="sex">
+                                    <option value="" disabled selected hidden>Sexe</option>
+                                    <option>male</option>
+                                    <option>female</option>
+                                    <option>other</option>
+                                </select>
+                            </div>
+                        </div>
+
+                    <h7 class="dropup-header2">Seulement pour les abonnements</h7>
+
+                        <div class="bottom-grid">
+                            <div class="mm-inputs">
+                                <input type="text" placeholder="Société">
+                            </div>
+                            <div class="mm-inputs">
+                                <input type="text" placeholder="Fonction">
+                            </div>
+                            <div class="empty-div"></div>
+
+                            <div class="mm-inputs">
+                                <input type="text" placeholder="N° et rue">
+                            </div>
+                            <div class="mm-inputs2-parent">
+                                <div class="mm-inputs2">
+                                    <input type="number" placeholder="Code Postal">
+                                    <select name="location" id="location" class="mm-select">
+                                        <option value="Localité">Localité</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="mm-inputs select">
+                                <select name="country" id="country" class="mm-select">
+                                    <option value="Pays">Pays</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="form-end-container mt-5">
+                            <div class="privacy-container">
+                                <input type="checkbox" id="mm-privacy" name="mm-privacy">
+                                <label for="mm-privacy">J'ai lu et accepte la politique de confidentialité (https://www.maisonmoderne.com/privacy-policy)</label>
+                            </div>
+                            <button class="mm-button-dropup mt-1" type="button">Valider</button>
+                        </div>
+
+                    </form>
+
+                </div>
+            </div>
+        </nav>
+        <!-- ? END OF FIXED BOTTOM NAV ? -->
+
+		<container class="container-xlg">
 			<!-- HERO -->
-			<section class="hero">
+			<section class="hero mt-5">
 				<div class="main-header-container p-3">
-					<h1 class="main-header-text">Mieux connaître <span class="mm-underline">l'écosystème</span><br>de Paperjam + Delano.</h1>
-					<p class=main-header-body>Mieux comprendre le Luxembourg. Business, Place financière, Politique et Culture, déclinés en Print, Digital, Social et Live.</p>
+					<h1 class="main-header-text">Mieux connaître<span class="mm-underline"> l<span class="apostrophe">`</span>écosystème</span><br>de Paperjam + Delano.</h1>
+					<p class="main-header-body">Mieux comprendre le Luxembourg. Business, Place financière, Politique et Culture, déclinés en Print, Digital, Club et Communication.</p>
 				</div>
 			</section>
 
 			<!-- SUB-NAVIGATION -->
-			<section class="subnav-main container-xlg">
+			<section class="subnav-main container-xlg pb-2">
 				<ul class="navbar-nav subnav">
-					<li><a class="text-dark list-width" href="index.html">Print</a></li>
-					<li class="active-tab"><a class="text-dark list-width" href="digital.html">Digital</a></li>
-					<li><a class="text-dark list-width" href="live.html">Live</a></li>
-					<li><a class="text-dark list-width" href="communication.html"><span class="long-txt">Communication</span><span class="short-txt">Comm.</span></a></li>
+					<li class="subnav-tab"><a class="text-dark list-width" href="welcome.html">Print</a></li>
+					<li class="subnav-tab"><img class="subnav-focus" src="/assets/rounded.svg" alt="hand-drawn circle over digital tab"><a class="text-dark list-width" href="digital.html">Digital</a></li>
+					<li class="subnav-tab"><a class="text-dark list-width" href="club.html">Club</a></li>
+					<li class="subnav-tab"><a class="text-dark list-width" href="communication.html"><span class="long-txt">Communication</span><span class="short-txt">Comm.</span></a></li>
 				</ul>
 			</section>
 
 			<!-- Section Heading -->
-			<section class="header-container">
-				<h2 class="header-text">Recevez les mensuels <span class="italicized">Paperjam et Delano</span> à votre lieu de travail.</h2>
-				<p class=header-body>Ces médias sont fait pour vous ...</p>
+			<section class="header-container container-xlg mb-2">
+				<h2 class="header-text">Dix newsletters au choix</h2>
+				<p class="header-body">De l'information quotidienne au sujets spécialitisés</p>
 			</section>
 
 			<!-- CARDS -->
-			<section class="wrapper container-xlg">whats192.168.50.85
-				<div class="grid-container">
-					<div class="card card1" style="width: 18rem;">
-						<img class="card-img-top" src="/assets/cover-paperjam@2x.png" alt="Card image cap">
-						<div class="card-body">
-							<ul class="hashtag-list p-0">
-								<li class="hashtags mr-1">#politique</li>
-								<li class="hashtags mr-1">#finance</li>
-								<li class="hashtags mr-1">#economie</li>
-							</ul>
-							<h5 class="card-title">Paperjam 🇫🇷</h5>
+			<section class="wrapper container-xlg">
+				<div class="nl-grid-container">
+
+                    <!-- Newsletter Card 1 -->
+					<div class="nl-card-template nl-card1">
+						<div class="nl-card-row1">
+							<div class="img-wrapper">
+								<img class="card-img-top" src="/assets/biquotidienne.svg" alt="Couverture du magazine Paperjam">
+							</div>
 							<form>
-								<input class="sub-checkbox" id="nl-selector1" type="checkbox">
-								<label class="checkbox-txt" for="nl-selector1">Ajouter</label>
-								<a href="#" class="view-ex text-grey">Voir un exemple</a>
-							</form>
+                                <input class="sub-checkbox" id="nl-selector1" type="checkbox">
+                                <label class="checkbox-txt" for="nl-selector1"></label>
+                            </form>
+						</div>
+						<sub class="nl-freq">Lundi à Vendredie à 8h et à 16h</sub>
+						<div class="nl-card-content">
+                            <h5 class="card-title mt-3">Paperjam<br>Biquotidienne</h5>
+                        </div>
+						<p class="nl-desc">L'actualité business, place financière et politique du Luxembourg</p>
+						<div class="view-ex">
+                            <a href="#" class="text-grey">Voir un exemple</a>
 						</div>
 					</div>
 
-					<div class="card card2" style="width: 18rem;">
-						<img class="card-img-top" src="/assets/cover-delano@2x.png" alt="Card image cap">
-						<div class="card-body">
-							<ul class="hashtag-list p-0">
-								<li class="hashtags mr-1">#politique</li>
-								<li class="hashtags mr-1">#finance</li>
-								<li class="hashtags mr-1">#economie</li>
-							</ul>
-							<h5 class="card-title">Delano 🇬🇧</h5>
-							<form class="mm-checkbox-form">
-								<input class="sub-checkbox" id="nl-selector2" type="checkbox">
-								<label class="checkbox-txt" for="nl-selector2">Ajouter</label>
-								<a href="#" class="view-ex text-grey">Voir un exemple</a>
-							</form>
+                    <!-- Newsletter Card 2 -->
+					<div class="nl-card-template nl-card2">
+						<div class="nl-card-row1">
+							<div class="img-wrapper">
+								<img class="card-img-top" src="/assets/finance.svg" alt="Couverture du magazine Paperjam">
+							</div>
+							<form>
+                                <input class="sub-checkbox" id="nl-selector2" type="checkbox">
+                                <label class="checkbox-txt" for="nl-selector2"></label>
+                            </form>
+						</div>
+						<sub class="nl-freq">Mensuelle</sub>
+						<div class="nl-card-content">
+                            <h5 class="card-title mt-3">Paperjam<br>Finance</h5>
+                        </div>
+						<p class="nl-desc">L'actualité business, place financière</p>
+						<div class="view-ex">
+							<a href="#" class="text-grey">Voir un exemple</a>
 						</div>
 					</div>
+
+					<!-- Newsletter Card 3 -->
+					<div class="nl-card-template nl-card3">
+						<div class="nl-card-row1">
+							<div class="img-wrapper">
+								<img class="card-img-top" src="/assets/biquotidienne.svg" alt="Couverture du magazine Paperjam">
+							</div>
+							<form>
+								<input class="sub-checkbox" id="nl-selector3" type="checkbox">
+								<label class="checkbox-txt" for="nl-selector3"></label>
+							</form>
+						</div>
+						<sub class="nl-freq">Lundi à Vendredie à 6h45 et à 11h45</sub>
+						<div class="nl-card-content">
+							<h5 class="card-title mt-3">Delano Daily<br>Briefing</h5>
+						</div>
+						<p class="nl-desc">L'actualité business, place financière et politique du Luxembourg</p>
+						<div class="view-ex">
+							<a href="#" class="text-grey">Voir un exemple</a>
+						</div>
+					</div>
+
+					<!-- Newsletter Card 4 -->
+					<div class="nl-card-template nl-card4">
+						<div class="nl-card-row1">
+							<div class="img-wrapper">
+								<img class="card-img-top" src="/assets/finance.svg" alt="Couverture du magazine Paperjam">
+							</div>
+							<form>
+								<input class="sub-checkbox" id="nl-selector4" type="checkbox">
+								<label class="checkbox-txt" for="nl-selector4"></label>
+							</form>
+						</div>
+						<sub class="nl-freq">Mensuelle</sub>
+						<div class="nl-card-content">
+							<h5 class="card-title mt-3">Delano<br>Finance</h5>
+						</div>
+						<p class="nl-desc">L'actualité de la place financière</p>
+						<div class="view-ex">
+							<a href="#" class="text-grey">Voir un exemple</a>
+						</div>
+					</div>
+
+					<!-- Newsletter Card 5 -->
+					<div class="nl-card-template nl-card5">
+						<div class="nl-card-row1">
+							<div class="img-wrapper">
+								<img class="card-img-top" src="/assets/architecture.svg" alt="Couverture du magazine Paperjam">
+							</div>
+							<form>
+								<input class="sub-checkbox" id="nl-selector5" type="checkbox">
+								<label class="checkbox-txt" for="nl-selector5"></label>
+							</form>
+						</div>
+						<sub class="nl-freq">Bi-mensuelle</sub>
+						<div class="nl-card-content">
+							<h5 class="card-title mt-3">Paperjam Architecture +<br>Real Estate</h5>
+						</div>
+						<p class="nl-desc">Architecture, Design, Immobilier</p>
+						<div class="view-ex">
+							<a href="#" class="text-grey">Voir un exemple</a>
+						</div>
+					</div>
+
+					<!-- Newsletter Card 6 -->
+					<div class="nl-card-template nl-card6">
+						<div class="nl-card-row1">
+							<div class="img-wrapper">
+								<img class="card-img-top" src="/assets/trendin.svg" alt="Couverture du magazine Paperjam">
+							</div>
+							<form>
+								<input class="sub-checkbox" id="nl-selector6" type="checkbox">
+								<label class="checkbox-txt" for="nl-selector6"></label>
+							</form>
+						</div>
+						<sub class="nl-freq">Vendredi à 14h</sub>
+						<div class="nl-card-content">
+							<h5 class="card-title mt-3">Paperjam<br>Trendin'</h5>
+						</div>
+						<p class="nl-desc">L'hebdo Innovation & Technologies</p>
+						<div class="view-ex">
+							<a href="#" class="text-grey">Voir un exemple</a>
+						</div>
+					</div>
+
+					<!-- Newsletter Card 7 -->
+					<div class="nl-card-template nl-card7">
+						<div class="nl-card-row1">
+							<div class="img-wrapper">
+								<img class="card-img-top" src="/assets/green.svg" alt="Couverture du magazine Paperjam">
+							</div>
+							<form>
+								<input class="sub-checkbox" id="nl-selector7" type="checkbox">
+								<label class="checkbox-txt" for="nl-selector7"></label>
+							</form>
+						</div>
+						<sub class="nl-freq">Vendredi à 14h</sub>
+						<div class="nl-card-content">
+							<h5 class="card-title mt-3">Paperjam<br>Green</h5>
+						</div>
+						<p class="nl-desc">L'actualité des enjeux de l'environnement</p>
+						<div class="view-ex">
+							<a href="#" class="text-grey">Voir un exemple</a>
+						</div>
+					</div>
+
+					<div class="blank-card"></div>
+
+					<!-- Newsletter Card 9 -->
+					<div class="nl-card-template nl-card9">
+						<div class="nl-card-row1">
+							<div class="img-wrapper">
+								<img class="card-img-top" src="/assets/foodzilla.svg" alt="Couverture du magazine Paperjam">
+							</div>
+							<form>
+								<input class="sub-checkbox" id="nl-selector9" type="checkbox">
+								<label class="checkbox-txt" for="nl-selector9"></label>
+							</form>
+						</div>
+						<sub class="nl-freq">Jeudi à 11h</sub>
+						<div class="nl-card-content">
+							<h5 class="card-title mt-3">Paperjam<br>Foodzilla</h5>
+						</div>
+						<p class="nl-desc">Restaurants, afterworks et sorties culturelles en mode « coupes de cœurs »</p>
+						<div class="view-ex">
+							<a href="#" class="text-grey">Voir un exemple</a>
+						</div>
+					</div>
+
+					<!-- Newsletter Card 10 -->
+					<div class="nl-card-template nl-card10">
+						<div class="nl-card-row1">
+							<div class="img-wrapper">
+								<img class="card-img-top" src="/assets/weekend.svg" alt="Couverture du magazine Paperjam">
+							</div>
+							<form>
+								<input class="sub-checkbox" id="nl-selector10" type="checkbox">
+								<label class="checkbox-txt" for="nl-selector10"></label>
+							</form>
+						</div>
+						<sub class="nl-freq">Samedi à 09h</sub>
+						<div class="nl-card-content">
+							<h5 class="card-title mt-3">Delano<br>Weekend</h5>
+						</div>
+						<p class="nl-desc">« 10 things to do », actualité et de l'utile (restaurants, jobs, immobilier)</p>
+						<div class="view-ex">
+							<a href="#" class="text-grey">Voir un exemple</a>
+						</div>
+					</div>
+
+					<!-- Newsletter Card 11 -->
+					<div class="nl-card-template nl-card11">
+						<div class="nl-card-row1">
+							<div class="img-wrapper">
+								<img class="card-img-top" src="/assets/dossier.svg" alt="Couverture du magazine Paperjam">
+							</div>
+							<form>
+								<input class="sub-checkbox" id="nl-selector11" type="checkbox">
+								<label class="checkbox-txt" for="nl-selector11"></label>
+							</form>
+						</div>
+						<sub class="nl-freq">Bi-mensuelle</sub>
+						<div class="nl-card-content">
+							<h5 class="card-title mt-3">Paperjam<br>Grands Dossiers</h5>
+						</div>
+						<p class="nl-desc">Le rendez-vous de l'expertise</p>
+						<div class="view-ex">
+							<a href="#" class="text-grey">Voir un exemple</a>
+						</div>
+					</div>
+
+					<!-- Newsletter Card 12 -->
+					<div class="nl-card-template nl-card12">
+						<div class="nl-card-row1">
+							<div class="img-wrapper">
+								<img class="card-img-top" src="/assets/dossier.svg" alt="Couverture du magazine Paperjam">
+							</div>
+							<form>
+								<input class="sub-checkbox" id="nl-selector12" type="checkbox">
+								<label class="checkbox-txt" for="nl-selector12"></label>
+							</form>
+						</div>
+						<sub class="nl-freq">Mensuelle</sub>
+						<div class="nl-card-content">
+							<h5 class="card-title mt-3">Delano<br>Know How</h5>
+						</div>
+						<p class="nl-desc">Le rendez-vous de l'expertise</p>
+						<div class="view-ex">
+							<a href="#" class="text-grey">Voir un exemple</a>
+						</div>
+					</div>
+
 				</div>
 			</section>
 
 			<!-- FOOTER START -->
-			<footer>
-				<section class="footer-ctas container-xlg">
-					<div class="left-content">
+			<footer class="bg-light-grey">
+                <section class="footer-ctas container-xlg">
+                    <div class="left-content">
 						<h6 class="footer-headings">Pour contacter les rédactions de <span>Paperjam + Delano</span></h6>
 						<button type="button" class="btn btn-block footer-btn">Contacter les Rédactions (FR)</button>
 					</div>
-					<div class="right-content">
-						<div class="right-side-left">
-							<h6 class="footer-headings">Découvrez <br>les « Évolutionnaires »</span></h6>
-							<button type="button" class="btn btn-block footer-btn">Les Évolutionnaires</button>
-						</div>
-						<div class="right-side-right">
-							<a href=""><img class="footer-img" src="/assets/evolutionaries.png" alt=""></a>
-						</div>
-					</div>
-				</section>
+                    <div class="right-content">
+                        <div class="right-side-left">
+                            <h6 class="footer-headings">Découvrez les « Évolutionnaires »</span></h6>
+                            <button type="button" class="btn btn-block footer-btn">Les Évolutionnaires</button>
+                        </div>
+                        <div class="right-side-right">
+                            <a href="#"><img class="footer-img mt-1" src="/assets/evolutionaries.png" alt=""></a>
+                        </div>
+                    </div>
+                </section>
+
 				<hr class="container-xlg">
 				<section class="footer-fineprint container-xlg">
 					<div class="footer-group">
-						<a href="index.html"><img class="mm-logo" src="/assets/logo-mm.svg" alt=""></a>
+						<a href="welcome.html"><img class="navbar-brand mm-logo mr-4" src="/assets/logo-mm.svg" alt=""></a>
 						<p class="fine-print">Paperjam, Delano et Maison Moderne sont des marques déposées utilisées sous license par MM Publishing and Media S.A. (Luxembourg).</p>
 					</div>
 					<div class="footer-socials">
 						<ul class="socials-list">
-							<li class="socials"><a href="http://"><img class="li-right" src="assets/icon_linkedin.svg" alt=""></a></li>
-							<li class="socials"><a href="http://"><img src="/assets/icon_facebook.svg" alt=""></a></li>
-							<li class="socials"><a href="http://"><img class="ig-left" src="/assets/icon-instagram.svg" alt=""></a></li>
+							<li><a href="http://"><img class="li-right" src="assets/icon_linkedin.svg" alt=""></a></li>
+							<li class="ml-4"><a href="http://"><img src="/assets/icon_facebook.svg" alt=""></a></li>
+							<li class="ml-4"><a href="http://"><img class="ig-left" src="/assets/icon-instagram.svg" alt=""></a></li>
 						</ul>
 					</div>
 				</section>
@@ -273,4 +487,3 @@
 		<script src="../js/script.js"></script>
 	</body>
 </html>
-

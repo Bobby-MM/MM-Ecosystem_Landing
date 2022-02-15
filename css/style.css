@@ -324,14 +324,13 @@ input[type=text], input[type=email], input[type=number] {
 }
 
 ::placeholder {
-  color: #CCC;
+  color: #333;
 }
 
 select {
   border-style: none;
   border-bottom: 1px solid #CCC;
   height: 38px;
-  color: #E50046;
 }
 
 #mm-privacy + label {
@@ -344,7 +343,7 @@ select {
 .form-end-container {
   display: grid;
   justify-content: end;
-  margin-bottom: 40px;
+  margin-bottom: 30px;
 }
 
 /* Hero Styling */
@@ -1272,6 +1271,21 @@ footer {
   .fine-print {
     font-size: 10px;
   }
+
+  .dropup-header2 {
+    font-size: 21px;
+  }
+
+  .mm-button-dropup {
+    height: 35px;
+    width: 250px;
+  }
+
+  .form-end-container {
+    justify-content: auto;
+    margin-bottom: 25px;
+  }
+
 }
 
 @media screen and (max-width: 414px) {
@@ -1389,12 +1403,7 @@ footer {
   .mm-email-section {
     margin-right: 20px;
   }
-
-  .form-end-container {
-    justify-content: center;
-    margin-bottom: 25px;
-  }
-
+  
   .mm-button-dropup {
     margin: 0;
   }
