@@ -1,3 +1,8 @@
+.subnav-focus {
+  left: 0;
+  top: 0;
+}
+
 /* Card Styling */
 .nl-grid-container {
     margin-top: 40px;
@@ -61,7 +66,7 @@
   }
   
   .added {
-    outline: 2px solid #E50046;
+    outline: 2px solid #E5003C;
   }
   
   .checkbox-txt {
@@ -110,7 +115,7 @@
     top: 0px;
     width: 40px;
     height: 40px;
-    border: 2px solid #E50046;
+    border: 2px solid #E5003C;
     border-radius: 50%;
     background-image: url(../assets/mm-dash.svg);
     background-repeat: no-repeat;

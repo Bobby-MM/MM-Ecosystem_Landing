@@ -120,6 +120,24 @@ $(document).ready(function () {
         }
     });
 
+    // Club Selection1
+    $('#club-selector1').click(function() {
+        if ($(this).is(':checked')) {
+            $(".club-card1").addClass("added");
+        } else {
+            $(".club-card1").removeClass("added");
+        }
+    });
+
+    // Comm Selection1
+    $('#comm-selector1').click(function() {
+        if ($(this).is(':checked')) {
+            $(".comm-card1").addClass("added");
+        } else {
+            $(".comm-card1").removeClass("added");
+        }
+    });
+
     // * Hide fixed nav content on click
     $('.mm-form-top').click(function() {
         $(".hidden-content").toggleClass("navbar-hide");

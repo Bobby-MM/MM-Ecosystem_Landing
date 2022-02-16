@@ -1,0 +1,81 @@
+.club-grid-container {
+    margin: 40px 0 50px 0;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    grid-column-gap: 0;
+    width: 80vw;
+}
+
+.club-card-template {
+    height: 229px;
+    width: 1164px;
+    outline: 2px solid #333;
+    display: flex;
+}
+
+/* thumbnail img styling */
+.img-wrapper {
+    height: 229px;
+    width: 470px;
+}
+
+.card-img-top {
+    height: 229px;
+    width: 333px;
+    border-radius: 0;
+}
+  /* end img styling */
+
+.club-card-content {
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.club-card-row1 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.sub-checkbox + label::before{
+    right: 0px;
+    top: 0px;
+}
+
+/* change checkbox on checked */
+.sub-checkbox:checked + label::before{
+right: 0px;
+top: 0px;
+}
+
+.added {
+    outline: 2px solid #E5003C;
+}
+
+.club-arrow {
+    margin-left: 10px;
+}
+
+.view-ex {
+    margin-top: auto;
+}
+
+.club-subtext {
+    width: 1164px;
+    margin-top: 25px;
+} 
+
+.club-subs {
+    font-family: Larsseit-Light-italic;
+    font-size: 14px;
+}
+
+.club-link {
+    text-decoration: underline;
+}
+
+footer {
+    margin-top: 50px;
+}
