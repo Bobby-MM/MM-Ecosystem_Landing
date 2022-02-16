@@ -1,0 +1,17 @@
+.navbar {
+    color: #333333 !important;
+    cursor: default !important;
+}
+
+/* Reducing width to eliminate overflow on mbpro */
+.dropdown-menu {
+    min-width:100px !important;
+}
+
+/* ********** ////////// MEDIA QUERIES \\\\\\\\\\ ********** */
+
+@media screen and (max-width: 414px) {
+    .mm-top-logo {
+        width: 80%;
+    }
+}

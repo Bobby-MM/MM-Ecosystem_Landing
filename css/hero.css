@@ -1,0 +1,138 @@
+/* Hero Styling */
+.hero {
+display: flex;
+justify-content: center;
+align-items: center;
+height: 50vh
+}
+
+.main-header-container {
+max-width: 1000px;
+flex-direction: column;
+}
+
+.main-header-text {
+font-family: 'MenoBannerCondensedRegular';
+font-size: 75px;
+line-height: 85.8px;
+text-align: center;
+}
+
+.main-header-body {
+font-size: 24px;
+line-height: 36.96px;
+text-align: center;
+margin: 0 auto;
+margin-top: 18px;
+width: 75%;
+}
+
+.apostrophe {
+/* font-family: Arial, Helvetica, sans-serif; */
+font-family:'Arial Narrow', Arial, sans-serif;
+}
+
+.mm-underline {
+background-image: url("../assets/underline-thik.svg");
+background-repeat: no-repeat, repeat;
+background-size: 100%;
+background-position: 0% 95%;
+}
+/* End Hero Styling */
+
+/* ********** ////////// MEDIA QUERIES \\\\\\\\\\ ********** */
+/* ! XL SCREENS */ 
+@media screen and (min-width: 1900px) {
+    .hero {
+        height: 60vh;
+    }
+    
+    .main-header-text {
+        font-size: 100px;
+        line-height: 100px;
+    }
+    
+    .main-header-body {
+        font-size: 32px;
+        margin-top: 40px;
+    }
+}
+
+@media screen and (max-width: 912px) {
+    .hero {
+        max-height: 30vh;
+    }
+}
+
+@media screen and (max-width: 850px) {
+    .main-header-text {
+        font-size: 54px;
+        line-height: 80px;
+    }
+    
+    .main-header-body {
+        font-size: 24px;
+        line-height: 34px;
+    }
+}
+
+@media screen and (max-width: 720px) {
+    .hero {
+        height: 28vh;
+    }
+
+    .main-header-text {
+        font-size: 36px;
+        line-height: 40px;
+    }
+    
+    .main-header-body {
+        font-size: 18px;
+        line-height: 30px;
+        padding: 0 20px;
+    }
+}
+
+@media screen and (max-width: 540px) {
+    .main-header-text {
+        font-size: 42px;
+    }
+    
+    .main-header-body {
+        font-size: 16px;
+        padding: 0;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .hero {
+        max-height: 30vh
+    }
+
+    .main-header-text {
+        font-size: 42px;
+        line-height: 50px;
+    }
+    
+    .main-header-body {
+        font-size: 18px;
+        line-height: 30px;
+    }
+}
+
+@media screen and (max-width: 414px) {
+    .main-header-text {
+        font-size: 32px;
+    }
+    
+    .main-header-body {
+        font-size: 16px;
+        padding: 0;
+    }
+}
+
+@media screen and (max-width: 395px) {
+    .hero {
+        padding-top: 75px;
+    }
+}
