@@ -148,6 +148,10 @@ body {
   font-family: 'Larsseit-italic';
 }
 
+.navbar-hide {
+  display: none;
+}
+
 /* Changing the focus color on inputs */
 input[type=text]:focus { 
   border: none !important;

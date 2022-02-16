@@ -60,7 +60,7 @@ background-position: 0% 95%;
 
 @media screen and (max-width: 912px) {
     .hero {
-        max-height: 30vh;
+        max-height: 50vh;
     }
 }
 
@@ -94,10 +94,6 @@ background-position: 0% 95%;
 }
 
 @media screen and (max-width: 540px) {
-    .main-header-text {
-        font-size: 42px;
-    }
-    
     .main-header-body {
         font-size: 16px;
         padding: 0;
@@ -107,11 +103,6 @@ background-position: 0% 95%;
 @media screen and (max-width: 500px) {
     .hero {
         max-height: 30vh
-    }
-
-    .main-header-text {
-        font-size: 42px;
-        line-height: 50px;
     }
     
     .main-header-body {

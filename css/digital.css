@@ -1,6 +1,7 @@
 .subnav-focus {
-  left: 0;
-  top: 0;
+  height: 45px;
+  top: -5px;
+  right: -20px;
 }
 
 /* Card Styling */
@@ -123,3 +124,41 @@
     background-position: center;
   }
   /* End checkbox styling */
+
+  /* ********** ////////// MEDIA QUERIES \\\\\\\\\\ ********** */
+@media screen and (min-width: 601px) {
+  .short-txt {
+      display: none;
+  }
+}
+
+@media screen and (max-width: 1300px) {
+  .nl-grid-container {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .nl-grid-container {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media screen and (max-width: 950px) {
+  .subnav-focus {
+      top: -10px;
+      right: -28px;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .nl-grid-container {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .long-txt {
+      display: none;
+  }
+}

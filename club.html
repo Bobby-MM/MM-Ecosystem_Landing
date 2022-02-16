@@ -18,12 +18,12 @@
 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 		
 		<!--====== Style CSS ======-->
+		<link rel="stylesheet" href="css/style.css">
 		<link rel="stylesheet" href="css/navbar.css">
 		<link rel="stylesheet" href="css/dropup.css">
 		<link rel="stylesheet" href="css/hero.css">
 		<link rel="stylesheet" href="css/subnav.css">
 		<link rel="stylesheet" href="css/footer.css">
-		<link rel="stylesheet" href="css/style.css">
 		<link rel="stylesheet" href="css/club.css">
 		<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css'>
 
@@ -149,18 +149,17 @@
                             <div class="mm-inputs">
                                 <input type="text" placeholder="Fonction">
                             </div>
-                            <div class="empty-div"></div>
+                            <div class="mm-inputs">
+                                <select name="location" id="location" class="mm-select">
+                                    <option value="Localité">Localité</option>
+                                </select>
+                            </div>
 
                             <div class="mm-inputs">
                                 <input type="text" placeholder="N° et rue">
                             </div>
-                            <div class="mm-inputs2-parent">
-                                <div class="mm-inputs2">
-                                    <input type="number" placeholder="Code Postal">
-                                    <select name="location" id="location" class="mm-select">
-                                        <option value="Localité">Localité</option>
-                                    </select>
-                                </div>
+                            <div class="mm-inputs">
+                                <input type="number" placeholder="Code Postal">
                             </div>
                             <div class="mm-inputs select">
                                 <select name="country" id="country" class="mm-select">
@@ -213,29 +212,31 @@
 				<div class="club-grid-container">
 
                     <!-- Club Card 1 -->
-					<div class="club-card-template club-card1">
-						<div class="img-wrapper">
-							<img class="card-img-top" src="/assets/club_img-2x.png" alt="Couverture du magazine Paperjam">
-						</div>
-						<div class="club-card-content">
-							<div class="club-card-row1">
-								<h5 class="card-title mt-3">Découverte</h5>
-								<form>
-									<input class="sub-checkbox" id="club-selector1" type="checkbox">
-									<label class="checkbox-txt" for="club-selector1"></label>
-								</form>
+					<div class="club-card-template-parent">
+						<div class="club-card-template club-card1">
+							<div class="img-wrapper">
+								<img class="card-img-top" src="/assets/club_img-2x.png" alt="Couverture du magazine Paperjam">
 							</div>
-							<p class="club-desc">Je souhaite recevoir un voucher pour participer à un événement du business club avant de devenir membre.</p>
-							<div class="view-ex">
-								<a href="#" class="text-grey">Découvrez le programme du club
-									<img class="club-arrow" src="/assets/arrow-right.svg" alt="">
-								</a>
+							<div class="club-card-content">
+								<div class="club-card-row1">
+									<h5 class="card-title mt-3">Découverte</h5>
+									<form>
+										<input class="sub-checkbox" id="club-selector1" type="checkbox">
+										<label class="checkbox-txt" for="club-selector1"></label>
+									</form>
+								</div>
+								<p class="club-desc">Je souhaite recevoir un voucher pour participer à un événement du business club avant de devenir membre.</p>
+								<div class="view-ex">
+									<a href="#" class="text-grey">Découvrez le programme du club
+										<img class="club-arrow" src="/assets/arrow-right.svg" alt="">
+									</a>
+								</div>
 							</div>
 						</div>
-					</div>
-					<div class="club-subtext">
-						<p class="club-subs text-grey">Cette offre est valable une fois et réservée aux décideurs en entreprises ou institutions.</p>
-						<p class="club-subs text-grey">Dans sa démarche de responsabilité sociale, Paperjam + Delano Club propose aussi un quota de places aux étudiants, enseignants, demandeurs d’emploi, demandeurs de protection internationale. <a class="text-grey club-link" href="#">C’est par ici</a>.</p>
+						<div class="club-subtext">
+							<p class="club-subs text-grey">Cette offre est valable une fois et réservée aux décideurs en entreprises ou institutions.</p>
+							<p class="club-subs text-grey">Dans sa démarche de responsabilité sociale, Paperjam + Delano Club propose aussi un quota de places aux étudiants, enseignants, demandeurs d’emploi, demandeurs de protection internationale. <a class="text-grey club-link" href="#">C’est par ici</a>.</p>
+						</div>
 					</div>
 
 				</div>

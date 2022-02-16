@@ -1,21 +1,19 @@
 .subnav-focus {
-    left: -30px;
+    height: 50px;
     top: -5px;
-    width: 250px;
+    right: -25px;
 }
 
 .comm-grid-container {
     margin: 40px 0 50px 0;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr;
-    grid-column-gap: 0;
-    width: 80vw;
+    justify-items: center;
 }
 
 .comm-card-template {
     height: 229px;
-    width: 1164px;
+    max-width: 80%;
     outline: 2px solid #333;
     display: flex;
 }
@@ -61,8 +59,11 @@
 }
 
 .comm-grid-container2 {
+    max-width: 80%;
     display: grid;
     grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    margin: 0 auto;
 }
 
 .comm-card-template2 {
@@ -100,4 +101,42 @@
     display: flex;
     flex-direction: column;
     margin-top: auto;
+}
+
+/* ********** ////////// MEDIA QUERIES \\\\\\\\\\ ********** */
+@media screen and (min-width: 601px) {
+    .short-txt {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 950px) {
+    .subnav-focus {
+        height: 45px;
+        left: -30px;
+    }
+}
+
+@media screen and (max-width: 720px) {
+    .subnav-focus {
+        height: 40px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .long-txt {
+        display: none;
+    }
+
+    .subnav-focus {
+        width: 130px;
+        top: -7px;
+        right: 0;
+    }
+}
+
+@media screen and (max-width: 395px) {
+    .subnav-focus {
+        width: 90px;
+    }
 }

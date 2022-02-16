@@ -1,15 +1,25 @@
+.subnav-focus {
+    height: 45px;
+    top: -5px;
+    right: -25px;
+}
+
 .club-grid-container {
     margin: 40px 0 50px 0;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr;
     grid-column-gap: 0;
-    width: 80vw;
+}
+
+.club-card-template-parent {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
 }
 
 .club-card-template {
-    height: 229px;
-    width: 1164px;
+    height: 100%;
+    width: 100%;
     outline: 2px solid #333;
     display: flex;
 }
@@ -63,7 +73,7 @@ top: 0px;
 }
 
 .club-subtext {
-    width: 1164px;
+    width: 100%;
     margin-top: 25px;
 } 
 
@@ -78,4 +88,40 @@ top: 0px;
 
 footer {
     margin-top: 50px;
+}
+
+/* ********** ////////// MEDIA QUERIES \\\\\\\\\\ ********** */
+@media screen and (min-width: 601px) {
+    .short-txt {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1300px) {
+
+}
+
+@media screen and (max-width: 950px) {
+    .subnav-focus {
+        top: -14px;
+        right: -28px;
+    }
+}
+
+@media screen and (max-width: 850px) {
+    .club-card-template {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 720px) {
+    .subnav-focus {
+        right: -35px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .long-txt {
+        display: none;
+    }
 }

@@ -1,93 +1,45 @@
 /* Sub-nav Styling (tabs) */
 .subnav-main {
-border-bottom: 1px solid #333;
-margin-bottom: 50px;
+    border-bottom: 1px solid #333;
+    margin-bottom: 50px;
 }
 
 .subnav-tab {
-position: relative;
+    position: relative;
 }
 
 .subnav-focus {
-position: absolute;
-left: -10px;
-top: -08px;
+    position: absolute;
 }
 
 .subnav {
-display: flex;
-flex-direction: row;
-justify-content: space-around;
-font-size: 28px;
-}
-
-.subnav li {
-text-align: center;
-width: 120px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    font-size: 28px;
 }
 
 .subnav a {
-text-decoration: none;
+    text-decoration: none;
 }
 
 .subnav a:hover {
-color: #E5003C !important;
-transition: .3s;
+    color: #E5003C !important;
+    transition: .3s;
 }
 /* End Sub-nav styling */
 
 /* ********** ////////// MEDIA QUERIES \\\\\\\\\\ ********** */
-@media screen and (min-width: 600px) {
-    .short-txt {
-        display: none;
-    }
-}
-
 @media screen and (max-width: 950px) {
     .subnav {
         margin-top: 25px;
         font-size: 21px;
-        line-height: 35px;
-    }
-    
-    .subnav-focus {
-        top: 12px;
-        left: 35px;
-        height: 35px;
-    }
-    
-    .subnav li {
-        line-height: 60px;
-        width: 200px;
     }
 }
 
 @media screen and (max-width: 912px) {
     .subnav-main {
-        margin-bottom: 25px;
-    }
-}
-
-@media screen and (max-width: 850px) {
-    .subnav-focus {
-        left: 25px;
-    }
-    
-    .subnav li {
-        line-height: 60px;
-        width: 175px;
-    }
-}
-
-@media screen and (max-width: 800px) {
-    .subnav-focus {
-        left: 10px;
-        height: 35px;
-    }
-    
-    .subnav li {
-        line-height: 60px;
-        width: 150px;
+        margin-bottom: 50px;
     }
 }
 
@@ -97,51 +49,13 @@ transition: .3s;
     }
     
     .subnav {
-        font-family: 'Larsseit-Bold';
-        justify-content: space-between;
         font-size: 18px;
     }
 }
 
-@media screen and (max-width: 600px) {
-    .subnav-focus {
-        left: 0;
-        height: 33px;
-    }
-
-    .subnav li {
-        line-height: 60px;
-        width: 125px;
-    }
-
-    .long-txt {
-        display: none;
-    }
-}
-
-@media screen and (max-width: 500px) {
-    .subnav li {
-        line-height: 60px;
-        width: 100px;
-    }
-    
-    .subnav-main {
-        margin-bottom: 20px;
-    }
-
-    .subnav-focus {
-        left: 0;
-        width: 100px;
-    }
-}
 @media screen and (max-width: 395px) {
     .subnav-main {
         margin-top: 75px;
         margin-bottom: 25px;
     }
-    
-    .subnav-focus {
-        width: 90px;
-    }
-    
 }
