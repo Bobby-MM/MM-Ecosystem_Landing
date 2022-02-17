@@ -14,12 +14,11 @@
 .club-card-template-parent {
     display: flex;
     flex-direction: column;
-    margin: 0 auto;
 }
 
 .club-card-template {
     height: 100%;
-    width: 100%;
+    max-width: 77%;
     outline: 2px solid #333;
     display: flex;
 }
@@ -61,7 +60,7 @@ top: 0px;
 }
 
 .added {
-    outline: 2px solid #E5003C;
+    outline: 3px solid #E5003C;
 }
 
 .club-arrow {
@@ -73,7 +72,7 @@ top: 0px;
 }
 
 .club-subtext {
-    width: 100%;
+    max-width: 77%;
     margin-top: 25px;
 } 
 
@@ -97,14 +96,41 @@ footer {
     }
 }
 
-@media screen and (max-width: 1300px) {
-
-}
-
 @media screen and (max-width: 950px) {
     .subnav-focus {
         top: -14px;
         right: -28px;
+    }
+}
+
+@media screen and (max-width: 925px) {
+    .img-wrapper {
+        height: 100%;
+        width: auto;
+        overflow: auto;
+    }
+    
+    .card-img-top {
+        height: 100%;
+        margin-left: 50%;
+        transform: translateX(-50%);
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .club-card-template {
+        flex-direction: column;
+        width: 75%;
+    }
+
+    .img-wrapper {
+        width: 100%;
+        height: auto;
+    }
+    
+    .card-img-top {
+        width: 100%;
+        height: auto;
     }
 }
 
@@ -123,5 +149,15 @@ footer {
 @media screen and (max-width: 600px) {
     .long-txt {
         display: none;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .club-card-template {
+        margin: 0 auto;
+    }
+    .club-subtext {
+        margin: 0 auto;
+        margin-top: 20px;
     }
 }

@@ -1,8 +1,8 @@
 .subnav-focus {
     height: 45px;
     top: -5px;
-    right: -20px;
-  }
+    right: -25px;
+}
 
 /* CARDS */
 .mag-grid-container {
@@ -11,7 +11,7 @@
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr;
     grid-column-gap: 0;
-    width: 80vw;
+    width: 80%;
 }
 
 .mag-card-template {
@@ -28,7 +28,7 @@
 }
 
 .added {
-outline: 2px solid #E5003C;
+outline: 3px solid #E5003C;
 }
 
 /* thumbnail img styling */

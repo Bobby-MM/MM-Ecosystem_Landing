@@ -10,9 +10,8 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
-    column-gap: 20px;
     row-gap: 20px;
-    justify-items: center;
+    max-width: 80%;
   }
 
 .nl-card-template {
@@ -44,7 +43,7 @@
 }
 
 .card-title {
-    font-size: 26px;
+    font-size: 32px;
 }
 
 .nl-freq {
@@ -67,7 +66,7 @@
   }
   
   .added {
-    outline: 2px solid #E5003C;
+    outline: 3px solid #E5003C;
   }
   
   .checkbox-txt {

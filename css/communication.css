@@ -8,12 +8,11 @@
     margin: 40px 0 50px 0;
     display: grid;
     grid-template-columns: 1fr;
-    justify-items: center;
 }
 
 .comm-card-template {
-    height: 229px;
-    max-width: 80%;
+    height: 100%;
+    max-width: 77%;
     outline: 2px solid #333;
     display: flex;
 }
@@ -55,36 +54,33 @@
 }
 
 .added {
-    outline: 2px solid #E5003C;
+    outline: 3px solid #E5003C;
 }
 
 .comm-grid-container2 {
-    max-width: 80%;
+    max-width: 77%;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    justify-items: center;
-    margin: 0 auto;
+    column-gap: 20px;
 }
 
 .comm-card-template2 {
     height: 436px;
-    width: 470px;
+    width: 100%;
     display: flex;
     flex-direction: column;
 }
 
 /* thumbnail img styling */
 .img-wrapper2 {
-    height: 225px;
-    width: 470px;
+    width: 100%;
     overflow: hidden;
     display: flex;
     justify-content: center;
 }
 
 .card-img-top2 {
-    height: 225px;
-    width: 470px;
+    width: 100%;
     border-radius: 0;
 }
   /* end img styling */
@@ -110,10 +106,47 @@
     }
 }
 
+@media screen and (max-width: 1150px) {
+    .img-wrapper {
+        height: 100%;
+        width: auto;
+        overflow: auto;
+    }
+    
+    .card-img-top {
+        height: 100%;
+        margin-left: 50%;
+        transform: translateX(-50%);
+    }
+}
+
 @media screen and (max-width: 950px) {
     .subnav-focus {
         height: 45px;
         left: -30px;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .comm-card-template {
+        flex-direction: column;
+        width: 75%;
+    }
+
+    .img-wrapper {
+        width: 100%;
+        height: auto;
+    }
+    
+    .card-img-top {
+        width: 100%;
+        height: auto;
+    }
+
+    .comm-grid-container2 {
+        grid-template-columns: 1fr;
+        max-width: 75%;
+        row-gap: 50px;
     }
 }
 
@@ -132,6 +165,16 @@
         width: 130px;
         top: -7px;
         right: 0;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .comm-card-template {
+        margin: 0 auto;
+    }
+
+    .comm-grid-container2 {
+        margin: 0 auto;
     }
 }
 
