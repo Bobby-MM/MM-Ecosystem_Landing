@@ -124,15 +124,14 @@ select {
     height: 38px;
 }
 
-.mm-inputs2-parent {
-    display: flex;
-}
-
 .mm-inputs2 {
     display: grid;
     grid-template-columns: 1fr 1fr;
     column-gap: 30px;
     margin-top: auto;
+}
+
+.mm-inputs2-children {
     width: 100%;
 }
 
@@ -187,6 +186,10 @@ select {
 
     .bottom-vis {
         grid-template-columns: 1fr 4fr;
+    }
+
+    .empty-div {
+        display: none;
     }
 
     .top-grid {
