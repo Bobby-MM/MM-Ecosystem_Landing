@@ -135,12 +135,6 @@ select {
     width: 100%;
 }
 
-/* .mm-inputs2 {
-    display: flex;
-    justify-content: space-evenly;
-    margin-top: auto;
-} */
-
 #mm-privacy + label {
     margin-left: 10px;
     font-size: 10px;
@@ -335,5 +329,9 @@ select {
 
     .mm-button-dropup {
         margin: 0;
+    }
+
+    .mm-form-top {
+        flex-direction: column;
     }
 }

@@ -109,9 +109,15 @@ footer {
     }
 }
 
+@media screen and (max-width: 1280px) {
+    footer {
+        height: 550px;
+    }
+}
+
 @media screen and (max-width: 1180px) {
     footer {
-        height: 65vh;
+        height: 525px;
     }
 }
 
@@ -339,8 +345,18 @@ footer {
     }
 }
 
-@media screen and (max-width: 395px) {
+@media screen and (max-width: 412px) {
     footer {
-        height: 850px;
+        height: 900px;
+    }
+}
+
+@media screen and (max-width: 280px) {
+    footer {
+        height: 875px;
+    }
+
+    .footer-btn {
+        font-size: 08px;
     }
 }

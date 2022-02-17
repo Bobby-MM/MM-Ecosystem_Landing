@@ -161,3 +161,19 @@ footer {
         margin-top: 20px;
     }
 }
+
+@media screen and (max-width: 412px) {
+    .subnav-focus {
+        height: 30px;
+        top: -3px;
+        left: -18px;
+    }
+}
+
+@media screen and (max-width: 280px) {
+    .subnav-focus {
+        height: 25px;
+        top: 0;
+        left: -12px;
+    }
+}

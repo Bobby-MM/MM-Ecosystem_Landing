@@ -178,8 +178,24 @@
     }
 }
 
+@media screen and (max-width: 412px) {
+    .subnav-focus {
+        height: 25px;
+        top: 0;
+        left: -35px;
+    }
+}
+
 @media screen and (max-width: 395px) {
     .subnav-focus {
         width: 90px;
+    }
+}
+
+@media screen and (max-width: 280px) {
+    .subnav-focus {
+        height: 25px;
+        top: 0;
+        left: -17px;
     }
 }

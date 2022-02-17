@@ -10,7 +10,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
-    row-gap: 20px;
+    gap: 30px;
     max-width: 80%;
   }
 
@@ -160,4 +160,41 @@
   .long-txt {
       display: none;
   }
+}
+
+@media screen and (max-width: 500px) {
+  .nl-grid-container {
+    justify-items: center;
+    margin: 0 auto;
+    margin-top: 20px;
+  }
+}
+
+@media screen and (max-width: 412px) {
+  .subnav-focus {
+      height: 30px;
+      top: -3px;
+      left: -15px;
+  }
+}
+
+
+@media screen and (max-width: 280px) {
+  .subnav-focus {
+      height: 28px;
+      top: 0;
+      left: -10px;
+  }
+
+  .nl-grid-container {
+    justify-items: start;
+    margin: 0 ;
+    margin-top: 20px;
+  }
+
+  .nl-card-template {
+    height: 357px;
+    width: 250px;
+}
+
 }
