@@ -4,20 +4,20 @@
     margin-bottom: 50px;
 }
 
-.subnav-tab {
+/* .subnav-tab {
     position: relative;
-}
+} */
 
 .subnav-focus {
     position: absolute;
 }
 
-.subnav {
+/* .subnav {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     font-size: 28px;
-}
+} */
 
 .subnav a {
     text-decoration: none;

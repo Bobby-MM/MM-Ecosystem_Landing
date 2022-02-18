@@ -1,5 +1,16 @@
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+
 $(document).ready(function () {
-    // When checkbox is checked display different text
+
+    // $('.sub-checkbox').click(function() {
+    //     if($(this).is(":checked")){
+    //             $(".card-template-main").addClass("added");
+    //         } else {
+    //             $(".card-template-main").removeClass("added");
+    //         }
+    // });
+
     // Card 1
     // TODO This needs to be cleaned and made DRY
     $('#mag-selector1').click(function() {
@@ -140,15 +151,76 @@ $(document).ready(function () {
 
     // * Hide fixed nav content on click
     $('.mm-form-top').click(function() {
-        $(".hidden-content").toggleClass("navbar-hide");
+        $(".hidden-form").addClass("navbar-hide");
         $(".mm-bottom-nav").toggleClass("mm-border-top");
     });
 
     // * Drop dropup menu
     $(".collapse-arrow").click(function(){
-        $(".hidden-content").removeClass("navbar-hide");
+        $(".hidden-form").removeClass("navbar-hide");
         $(".mm-bottom-nav").toggleClass("mm-border-top");
+    });
+    
+    // if ($(this).is(':checked')) {
+    //     $(".mag-card1").addClass("added");
+    // } else {
+    //     $(".mag-card1").removeClass("added");
+    // }
+
+    // Display correct Brand circle on click.
+    // Print
+    $("#print-tab").click(function(){
+        $(this).addClass("focus-print");
+        $("#digital-tab").removeClass("focus-digital");
+        $("#club-tab").removeClass("focus-club");
+        $("#comm-tab").removeClass("focus-comm");
+    });
+
+    // Digital
+    $("#digital-tab").click(function(){
+        $(this).addClass("focus-digital");
+        $("#print-tab").removeClass("focus-print");
+        $("#club-tab").removeClass("focus-club");
+        $("#comm-tab").removeClass("focus-comm");
+    });
+
+    // Club
+    $("#club-tab").click(function(){
+        $(this).addClass("focus-club");
+        $("#print-tab").removeClass("focus-print");
+        $("#digital-tab").removeClass("focus-digital");
+        $("#comm-tab").removeClass("focus-comm");
+    });
+
+    // Communication
+    $("#comm-tab").click(function(){
+        $(this).addClass("focus-comm");
+        $("#print-tab").removeClass("focus-print");
+        $("#digital-tab").removeClass("focus-digital");
+        $("#club-tab").removeClass("focus-club");
     });
 
 });
+
+// JS for TABS functionality
+function openPage(evt, pageName) {
+    // Declare all variables
+    var i, tabcontent, tablinks;
+
+    // Get all elements with class="tabcontent" and hide them
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+
+    // Get all elements with class="tablinks" and remove the class "active"
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+
+    // Show the current tab, and add an "active" class to the button that opened the tab
+    document.getElementById(pageName).style.display = "block";
+    evt.currentTarget.className += " active";
+    }
 

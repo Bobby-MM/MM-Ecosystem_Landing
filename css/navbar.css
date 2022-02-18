@@ -1,6 +1,6 @@
-.navbar {
-    color: #333333 !important;
-    cursor: default !important;
+.navbar-container {
+    width:90% !important;
+    margin: 0 auto;
 }
 
 /* Reducing width to eliminate overflow on mbpro */
@@ -10,8 +10,36 @@
 
 /* ********** ////////// MEDIA QUERIES \\\\\\\\\\ ********** */
 
+@media screen and (min-width: 505px) {
+    .mm-top-logo-mobile {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 618px) {
+    .mm-top-logo {
+        width: 300px;
+    }
+}
+
+@media screen and (max-width: 504px) {
+    .mm-top-logo {
+        display: none;
+    }
+    .mm-top-logo-mobile {
+        display: block;
+        width: 175px;
+    }
+}
+
 @media screen and (max-width: 414px) {
     .mm-top-logo {
         width: 80%;
+    }
+}
+
+@media screen and (max-width: 280px) {
+    .mm-top-logo-mobile {
+        width: 125px;
     }
 }

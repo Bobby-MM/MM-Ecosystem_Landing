@@ -65,12 +65,12 @@
 }
 
 /* MAIN SETTINGS */
-.container-xlg {
+. {
   width: 90%;
   margin: 0 auto;
 }
 
-.container-lg {
+. {
   width: 80%;
   margin: 0 auto;
 }
@@ -148,8 +148,9 @@ body {
   font-family: 'Larsseit-italic';
 }
 
-.navbar-hide {
-  display: none;
+.container-main {
+  max-width: 80% !important;
+  margin: 0 auto;
 }
 
 /* Changing the focus color on inputs */
@@ -348,5 +349,11 @@ button:focus {
 
   select {
     font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 280px) {
+  .card-title {
+    margin-bottom: 0;
   }
 }
