@@ -30,7 +30,7 @@ width: 75%;
 }
 
 .mm-underline {
-background-image: url("https://maison-moderne-pardot.s3.eu-central-1.amazonaws.com/paperjam_delano-ecosystem/assets/underline-thik.svg");
+background-image: url("../assets/underline-thik.svg");
 background-repeat: no-repeat, repeat;
 background-size: 100%;
 background-position: 0% 95%;

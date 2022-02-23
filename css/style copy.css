@@ -1,79 +1,79 @@
 /* FONTS */
 @font-face {
   font-family: MenoBannerCondensedRegular;
-  src: url("https://maison-moderne-pardot.s3.eu-central-1.amazonaws.com/fonts/MenoBannerCondensed/Meno+Banner+Condensed+Regular.otf");
+  src: url("../assets/fonts/Meno%20Banner%20Condensed%20Regular.otf");
 }
 @font-face {
   font-family: MenoBannerCondensedItalic;
-  src: url("https://maison-moderne-pardot.s3.eu-central-1.amazonaws.com/fonts/MenoBannerCondensed/Meno+Banner+Condensed+Italic.otf");
+  src: url("../assets/fonts/Meno%20Banner%20Condensed%20Italic.otf");
 }
 @font-face {
   font-family: MenoBannerRegular;
-  src: url("https://maison-moderne-pardot.s3.eu-central-1.amazonaws.com/fonts/MenoBanner/Meno+Banner+Regular.otf");
+  src: url("../assets/fonts/Meno%20Banner%20Regular.otf");
 }
 @font-face {
   font-family: MenoBannerItalic;
-  src: url("https://maison-moderne-pardot.s3.eu-central-1.amazonaws.com/fonts/MenoBanner/Meno+Banner+Italic.otf");
+  src: url("../assets/fonts/Meno%20Banner%20Italic.otf");
 }
 @font-face {
   font-family: Larsseit-Bold-italic;
-  src: url("https://maison-moderne-pardot.s3.eu-central-1.amazonaws.com/fonts/Larsseit/Larsseit+Bold+Italic.otf");
+  src: url("../assets/fonts/Larsseit%20Bold%20Italic.otf");
 }
 @font-face {
   font-family: Larsseit-Bold;
-  src: url("https://maison-moderne-pardot.s3.eu-central-1.amazonaws.com/fonts/Larsseit/Larsseit+Bold.otf");
+  src: url("../assets/fonts/Larsseit%20Bold.otf");
 }
 @font-face {
   font-family: Larsseit-ExtraBold-italic;
-  src: url("https://maison-moderne-pardot.s3.eu-central-1.amazonaws.com/fonts/Larsseit/Larsseit+ExtraBold+Italic.otf");
+  src: url("../assets/fonts/Larsseit%20ExtraBold%20Italic.otf");
 }
 @font-face {
   font-family: Larsseit-ExtraBold;
-  src: url("https://maison-moderne-pardot.s3.eu-central-1.amazonaws.com/fonts/Larsseit/Larsseit+ExtraBold.otf");
+  src: url("../assets/fonts/Larsseit%20ExtraBold.otf");
 }
 @font-face {
   font-family: Larsseit-Light-italic;
-  src: url("https://maison-moderne-pardot.s3.eu-central-1.amazonaws.com/fonts/Larsseit/Larsseit+Light+Italic.otf");
+  src: url("../assets/fonts/Larsseit%20Light%20Italic.otf");
 }
 @font-face {
   font-family: Larsseit-Light;
-  src: url("https://maison-moderne-pardot.s3.eu-central-1.amazonaws.com/fonts/Larsseit/Larsseit+Light.otf");
+  src: url("../assets/fonts/Larsseit%20Light.otf");
 }
 @font-face {
   font-family: Larsseit-Medium-italic;
-  src: url("https://maison-moderne-pardot.s3.eu-central-1.amazonaws.com/fonts/Larsseit/Larsseit+Medium+Italic.otf");
+  src: url("../assets/fonts/Larsseit%20Medium%20Italic.otf");
 }
 @font-face {
   font-family: Larsseit-Medium;
-  src: url("https://maison-moderne-pardot.s3.eu-central-1.amazonaws.com/fonts/Larsseit/Larsseit+Medium.otf");
+  src: url("../assets/fonts/Larsseit%20Medium.otf");
 }
 @font-face {
   font-family: Larsseit-Regular-italic;
-  src: url("https://maison-moderne-pardot.s3.eu-central-1.amazonaws.com/fonts/Larsseit/Larsseit+Regular+Italic.otf");
+  src: url("../assets/fonts/Larsseit%20Regular%20Italic.otf");
 }
 @font-face {
   font-family: Larsseit-Regular;
-  src: url("https://maison-moderne-pardot.s3.eu-central-1.amazonaws.com/fonts/Larsseit/Larsseit+Regular.otf");
+  src: url("../assets/fonts/Larsseit%20Regular.otf");
 }
 @font-face {
   font-family: Larsseit-Thin-italic;
-  src: url("https://maison-moderne-pardot.s3.eu-central-1.amazonaws.com/fonts/Larsseit/Larsseit+Thin+Italic.otf");
+  src: url("../assets/fonts/Larsseit%20Thin%20Italic.otf");
 }
 @font-face {
   font-family: Larsseit-Thin;
-  src: url("https://maison-moderne-pardot.s3.eu-central-1.amazonaws.com/fonts/Larsseit/Larsseit+Thin.otf");
+  src: url("../assets/fonts/Larsseit%20Thin.otf");
 }
 
 /* MAIN SETTINGS */
-.container-xlg {
+/* . {
   width: 90%;
   margin: 0 auto;
 }
 
-.container-lg {
+. {
   width: 80%;
   margin: 0 auto;
-}
+} */
 
 .container-m {
   width: 70%;
@@ -233,7 +233,7 @@ button:focus {
   height: 40px;
   border: 2px solid #333;
   border-radius: 50%;
-  background-image: url(https://maison-moderne-pardot.s3.eu-central-1.amazonaws.com/paperjam_delano-ecosystem/assets/mm-plus.svg);
+  background-image: url(../assets/mm-plus.svg);
   background-repeat: no-repeat;
   background-size: 15px;
   background-position: center;
@@ -247,7 +247,7 @@ button:focus {
   height: 40px;
   border: 2px solid #E5003C;
   border-radius: 50%;
-  background-image: url(https://maison-moderne-pardot.s3.eu-central-1.amazonaws.com/paperjam_delano-ecosystem/assets/mm-dash.svg);
+  background-image: url(../assets/mm-dash.svg);
   background-repeat: no-repeat;
   background-size: 15px;
   background-position: center;

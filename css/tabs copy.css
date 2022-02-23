@@ -42,28 +42,28 @@
 
 /* Brand circles around focused TAB */
 .focus-print {
-    background-image: url(https://maison-moderne-pardot.s3.eu-central-1.amazonaws.com/paperjam_delano-ecosystem/assets/circle_magazine.svg);
+    background-image: url(/assets/circle_magazine.svg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
 }
 
 .focus-digital {
-    background-image: url(https://maison-moderne-pardot.s3.eu-central-1.amazonaws.com/paperjam_delano-ecosystem/assets/circle_digital.svg);
+    background-image: url(/assets/circle_digital.svg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
 }
 
 .focus-club {
-    background-image: url(https://maison-moderne-pardot.s3.eu-central-1.amazonaws.com/paperjam_delano-ecosystem/assets/circle_club.svg);
+    background-image: url(/assets/circle_club.svg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
 }
 
 .focus-comm {
-    background-image: url(https://maison-moderne-pardot.s3.eu-central-1.amazonaws.com/paperjam_delano-ecosystem/assets/circle_digital.svg);
+    background-image: url(/assets/circle_digital.svg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
