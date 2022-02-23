@@ -81,7 +81,7 @@
 		</header>
 
         <!-- ? START OF FIXED BOTTOM NAV ? -->
-        <nav class="navbar fixed-bottom bg-white navbar-toggler pt-2 pb-2 mm-bottom-nav" id="bottom-navbar">
+        <nav class="navbar fixed-bottom bg-white navbar-toggler pt-3 pb-3 mm-bottom-nav" id="bottom-navbar">
             <div class="hidden-form">
                 <div class="bottom-vis">
                     <div class="mm-dropup-left">
@@ -127,15 +127,16 @@
                         </div>
                         <div class="mm-inputs">
                             <input type="text" placeholder="Prénom">
-                        </div>                            
-                        <div class="mm-inputs">
+                        </div>
+                        <!-- ? Removed by request by Morgane -->
+                        <!-- <div class="mm-inputs">
                             <select name="sex" id="sex">
                                 <option value="" disabled selected hidden>Sexe</option>
                                 <option>male</option>
                                 <option>female</option>
                                 <option>other</option>
                             </select>
-                        </div>
+                        </div> -->
                     </div>
 
                 <h7 class="dropup-header2">Seulement pour les abonnements</h7>
@@ -218,6 +219,7 @@
                     <p class="header-body">Sans engagement et sans achate ...</p>
                 </section>
 
+                <!-- Magazine Tab -->
 				<div class="mag-grid-container">
                     <!-- Magazine Card 1 -->
                     <div class="card-template-main mag-card-template mag-card1">
@@ -262,7 +264,7 @@
                     <p class="header-body">De l'information quotidienne au sujets spécialitisés</p>
                 </section>
 
-                <!-- CARDS -->
+                <!-- NL Tab Section -->
                 <section class="wrapper ">
                     <div class="nl-grid-container">
 
@@ -509,7 +511,7 @@
                     <h2 class="header-text">Découvrez le <span class="italicized">Paperjam + Delano Club</span></h2>
                 </section>
 
-                <!-- CARDS -->
+                <!-- Club Tab Section -->
                 <section class="wrapper ">
                     <div class="club-grid-container">
 
@@ -550,31 +552,32 @@
                     <h2 class="header-text">Pour toucher les lecteurs et membres de <span class="italicized">Paperjam + Delano</span></h2>
                 </section>
 
-                <!-- CARDS -->
-                <section class="wrapper ">
-                    <div class="comm-grid-container">
+                <section class="wrapper">
 
-                        <!-- Comm Card 1 -->
-                        <div class="comm-card-template comm-card1">
-                            <div class="comm-img-wrapper">
-                                <img class="comm-card-img-top" src="assets/comm_img-2x.png" alt="Couverture du magazine Paperjam">
-                            </div>
-                            <div class="comm-card-content">
-                                <div class="comm-card-row1">
-                                    <h5 class="card-title mt-3">Media Kit</h5>
-                                    <form>
-                                        <input class="sub-checkbox comm-sub-checkbox" id="comm-selector1" type="checkbox">
-                                        <label class="checkbox-txt" for="comm-selector1"></label>
-                                    </form>
+                    <!-- Comm Tab Section -->
+                    <div class="comm-grid-container">
+                        <section class="wrapper">
+                            <!-- Comm Card 1 -->
+                            <div class="comm-card-template comm-card1">
+                                <div class="comm-img-wrapper">
+                                    <img class="comm-card-img-top" src="assets/comm_img-2x.png" alt="Couverture du magazine Paperjam">
                                 </div>
-                                <p class="comm-desc">Je souhaite découvrir les solutions de communication dans l’écosystème Paperjam et Delano.  Contactez-moi pour me présenter les solutions en native advertising, publicité, sponsoring, employer branding, recrutements, formations, memberships.</p>
+                                <div class="comm-card-content">
+                                    <div class="comm-card-row1">
+                                        <h5 class="card-title mt-3">Media Kit</h5>
+                                        <form>
+                                            <input class="sub-checkbox comm-sub-checkbox" id="comm-selector1" type="checkbox">
+                                            <label class="checkbox-txt" for="comm-selector1"></label>
+                                        </form>
+                                    </div>
+                                    <p class="comm-desc">Je souhaite découvrir les solutions de communication dans l’écosystème Paperjam et Delano.  Contactez-moi pour me présenter les solutions en native advertising, publicité, sponsoring, employer branding, recrutements, formations, memberships.</p>
+                                </div>
                             </div>
-                        </div>
+                        </section>
                     </div>
 
                     <!-- Communication Additional Content -->
                     <div class="comm-grid-container2">
-
                         <!-- Section 2 Card 1 -->
                         <div class="comm-card-template2">
                             <div class="img-wrapper2">
@@ -608,7 +611,9 @@
                             </div>
                         </div>
                     </div>
+
                 </section>
+
             </div>
 
 			<!-- FOOTER START -->

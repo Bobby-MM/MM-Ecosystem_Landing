@@ -322,7 +322,7 @@ top: -10px;
 }
 
 .comm-card-template2 {
-    height: 436px;
+    height: 500px;
     max-width: 100% !important;
     display: flex;
     flex-direction: column;
@@ -331,12 +331,15 @@ top: -10px;
 /* thumbnail img styling */
 .img-wrapper2 {
     width: 100%;
+    height: 325px;
     overflow: hidden;
     display: flex;
     justify-content: center;
 }
 
 .card-img-top2 {
+    object-fit: cover;
+    height: 100%;
     width: 100%;
     border-radius: 0;
 }

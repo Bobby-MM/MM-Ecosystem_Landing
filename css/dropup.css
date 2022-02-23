@@ -5,7 +5,7 @@
     border-radius: 0;
     width: 100vw !important;
     max-height: 100%;
-    overflow: scroll;
+    overflow-y: scroll;
 }
 
 .hidden-form {
@@ -63,7 +63,7 @@
     display: flex;
     max-width: 90% !important;
     margin: 0 auto;
-    justify-content: end;
+    justify-content: space-between;
 }
 
 .collapse-arrow {
