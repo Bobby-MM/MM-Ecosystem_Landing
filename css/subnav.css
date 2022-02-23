@@ -38,31 +38,13 @@
 }
 
 @media screen and (max-width: 915px) {
-    .subnav-main {
-        margin-top: 50px;
-        margin-bottom: 50px;
+    .subnav {
+        font-size: 12px;
     }
 }
 
 @media screen and (max-width: 740px) {
-    .subnav-main {
-        margin-top: 150px;
-    }
-    
     .subnav {
         font-size: 18px;
-    }
-}
-
-@media screen and (max-width: 412px) {
-    .subnav-main {
-        margin-top: 125px;
-        margin-bottom: 25px;
-    }
-}
-
-@media screen and (max-width: 280px) {
-    .subnav-main {
-        margin-top: 200px;
     }
 }

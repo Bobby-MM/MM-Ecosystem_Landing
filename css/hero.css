@@ -63,7 +63,7 @@ background-position: 0% 95%;
 
 @media screen and (max-width: 1024px) {
     .hero {
-        height: 60vh;
+        height: 50vh;
     }
 
     .main-header-text {
@@ -82,34 +82,11 @@ background-position: 0% 95%;
     .main-header-text {
         font-size: 48px;
         line-height: 50px;
-        margin-top: 40px;
-    }
-}
-
-@media screen and (max-width: 912px) {
-    .hero {
-        max-height: 30vh;
-    }
-}
-
-@media screen and (max-width: 850px) {
-    .main-header-text {
-        font-size: 54px;
-        line-height: 63px;
-    }
-    
-    .main-header-body {
-        font-size: 24px;
-        line-height: 34px;
+        margin-top: 10px;
     }
 }
 
 @media screen and (max-width: 800px) {
-    .hero {
-        height: 40vh;
-        padding-top: 30px;
-    }
-
     .main-header-container {
         max-width: 95% !important;
         }
@@ -208,13 +185,13 @@ background-position: 0% 95%;
 }
 
 /* Specific dimensions */
-@media screen and (max-width: 896px), screen and (max-height: 414px){
+/* @media screen and (max-width: 896px), screen and (max-height: 414px){
     .hero {
         margin-top: 75px;
     }
-}
+} */
 
-@media screen and (max-width: 851px), screen and (max-height: 393px){
+/* @media screen and (max-width: 851px), screen and (max-height: 393px){
     .hero {
         margin-top: 75px;
     }
@@ -224,4 +201,4 @@ background-position: 0% 95%;
     .hero {
         margin-top: 50px;
     }
-}
+} */

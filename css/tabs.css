@@ -446,6 +446,12 @@ top: -10px;
     }
 }
 
+@media screen and (max-width: 915px) {
+    .subnav {
+        font-size: 21px;
+    }
+}
+
 @media screen and (max-width: 900px) {
     .subnav div {
         width: 100px;
@@ -573,7 +579,7 @@ top: -10px;
 }
 
 /* Specific dimensions */
-@media screen and (max-width: 896px), screen and (max-height: 414px){
+/* @media screen and (max-width: 896px), screen and (max-height: 414px){
     .tab-container {
         margin-top: 110px;
     }
@@ -589,4 +595,4 @@ top: -10px;
     .tab-container {
         margin-top: 120px;
     }
-}
+} */
