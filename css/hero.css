@@ -79,6 +79,10 @@ background-position: 0% 95%;
 }
 
 @media screen and (max-width: 915px) {
+    .main-header-body {
+        width: 90%;
+    }
+
     .main-header-text {
         font-size: 48px;
         line-height: 50px;
@@ -89,7 +93,11 @@ background-position: 0% 95%;
 @media screen and (max-width: 800px) {
     .main-header-container {
         max-width: 95% !important;
-        }
+    }
+
+    .main-header-body {
+        width: 100%;
+    }
 
     .main-header-text {
         font-size: 42px;
@@ -185,13 +193,13 @@ background-position: 0% 95%;
 }
 
 /* Specific dimensions */
-/* @media screen and (max-width: 896px), screen and (max-height: 414px){
+@media screen and (max-width: 896px), screen and (max-height: 414px){
     .hero {
         margin-top: 75px;
     }
-} */
+}
 
-/* @media screen and (max-width: 851px), screen and (max-height: 393px){
+@media screen and (max-width: 851px), screen and (max-height: 393px){
     .hero {
         margin-top: 75px;
     }
@@ -201,4 +209,4 @@ background-position: 0% 95%;
     .hero {
         margin-top: 50px;
     }
-} */
+}
