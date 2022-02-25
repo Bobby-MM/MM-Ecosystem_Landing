@@ -2,15 +2,6 @@
 document.getElementById("defaultOpen").click();
 
 $(document).ready(function () {
-
-    // $('.sub-checkbox').click(function() {
-    //     if($(this).is(":checked")){
-    //             $(".card-template-main").addClass("added");
-    //         } else {
-    //             $(".card-template-main").removeClass("added");
-    //         }
-    // });
-
     // Card 1
     // TODO This needs to be cleaned and made DRY
     $('#mag-selector1').click(function() {
@@ -199,6 +190,24 @@ $(document).ready(function () {
         $("#digital-tab").removeClass("focus-digital");
         $("#club-tab").removeClass("focus-club");
     });
+
+    // $(".short-txt").click(function(){
+    //     $(this).addClass("focus-comm");
+    //     $("#print-tab").removeClass("focus-print");
+    //     $("#digital-tab").removeClass("focus-digital");
+    //     $("#club-tab").removeClass("focus-club");
+    // });
+
+    // $(".long-txt").click(function(){
+    //     $(this).addClass("focus-communication");
+    //     $("#print-tab").removeClass("focus-print");
+    //     $("#digital-tab").removeClass("focus-digital");
+    //     $("#club-tab").removeClass("focus-club");
+    // });
+
+    // ? If hasClass .short-txt -> removeClass (.focus-communication/focus-print/focus-digital/focus-club) addClass .focus-comm
+    // ? ELSE If hasClass .long-txt -> removeClass (.focus-comm/focus-print/focus-digital/focus-club) addClass .focus-communication
+    
 
 });
 

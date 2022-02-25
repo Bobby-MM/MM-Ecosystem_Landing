@@ -5,8 +5,6 @@
 }
 
 /* ** Custom Styling for TAB ** */
-
-
 .tab-container {
     max-width: 80%;
     margin: 0 auto;
@@ -40,6 +38,10 @@
     transition: 0.3s;
 }
 
+.short-txt {
+    display: none;
+}
+
 /* Brand circles around focused TAB */
 .focus-print {
     background-image: url(https://maison-moderne-pardot.s3.eu-central-1.amazonaws.com/paperjam_delano-ecosystem/assets/circle_magazine.svg);
@@ -64,6 +66,13 @@
 
 .focus-comm {
     background-image: url(https://maison-moderne-pardot.s3.eu-central-1.amazonaws.com/paperjam_delano-ecosystem/assets/circle_digital.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.focus-communication {
+    background-image: url(https://maison-moderne-pardot.s3.eu-central-1.amazonaws.com/paperjam_delano-ecosystem/assets/circle_comm.svg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
@@ -370,6 +379,12 @@ top: -10px;
 }
 
 /* ***** ///// ***** \\\\\ MEDIA QUERIES ///// ***** \\\\\ ***** */
+@media screen and (min-width: 900px) {
+    .short-txt {
+        display: none;
+    }
+}
+
 @media screen and (max-width: 1350px) {
     .nl-grid-container {
         grid-template-columns: 1fr 1fr 2fr;
@@ -495,6 +510,16 @@ top: -10px;
     .comm-card-img-top {
         width: 100%;
         height: auto;
+    }
+}
+
+@media screen and (max-width: 899px) {
+    .short-txt {
+        display: inline;
+    }
+    
+    .long-txt {
+        display: none;
     }
 }
 
