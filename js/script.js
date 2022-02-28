@@ -151,12 +151,6 @@ $(document).ready(function () {
         $(".hidden-form").removeClass("navbar-hide");
         $(".mm-bottom-nav").toggleClass("mm-border-top");
     });
-    
-    // if ($(this).is(':checked')) {
-    //     $(".mag-card1").addClass("added");
-    // } else {
-    //     $(".mag-card1").removeClass("added");
-    // }
 
     // Display correct Brand circle on click.
     // Print
@@ -165,6 +159,7 @@ $(document).ready(function () {
         $("#digital-tab").removeClass("focus-digital");
         $("#club-tab").removeClass("focus-club");
         $("#comm-tab").removeClass("focus-comm");
+        $("#comm-tab").removeClass("focus-communication");
     });
 
     // Digital
@@ -173,6 +168,7 @@ $(document).ready(function () {
         $("#print-tab").removeClass("focus-print");
         $("#club-tab").removeClass("focus-club");
         $("#comm-tab").removeClass("focus-comm");
+        $("#comm-tab").removeClass("focus-communication");
     });
 
     // Club
@@ -181,25 +177,12 @@ $(document).ready(function () {
         $("#print-tab").removeClass("focus-print");
         $("#digital-tab").removeClass("focus-digital");
         $("#comm-tab").removeClass("focus-comm");
+        $("#comm-tab").removeClass("focus-communication");
     });
 
     // Communication
-    $("#comm-tab").click(function(){
-        $(this).addClass("focus-comm");
-        $("#print-tab").removeClass("focus-print");
-        $("#digital-tab").removeClass("focus-digital");
-        $("#club-tab").removeClass("focus-club");
-    });
-
-    // $(".short-txt").click(function(){
+    // $("#comm-tab").click(function(){
     //     $(this).addClass("focus-comm");
-    //     $("#print-tab").removeClass("focus-print");
-    //     $("#digital-tab").removeClass("focus-digital");
-    //     $("#club-tab").removeClass("focus-club");
-    // });
-
-    // $(".long-txt").click(function(){
-    //     $(this).addClass("focus-communication");
     //     $("#print-tab").removeClass("focus-print");
     //     $("#digital-tab").removeClass("focus-digital");
     //     $("#club-tab").removeClass("focus-club");
@@ -208,6 +191,18 @@ $(document).ready(function () {
     // ? If hasClass .short-txt -> removeClass (.focus-communication/focus-print/focus-digital/focus-club) addClass .focus-comm
     // ? ELSE If hasClass .long-txt -> removeClass (.focus-comm/focus-print/focus-digital/focus-club) addClass .focus-communication
     
+
+    $("#comm-tab").click(function(){
+        $("#print-tab").removeClass("focus-print");
+        $("#digital-tab").removeClass("focus-digital");
+        $("#club-tab").removeClass("focus-club");
+
+        if(window.innerWidth < 900){       
+            $(this).addClass("focus-comm");
+        } else {
+            $(this).addClass("focus-communication");
+        }
+    });
 
 });
 
