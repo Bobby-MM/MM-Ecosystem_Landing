@@ -2,6 +2,8 @@
 document.getElementById("defaultOpen").click();
 
 $(document).ready(function () {
+
+    // ********** FOR MAGAZINES ********** \\
     // Card 1
     // TODO This needs to be cleaned and made DRY
     $('#mag-selector1').click(function() {
@@ -21,7 +23,8 @@ $(document).ready(function () {
         }
     });
 
-    // For Newsletters
+
+    // ********** FOR NEWSLETTERS ********** \\
         // Newsletter 1
     // TODO This needs to be cleaned and made DRY
     $('#nl-selector1').click(function() {
@@ -122,6 +125,8 @@ $(document).ready(function () {
         }
     });
 
+
+    // ********** FOR CLUB ********** \\
     // Club Selection1
     $('#club-selector1').click(function() {
         if ($(this).is(':checked')) {
@@ -131,6 +136,8 @@ $(document).ready(function () {
         }
     });
 
+
+    // ********** FOR COMMUNICATION ********** \\
     // Comm Selection1
     $('#comm-selector1').click(function() {
         if ($(this).is(':checked')) {
@@ -188,15 +195,15 @@ $(document).ready(function () {
     //     $("#club-tab").removeClass("focus-club");
     // });
 
-    // ? If hasClass .short-txt -> removeClass (.focus-communication/focus-print/focus-digital/focus-club) addClass .focus-comm
-    // ? ELSE If hasClass .long-txt -> removeClass (.focus-comm/focus-print/focus-digital/focus-club) addClass .focus-communication
-    
-
+    // Communication V2
     $("#comm-tab").click(function(){
         $("#print-tab").removeClass("focus-print");
         $("#digital-tab").removeClass("focus-digital");
         $("#club-tab").removeClass("focus-club");
 
+        // ? If hasClass .short-txt -> removeClass (.focus-communication/focus-print/focus-digital/focus-club) addClass .focus-comm
+        // ? ELSE If hasClass .long-txt -> removeClass (.focus-comm/focus-print/focus-digital/focus-club) addClass .focus-communication
+    
         if(window.innerWidth < 900){       
             $(this).addClass("focus-comm");
         } else {
@@ -206,7 +213,7 @@ $(document).ready(function () {
 
 });
 
-// JS for TABS functionality
+// ********** ////////// JS for TABS functionality \\\\\\\\\\ ********** \\
 function openPage(evt, pageName) {
     // Declare all variables
     var i, tabcontent, tablinks;
