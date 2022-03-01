@@ -89,7 +89,7 @@ $ yarn start
 
 
 Made with :heart: by <a href="https://github.com/BBDgtlMM" target="_blank">Bobby Spencer</a>
-
+Collabs : <a href="https://github.com/Zack-MM" target="_blank">Zakaria Idriss</a>
 &#xa0;
 
 <a href="#top">Back to top</a>
