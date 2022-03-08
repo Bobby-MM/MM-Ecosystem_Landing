@@ -8,6 +8,10 @@
     min-width:100px !important;
 }
 
+.hidden-hamburger {
+    display: none !important; 
+}
+
 /* ********** ////////// MEDIA QUERIES \\\\\\\\\\ ********** */
 
 @media screen and (min-width: 505px) {

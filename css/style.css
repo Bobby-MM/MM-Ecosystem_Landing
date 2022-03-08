@@ -115,6 +115,7 @@
 .bg-light-grey {background-color: #F1F1F1 !important;}
 
 /* CUSTOM LAYOUT */
+
 *,
 *::before,
 *::after {
@@ -148,10 +149,10 @@ body {
   font-family: 'Larsseit-italic';
 }
 
-.container-main {
+/* .container-main {
   max-width: 80% !important;
   margin: 0 auto;
-}
+} */
 
 /* Changing the focus color on inputs */
 input[type=text]:focus { 
@@ -268,6 +269,12 @@ button:focus {
 
 /* ********** ////////// MEDIA QUERIES \\\\\\\\\\ ********** */
 /* ! XL SCREENS */ 
+@media screen and (min-width: 1920px) {
+  .container-main {
+    max-width: 80% !important;
+    margin: 0 auto;
+  }
+}
 
 @media screen and (max-width: 1300px) {
   .mm-button {

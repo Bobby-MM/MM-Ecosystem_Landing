@@ -167,6 +167,16 @@ select {
 
 /* ********** ////////// MEDIA QUERIES \\\\\\\\\\ ********** */
 /* ! XL SCREENS */ 
+@media screen and (min-width: 1920px) {
+    .container-main {
+        max-width: 80% !important;
+        margin: 0 auto;
+    }
+    .dropup-heading {
+        max-width: 100% !important;
+    }
+}
+
 @media screen and (max-width: 1300px) {
     .dropup-header {
         font-size: 21px;
@@ -320,14 +330,15 @@ select {
     }
 }
 
-@media screen and (max-width: 414px) {
+@media screen and (max-width: 428px) {
     .dropup-header2 {
         font-size: 21px;
     }
 
     .mm-button-dropup {
         height: 35px;
-        width: 250px;
+        width: 100%;
+        margin: 0;
     }
 
     .mm-inputs {
@@ -337,15 +348,9 @@ select {
     .bottom-grid {
         row-gap: 0;
     }
-}
 
-@media screen and (max-width: 395px) {
     .mm-email-section {
         margin-right: 20px;
-    }
-
-    .mm-button-dropup {
-        margin: 0;
     }
 
     .mm-form-top {
