@@ -180,14 +180,6 @@ $(document).ready(function () {
         $("#comm-tab").removeClass("focus-communication");
     });
 
-    // Communication
-    // $("#comm-tab").click(function(){
-    //     $(this).addClass("focus-comm");
-    //     $("#print-tab").removeClass("focus-print");
-    //     $("#digital-tab").removeClass("focus-digital");
-    //     $("#club-tab").removeClass("focus-club");
-    // });
-
     // ? If hasClass .short-txt -> removeClass (.focus-communication/focus-print/focus-digital/focus-club) addClass .focus-comm
     // ? ELSE If hasClass .long-txt -> removeClass (.focus-comm/focus-print/focus-digital/focus-club) addClass .focus-communication
     
@@ -227,6 +219,3 @@ function openPage(evt, pageName) {
     document.getElementById(pageName).style.display = "block";
     evt.currentTarget.className += " active";
     }
-
-
-    
