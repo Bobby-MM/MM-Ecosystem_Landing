@@ -1,7 +1,7 @@
 /* Footer Styling */
 footer {
     width: 100% !important;
-    height: 525px;
+    height: 600px;
     margin-top: 50px;
     padding-top: 50px;
 }
@@ -13,7 +13,7 @@ footer {
 .footer-ctas {
     display: flex;
     justify-content: space-between;
-    padding-bottom: 50px;
+    padding-bottom: 100px;
     border-bottom: 1px solid #ccc;
     max-width: 80% !important;
     margin: 0 auto;
