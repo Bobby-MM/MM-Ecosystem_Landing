@@ -86,7 +86,7 @@
 .header-container {
     max-width: 80% !important;
     margin: 0 auto;
-    margin-top: 50px;
+    margin-top: 40px;
     margin-bottom: 40px;
 }
 
@@ -654,20 +654,20 @@ top: -10px;
 }
 
 /* Specific dimensions */
-@media screen and (max-width: 896px), screen and (max-height: 414px){
+/* @media screen and (max-width: 896px), screen and (max-height: 414px){
     .tab-container {
         margin-top: 110px;
     }
-}
+} */
 
-@media screen and (max-width: 851px), screen and (max-height: 393px){
+/* @media screen and (max-width: 851px), screen and (max-height: 393px){
     .tab-container {
         margin-top: 110px;
     }
-}
+} */
 
-@media screen and (max-width: 740px), screen and (max-height: 360px){
+/* @media screen and (max-width: 740px), screen and (max-height: 360px){
     .tab-container {
         margin-top: 120px;
     }
-}
+} */
