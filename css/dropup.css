@@ -201,8 +201,27 @@ select {
 }
 
 @media screen and (max-width: 950px) {
-    .dropup-header {
+    /* .dropup-header {
         display: none;
+    } */
+
+    .bottom-vis {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .mm-dropup-left {
+        min-width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .mm-form-top {
+        margin-left: 0;
+    }
+
+    .dropup-header {
+        margin-top: 5px;
+        margin-left: 10px !important;
     }
 
     .bottom-vis {
@@ -260,17 +279,6 @@ select {
 }
 
 @media screen and (max-width: 750px) {
-    .bottom-vis {
-        display: flex;
-    }
-
-    .mm-dropup-left {
-        display: none;
-    }
-
-    .dropup-header {
-        display: none;
-    }
 
     .mm-form-top {
         margin: 0 auto;
@@ -278,7 +286,7 @@ select {
     }
 
     .mm-mail {
-        display: none;
+        width: 50px;
     }
 }
 

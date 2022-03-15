@@ -3,13 +3,15 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 45vh !important;
+    min-height: 45vh !important;
+    padding: 25px;
     }
     
     .main-header-container {
-    max-width: 80% !important;
+    min-width: 90% !important;
     margin: 0 auto;
     flex-direction: column;
+    padding: 20px;
     }
     
     .main-header-text {
@@ -25,7 +27,7 @@
     text-align: center;
     margin: 0 auto;
     margin-top: 18px;
-    width: 75%;
+    width: 90%;
     }
     
     .mm-underline {
@@ -61,42 +63,42 @@
     }
     
     @media screen and (max-width: 1024px) {
-        .hero {
+        /* .hero {
             height: 55vh !important;
-        }
+        } */
     
         .main-header-text {
             font-size: 65px;
             line-height: auto;
         }
         
-        .main-header-body {
+        /* .main-header-body {
             font-size: 21px;
             line-height: 30px;
             margin-top: 40px;
-        }
+        } */
     }
     
     @media screen and (max-width: 915px) {
         .hero {
-            height: 60vh !important;
+            min-height: 20vh !important;
             }
 
         .main-header-body {
             width: 90%;
         }
     
-        .main-header-text {
+        /* .main-header-text {
             font-size: 48px;
-            line-height: 50px;
+            line-height: 40px;
             margin-top: 10px;
-        }
+        } */
     }
     
     @media screen and (max-width: 850px) {
-        .hero {
+        /* .hero {
             height: 65vh !important;
-            }
+            } */
     }
 
     @media screen and (max-width: 800px) {
@@ -108,32 +110,41 @@
             width: 100%;
         }
     
-        .main-header-text {
+        /* .main-header-text {
             font-size: 42px;
             line-height: 48px;
-        }
+        } */
         
-        .main-header-body {
+        /* .main-header-body {
             font-size: 18px;
             line-height: 28px;
             padding: 0 20px;
-        }
+        } */
     }
     
     @media screen and (max-width: 768px) {
-        .hero {
+        /* .hero {
             height: 70vh !important;
-            }
+            } */
+        .main-header-text {
+            font-size: 54px;
+            line-height: 60px;
+        }    
     }
 
     @media screen and (max-width: 540px) {
-        .main-header-body {
+        /* .main-header-body {
             font-size: 16px;
             padding: 0;
-        }
+        } */
     }
     
     @media screen and (max-width: 500px) {
+        .main-header-text {
+            font-size: 48px;
+            line-height: 60px;
+        }    
+
         .main-header-body {
             font-size: 18px;
             line-height: 30px;
@@ -143,61 +154,62 @@
     @media screen and (max-width: 428px) {
         .main-header-text {
             font-size: 32px;
+            line-height: 45px;
         }
         
         .main-header-body {
             font-size: 16px;
+            line-height: 25px;
             padding: 0;
         }
 
         .hero {
-            height: 30vh !important;
+            min-height: 20vh !important;
+            padding: 10px;
         }
 
     }
     
     @media screen and (max-width: 395px) {
         .hero {
-            height: 45vh !important;
-        }
-    
-        .main-header-text {
-            margin-top: 0;
-        }
-    }
-
-    @media screen and (max-width: 360px) {
-        .hero {
-            padding-top: 0;
-        }
-    
-        .main-header-container {
-            margin-top: 0;
+            height: 40vh !important;
         }
     
         .main-header-text {
             margin-top: 20px;
             line-height: 35px;
         }
+    }
+
+    @media screen and (max-width: 395px) {
+        .hero {
+            height: 30vh !important;
+        }
+    }
+
+    @media screen and (max-width: 360px) {
+        .hero {
+            min-height: 40vh !important;
+        }
     
         .main-header-body {
-            line-height: 25px;
+            line-height: 20px;
             margin-top: 20px;
         }
     }
     
     @media screen and (max-width: 280px) {
         .hero {
-            height: 45vh !important;
-            padding-top: 0;
+            min-height: 45vh !important;
+            padding: 5px;
         }
-    
+
         .main-header-container {
             padding: 5px;
         }
     
         .main-header-body {
-            width: 90%;
+            min-width: 100%;
             margin: 0 auto;
             margin-top: 20px;
             line-height: 23px;

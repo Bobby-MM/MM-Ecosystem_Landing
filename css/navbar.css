@@ -3,6 +3,10 @@
     margin: 0 auto;
 }
 
+.mm-top-logo {
+    width: 400px !important;
+}
+
 /* Reducing width to eliminate overflow on mbpro */
 .dropdown-menu {
     min-width:100px !important;

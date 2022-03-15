@@ -233,7 +233,8 @@ footer {
 
 @media screen and (max-width: 720px) {
     footer {
-        height: 775px;
+        max-height: 875px;
+        padding: 25px;
     }
 
     .footer-headings {
@@ -282,9 +283,9 @@ footer {
 }
 
 @media screen and (max-width: 500px) {
-    footer {
+    /* footer {
         height: 675px;
-    }
+    } */
     
     .footer-group {
         margin: 0 auto;
@@ -307,8 +308,8 @@ footer {
 
 @media screen and (max-width: 428px) {
     footer {
-        height: 950px;
-        padding-top: 25px;
+        max-height: 1200px !important;
+        margin-bottom: 150px;
     }
     
     .footer-group {
@@ -317,6 +318,7 @@ footer {
     
     .footer-ctas {
         display: block;
+        padding-bottom: 50px;
     }
 
     .footer-btn {
