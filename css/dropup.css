@@ -172,6 +172,7 @@ select {
         max-width: 80% !important;
         margin: 0 auto;
     }
+
     .dropup-heading {
         max-width: 100% !important;
     }
@@ -201,10 +202,6 @@ select {
 }
 
 @media screen and (max-width: 950px) {
-    /* .dropup-header {
-        display: none;
-    } */
-
     .bottom-vis {
         display: flex;
         flex-direction: column;
@@ -279,7 +276,6 @@ select {
 }
 
 @media screen and (max-width: 750px) {
-
     .mm-form-top {
         margin: 0 auto;
         width: 100%;

@@ -652,22 +652,3 @@ top: -10px;
         display: flex;
     }
 }
-
-/* Specific dimensions */
-/* @media screen and (max-width: 896px), screen and (max-height: 414px){
-    .tab-container {
-        margin-top: 110px;
-    }
-} */
-
-/* @media screen and (max-width: 851px), screen and (max-height: 393px){
-    .tab-container {
-        margin-top: 110px;
-    }
-} */
-
-/* @media screen and (max-width: 740px), screen and (max-height: 360px){
-    .tab-container {
-        margin-top: 120px;
-    }
-} */

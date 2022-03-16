@@ -1,4 +1,4 @@
-/* Footer Styling */
+ /* Footer Styling */
 footer {
     width: 100% !important;
     height: 600px;
@@ -113,22 +113,12 @@ footer {
 }
 
 @media screen and (max-width: 1300px) {
-    footer {
-        height: 550px;
-    }
-
     .footer-ctas {
         max-width: 90% !important;
     }
 
     .footer-fineprint {
         max-width: 90% !important;
-    }
-}
-
-@media screen and (max-width: 1180px) {
-    footer {
-        height: 600px;
     }
 }
 
@@ -157,10 +147,6 @@ footer {
 }
 
 @media screen and (max-width: 955px) {
-    footer {
-        height: 600px;
-    }
-
     .footer-headings {
         font-size: 21px;
         line-height: auto;

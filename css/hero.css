@@ -63,20 +63,10 @@
     }
     
     @media screen and (max-width: 1024px) {
-        /* .hero {
-            height: 55vh !important;
-        } */
-    
         .main-header-text {
             font-size: 65px;
             line-height: auto;
         }
-        
-        /* .main-header-body {
-            font-size: 21px;
-            line-height: 30px;
-            margin-top: 40px;
-        } */
     }
     
     @media screen and (max-width: 915px) {
@@ -87,18 +77,6 @@
         .main-header-body {
             width: 90%;
         }
-    
-        /* .main-header-text {
-            font-size: 48px;
-            line-height: 40px;
-            margin-top: 10px;
-        } */
-    }
-    
-    @media screen and (max-width: 850px) {
-        /* .hero {
-            height: 65vh !important;
-            } */
     }
 
     @media screen and (max-width: 800px) {
@@ -109,34 +87,13 @@
         .main-header-body {
             width: 100%;
         }
-    
-        /* .main-header-text {
-            font-size: 42px;
-            line-height: 48px;
-        } */
-        
-        /* .main-header-body {
-            font-size: 18px;
-            line-height: 28px;
-            padding: 0 20px;
-        } */
     }
     
     @media screen and (max-width: 768px) {
-        /* .hero {
-            height: 70vh !important;
-            } */
         .main-header-text {
             font-size: 54px;
             line-height: 60px;
         }    
-    }
-
-    @media screen and (max-width: 540px) {
-        /* .main-header-body {
-            font-size: 16px;
-            padding: 0;
-        } */
     }
     
     @media screen and (max-width: 500px) {
@@ -167,7 +124,6 @@
             min-height: 20vh !important;
             padding: 10px;
         }
-
     }
     
     @media screen and (max-width: 395px) {
@@ -181,17 +137,7 @@
         }
     }
 
-    @media screen and (max-width: 395px) {
-        .hero {
-            height: 30vh !important;
-        }
-    }
-
     @media screen and (max-width: 360px) {
-        .hero {
-            min-height: 40vh !important;
-        }
-    
         .main-header-body {
             line-height: 20px;
             margin-top: 20px;
@@ -215,22 +161,3 @@
             line-height: 23px;
         }
     }
-    
-    /* Specific dimensions */
-    /* @media screen and (max-width: 896px), screen and (max-height: 414px){
-        .hero {
-            margin-top: 75px;
-        }
-    } */
-    
-    /* @media screen and (max-width: 851px), screen and (max-height: 393px){
-        .hero {
-            margin-top: 75px;
-        }
-    } */
-    
-    /* @media screen and (max-width: 740px), screen and (max-height: 360px){
-        .hero {
-            margin-top: 50px;
-        }
-    } */

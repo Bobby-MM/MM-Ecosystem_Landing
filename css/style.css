@@ -149,11 +149,6 @@ body {
   font-family: 'Larsseit-italic';
 }
 
-/* .container-main {
-  max-width: 80% !important;
-  margin: 0 auto;
-} */
-
 /* Changing the focus color on inputs */
 input[type=text]:focus { 
   border: none !important;

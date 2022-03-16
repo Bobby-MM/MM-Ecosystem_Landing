@@ -12,6 +12,7 @@
     min-width:100px !important;
 }
 
+/* Hiding the given Bootstrap hamburger icon which is not needed */
 .hidden-hamburger {
     display: none !important; 
 }
@@ -34,6 +35,7 @@
     .mm-top-logo {
         display: none;
     }
+    
     .mm-top-logo-mobile {
         display: block;
         width: 175px;
