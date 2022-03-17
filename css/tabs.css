@@ -257,7 +257,7 @@
 
 .club-sub-checkbox + label::before{
     right: 0px;
-    top: -10px;
+    top: 0px;
 }
 
 /* change checkbox on checked */
