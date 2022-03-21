@@ -1,9 +1,9 @@
 <div align="center" id="top"> 
-  <img src="assets/logo-ecosystem-white.svg" alt="MM Ecosystem_Landing" />
+  <img src="assets/logo-ecosystem-white.svg" alt="Maison Moderne - Paperjam + Delano Subscription Ecosystem" />
 
   &#xa0;
 
-  <a href="">Demo</a>
+  <a href="https://go.maisonmoderne.com/welcome" target="_blank">Demo</a>
 </div>
 
 <h1 align="center">MM Ecosystem_Landing Page</h1>
@@ -27,19 +27,19 @@
 <!-- Status -->
 
 <h4 align="center"> 
-	🚧  MM Ecosystem_Landing 🚀 Under construction...  🚧
+	🚧  MM Ecosystem_Landing 🚀 Awaiting validation...  🚧
 </h4> 
 
 <hr>
 
 <p align="center">
   <a href="#dart-about">About</a> &#xa0; | &#xa0; 
-  <a href="#sparkles-features">Features</a> &#xa0; | &#xa0;
+<!--   <a href="#sparkles-features">Features</a> &#xa0; | &#xa0; -->
   <a href="#rocket-technologies">Technologies</a> &#xa0; | &#xa0;
-  <a href="#white_check_mark-requirements">Requirements</a> &#xa0; | &#xa0;
+<!--   <a href="#white_check_mark-requirements">Requirements</a> &#xa0; | &#xa0; -->
   <a href="#checkered_flag-starting">Starting</a> &#xa0; | &#xa0;
   <a href="#memo-license">License</a> &#xa0; | &#xa0;
-  <a href="https://github.com/{{YOUR_GITHUB_USERNAME}}" target="_blank">Author</a>
+  <a href="https://github.com/{{Bobby-MM}}" target="_blank">Author</a>
 </p>
 
 <br>
@@ -48,7 +48,7 @@
 
 The new landing page for subscription content for Maison Moderne, Paperjam + Delano.
 
-## :sparkles: Features ##
+<!-- ## :sparkles: Features ## -->
 
 <!-- :heavy_check_mark: Feature 1;\
 :heavy_check_mark: Feature 2;\
@@ -61,7 +61,7 @@ The following tools were used in this project:
 - [Bootstrap](https://getbootstrap.com/)
 - [Pardot](https://pi.pardot.com/)
 
-## :white_check_mark: Requirements ##
+<!-- ## :white_check_mark: Requirements ## -->
 
 <!-- Before starting :checkered_flag:, you need to have [Git](https://git-scm.com) and [Node](https://nodejs.org/en/) installed. -->
 
@@ -83,7 +83,7 @@ $ yarn start
 # The server will initialize in the <http://localhost:3000>
 ```
 
-## :memo: License ##
+<!-- ## :memo: License ## -->
 
 <!-- This project is under license from MIT. For more details, see the [LICENSE](LICENSE.md) file. -->
 
