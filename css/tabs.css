@@ -263,7 +263,7 @@
 /* change checkbox on checked */
 .club-sub-checkbox:checked + label::before{
 right: 0px;
-top: -10px;
+top: 0px;
 }
 
 .club-subtext {
