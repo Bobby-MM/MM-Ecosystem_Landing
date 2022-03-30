@@ -355,7 +355,7 @@ top: 0px;
 }
 
 .comm-card-template2 {
-    height: 357px;
+    height: 400px;
     width: 275px;
     display: flex;
     flex-direction: column;
@@ -400,12 +400,22 @@ top: 0px;
     flex-direction: column;
     margin-top: auto;
 }
+
+.view-ex2 a {
+    font-size: 14px;
+}
+
 /* ***** ///// End COMMUNICATION Styling \\\\\ ***** */
 
 /* Global Overrides */
 .view-ex {
     margin-top: auto;
     text-decoration: underline;
+    font-size: 14px;
+}
+
+.view-ex a {
+    font-size: 14px;
 }
 
 .added {
