@@ -192,7 +192,7 @@
 }
 
 .nl-freq {
-    font-family: Larsseit-Light-italic;
+    font-family: Larsseit-Light;
     color: #7c7c7c;
     margin-top: 10px;
 }
@@ -272,7 +272,7 @@ top: 0px;
 } 
 
 .club-subs {
-    font-family: Larsseit-Light-italic;
+    font-family: Larsseit-Light;
     font-size: 14px;
 }
 
@@ -281,7 +281,7 @@ top: 0px;
 }
 
 .club-arrow {
-    margin-left: 15px;
+    margin-left: 5px;
 }
 /* ***** ///// End CLUB Styling \\\\\ ***** */
 
