@@ -104,7 +104,7 @@
     height: 276px;
     width: 276px;
     padding: 20px;
-    outline: 2px solid #333;
+    border: 2px solid #CCC;
     display: flex;
     flex-direction: column;
 }
@@ -156,7 +156,7 @@
     height: 357px;
     width: 275px;
     padding: 20px;
-    outline: 2px solid #333;
+    border: 2px solid #CCC;
     display: flex;
     flex-direction: column;
     padding: 20px 20px 10px 20px;
@@ -219,7 +219,7 @@
 .club-card-template {
     height: 100%;
     max-width: 100%;
-    outline: 2px solid #333;
+    border: 2px solid #CCC;
     display: flex;
 }
 
@@ -297,7 +297,7 @@ top: 0px;
 .comm-card-template {
     height: 100%;
     max-width: 100%;
-    outline: 2px solid #333;
+    border: 2px solid #CCC;
     display: flex;
 }
 
@@ -420,7 +420,7 @@ top: 0px;
 }
 
 .added {
-    outline: 3px solid #E5003C;
+    border: 2px solid #E5003C;
 }
 
 /* ***** ///// ***** \\\\\ MEDIA QUERIES ///// ***** \\\\\ ***** */
@@ -659,7 +659,7 @@ top: 0px;
     .club-card-template {
         height: 100%;
         max-width: 100%;
-        outline: 2px solid #333;
+        border: 2px solid #CCC;
         display: flex;
     }
 }
