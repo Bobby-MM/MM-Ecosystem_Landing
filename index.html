@@ -4,9 +4,9 @@
 		<meta charset="utf-8">
 		
 		<!--====== Title ======-->
-		<title>Ecosystème Paperjam + Delano</title>
+		<title>%%title%%</title>
 		
-		<meta name="description" content="">
+		<meta name="description" content="%%description%%">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 
 		<!--====== Favicon Icon ======-->
@@ -18,41 +18,44 @@
 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 		
 		<!--====== Style CSS ======-->
-		<link rel="stylesheet" href="https://maison-moderne-pardot.s3.eu-central-1.amazonaws.com/paperjam_delano-ecosystem/css/navbar.css">
+		<!--<link rel="stylesheet" href="https://maison-moderne-pardot.s3.eu-central-1.amazonaws.com/paperjam_delano-ecosystem/css/navbar.css">-->
+		<link rel="stylesheet" href="https://maison-moderne-pardot.s3.eu-central-1.amazonaws.com/paperjam_delano-ecosystem/css/navbar_2.css">
 		<!-- <link rel="stylesheet" href="/css/navbar.css"> -->
 		<link rel="stylesheet" href="https://maison-moderne-pardot.s3.eu-central-1.amazonaws.com/paperjam_delano-ecosystem/css/hero.css">
-		<!-- <link rel="stylesheet" href="/css/hero.css"> -->
+		<link rel="stylesheet" href="/css/hero.css">
+		<!--<link rel="stylesheet" href="https://maison-moderne-pardot.s3.eu-central-1.amazonaws.com/paperjam_delano-ecosystem/css/footer.css">-->
 		<link rel="stylesheet" href="https://maison-moderne-pardot.s3.eu-central-1.amazonaws.com/paperjam_delano-ecosystem/css/footer_2.css">
-		<!-- <link rel="stylesheet" href="/css/footer_2.css"> -->
-		<link rel="stylesheet" href="https://maison-moderne-pardot.s3.eu-central-1.amazonaws.com/paperjam_delano-ecosystem/css/style.css">
-		<!-- <link rel="stylesheet" href="/css/style.css"> -->
-		<link rel="stylesheet" href="https://maison-moderne-pardot.s3.eu-central-1.amazonaws.com/paperjam_delano-ecosystem/css/dropup.css">
+		<link rel="stylesheet" href="/css/footer.css">
+		<link rel="stylesheet" href="https://maison-moderne-pardot.s3.eu-central-1.amazonaws.com/paperjam_delano-ecosystem/css/style_1.css"> 
+		<!--<link rel="stylesheet" href="/css/style.css">-->
+		<link rel="stylesheet" href="https://maison-moderne-pardot.s3.eu-central-1.amazonaws.com/paperjam_delano-ecosystem/css/dropup_2.css">
+		<!--<link rel="stylesheet" href="https://maison-moderne-pardot.s3.eu-central-1.amazonaws.com/paperjam_delano-ecosystem/css/dropup.css">-->
 		<!-- <link rel="stylesheet" href="/css/dropup.css"> -->
-		<link rel="stylesheet" href="https://maison-moderne-pardot.s3.eu-central-1.amazonaws.com/paperjam_delano-ecosystem/css/tabs.css">
-		<!-- <link rel="stylesheet" href="/css/tabs.css"> -->
+		<link rel="stylesheet" href="https://maison-moderne-pardot.s3.eu-central-1.amazonaws.com/paperjam_delano-ecosystem/css/tabs_1.css">
+		<!--<link rel="stylesheet" href="/css/tabs.css">-->
 		<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css'>
 
 		<!-- OG Meta -->
-		<meta property="og:title" content="Ecosystème Paperjam + Delano">
+		<meta property="og:title" content="%%title%%">
 		<meta property="og:type" content="website">
 		<meta property="og:url" content="https://">
 		<meta property="og:image" content="https://maison-moderne-pardot.s3.eu-central-1.amazonaws.com/paperjam_delano-ecosystem/assets/ogimg.png">
-		<meta property="og:description" content="Ecosystème Paperjam + Delano">
-		<meta property="og:site_name" content="Ecosystème Paperjam + Delano">
+		<meta property="og:description" content="%%title%%">
+		<meta property="og:site_name" content="%%title%%">
 		<meta property="og:locale" content="en_EN">
 
 		<!-- Twitter Meta -->
 		<meta name="twitter:card" content="summary_large_image">
 		<meta name="twitter:site" content="@Paperjam_lu">
 		<meta name="twitter:creator" content="@Paperjam_lu">
-		<meta name="twitter:title" content="Ecosystème Paperjam + Delano">
-		<meta name="twitter:description" content="Ecosystème Paperjam + Delano">
+		<meta name="twitter:title" content="%%title%%">
+		<meta name="twitter:description" content="%%title%%">
 		<meta name="twitter:image" content="https://maison-moderne-pardot.s3.eu-central-1.amazonaws.com/paperjam_delano-ecosystem/assets/ogimg-tw.png">
 
 		<!-- Linkedin Meta -->
-		<meta property="og:title" content="Ecosystème Paperjam + Delano">
+		<meta property="og:title" content="%%title%%">
 		<meta property="og:image" content="https://maison-moderne-pardot.s3.eu-central-1.amazonaws.com/paperjam_delano-ecosystem/assets/ogimg-li.png">
-		<meta property="og:description" content="Ecosystème Paperjam + Delano">
+		<meta property="og:description" content="%%title%%">
 		<meta property="og:url" content="https://">
 		
         <style>
@@ -63,6 +66,10 @@
             
             .navbar-collapse {
                 width:100%;
+            }
+            
+            #pi_tracking_opt_in_div {
+            display: none !important;
             }
         </style>
 		
@@ -75,9 +82,8 @@
                 <section class="container-main">
 				<nav class="navbar navbar-expand-lg navbar-light bg-white">
 
-                    <a class="navbar-brand" href="index.html">
+                        <a pardot-region="home_link" pardot-region-type="link" class="navbar-brand" href="index.html">
                             <img class="mm-top-logo" src="https://maison-moderne-pardot.s3.eu-central-1.amazonaws.com/paperjam_delano-ecosystem/assets/eco_logo-updated.svg" alt="Maison Moderne x Paperjam+Delano">
-                            <!-- <img class="mm-top-logo" src="/assets/eco_logo-updated.svg" alt="Maison Moderne x Paperjam+Delano"> -->
                             <img class="mm-top-logo-mobile" src="https://maison-moderne-pardot.s3.eu-central-1.amazonaws.com/paperjam_delano-ecosystem/assets/logo-pjnd.svg" alt="Paperjam + Delano">
                         </a>
                         <button class="navbar-toggler mt-3 mb-2 hidden-hamburger" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -104,10 +110,10 @@
         <!-- ? START OF FIXED BOTTOM NAV ? -->
         <nav class="navbar fixed-bottom bg-white navbar-toggler pt-3 pb-3 mm-bottom-nav" id="bottom-navbar">
             <div class="hidden-form">
-                    <section class="container-main">
+                    <section pardot-region="title_teaser_form" pardot-region-type="html" class="container-main">
 
                     <div class="bottom-vis">
-                        <div class="mm-dropup-left">
+                        <div  class="mm-dropup-left">
                             <img class="mm-mail" src="https://maison-moderne-pardot.s3.eu-central-1.amazonaws.com/paperjam_delano-ecosystem/assets/mailbox.svg" alt="Mailbox icon for Maison Moderne, Paperjam & Delano">
                             <h7 class="dropup-header ml-4">Dernière étape pour valider</h7>
                         </div>
@@ -123,77 +129,17 @@
                     </div>
                 </div>
 
-                <div class="collapse navbar-collapse pt-4 navbar-push" id="navbarSupportedContent2">
+                <div class="collapse navbar-collapse navbar-push mt-4" id="navbarSupportedContent2">
 
                     <section class="container-main">
-                        <div class="dropup-heading">
+                        <div pardot-region="subtitle_teaser_form" pardot-region-type="html" class="dropup-heading">
                             <h7 class="dropup-header2">Dernière étape pour valider</h7>
                             <img class="collapse-arrow" src="https://maison-moderne-pardot.s3.eu-central-1.amazonaws.com/paperjam_delano-ecosystem/assets/collapse_arrow.svg" alt="an icon to collaps the bottom menu" data-toggle="collapse" data-target="#navbarSupportedContent2"
                             aria-controls="navbarSupportedContent2" aria-expanded="false" aria-label="Toggle navigation">
                         </div>
                     </section>
 
-                    <form action="" class="bottom-navigation">
-                        <div class="top-grid mb-4">
-                            <div class="mm-inputs">
-                                <input type="email" placeholder="Email professionel*">
-                                <sub class="mt-2 mm-subtext">Pour l’envoi des newsletters</sub>
-                            </div>
-                            <div class="mm-inputs">
-                                <input type="email" placeholder="Email privé">
-                                <sub class="mt-2 mm-subtext">Utilisé uniquement comme back up</sub>
-                            </div>
-                            <div class="mm-inputs">
-                                <input type="number" placeholder="Téléphone">
-                            </div>
-    
-                            <div class="mm-inputs">
-                                <input type="text" placeholder="Nom">
-                            </div>
-                            <div class="mm-inputs">
-                                <input type="text" placeholder="Prénom">
-                            </div>
-                        </div>
-    
-                    <h7 class="dropup-header2">Seulement pour les abonnements</h7>
-    
-                        <div class="bottom-grid">
-                            <div class="mm-inputs">
-                                <input type="text" placeholder="Société">
-                            </div>
-                            <div class="mm-inputs">
-                                <input type="text" placeholder="Fonction">
-                            </div>
-                            <div class="empty-div"></div>
-    
-                            <div class="mm-inputs">
-                                <input type="text" placeholder="N° et rue">
-                            </div>
-                            <div class="mm-inputs2">
-                                <input class="mm-inputs2-children" type="number" placeholder="Code Postal">
-                                <select class="mm-inputs2-children" name="location" id="location" class="mm-select">
-                                    <option value="Localité">Localité</option>
-                                </select>
-                            </div>
-                            <div class="mm-inputs select">
-                                <select name="country" id="country" class="mm-select">
-                                    <option value="Pays">Pays</option>
-                                    <option value="Pays">Luxembourg</option>
-                                    <option value="Pays">France</option>
-                                    <option value="Pays">Belgium</option>
-                                </select>
-                            </div>
-                        </div>
-    
-                        <div class="form-end-container mt-3">
-                            <div class="privacy-container">
-                                <input type="checkbox" id="mm-privacy" name="mm-privacy">
-                                <label for="mm-privacy">J’ai lu et accepte la politique de confidentialité (https://www.maisonmoderne.com/privacy-policy)</label>
-                            </div>
-                            <button class="mm-button-dropup mt-1" type="button">Valider</button>
-                        </div>
-    
-                    </form>
+                    %%content%%
                 </section>
 
                 </div>
@@ -203,9 +149,9 @@
 		<section class="container-main">
 			<!-- HERO -->
 			<section class="hero">
-				<div class="main-header-container">
-					<h1 class="main-header-text">Mieux connaître<span class="mm-underline"> l’écosystème</span><br>de Paperjam + Delano.</h1>
-					<p class="main-header-body">Mieux comprendre le Luxembourg.<br>Business, Place financière, Politique et Culture,<br>déclinés en Print, Digital, Club et Communication.</p>
+				<div pardot-region="opening_intro" pardot-region-type="html" class="main-header-container">
+					<h1 class="main-header-text">Mieux connaître<span class="mm-underline"> l’écosystème</span><br>de Paperjam + Delano</h1>
+					<p class="main-header-body">Pour mieux comprendre le Luxembourg.<br>Business, Place financière, Politique et Culture,<br>déclinés en Print, Digital, Club et Communication.</p>
 				</div>
 			</section>
 
@@ -233,14 +179,14 @@
 
                 <!-- Section Heading -->
                 <section class="header-container">
-                    <h2 class="header-text">Abonnement “découverte”</h2>
-                    <p class="header-body">(sans engagement et sans achate)</p>
+                    <h2 pardot-region="title_mag" pardot-region-type="simple" class="header-text">Abonnement “découverte”</h2>
+                    <p pardot-region="subtitle_mag" pardot-region-type="simple" class="header-body">(sans engagement et sans obligation d’achat)</p>
                 </section>
 
                 <!-- Magazine Tab -->
 				<div class="mag-grid-container">
                     <!-- Magazine Card 1 -->
-                    <div class="card-template-main mag-card-template mag-card1">
+                    <div pardot-region="card_mag_paperjam" pardot-region-type="html" class="card-template-main mag-card-template mag-card1">
                         <div class="mag-card-row1">
                             <div class="mag-img-wrapper">
                                 <img class="mag-card-img-top" src="https://maison-moderne-pardot.s3.eu-central-1.amazonaws.com/paperjam_delano-ecosystem/assets/cover-paperjam%402x.png" alt="Couverture du magazine Paperjam">
@@ -253,11 +199,11 @@
                         <div class="mag-card-content">
                             <h5 class="card-title mt-2">Paperjam</h5>
                         </div>
-                        <a href="https://paperjam.lu/magazine" target="blank" class="view-ex text-grey mt-2">Voir un exemple</a>
+                        <a href="https://paperjam.lu/magazine" target="_blank" class="view-ex text-grey mt-2">Voir un exemple</a>
                     </div>
 
                     <!-- Magazine Card 2 -->
-                    <div class="card-template-main mag-card-template mag-card2">
+                    <div pardot-region="card_mag_delano" pardot-region-type="html" class="card-template-main mag-card-template mag-card2">
                         <div class="mag-card-row1">
                             <div class="mag-img-wrapper">
                                 <img class="mag-card-img-top" src="https://maison-moderne-pardot.s3.eu-central-1.amazonaws.com/paperjam_delano-ecosystem/assets/cover-delano%402x.png" alt="Couverture du magazine Delano">
@@ -270,16 +216,16 @@
                         <div class="mag-card-content">
                             <h5 class="card-title mt-2">Delano</h5>
                         </div>
-                        <a href="https://delano.lu/magazine" target="blank" class="view-ex text-grey mt-2">Voir un exemple</a>
+                        <a href="https://delano.lu/magazine" target="_blank" class="view-ex text-grey mt-2">Voir un exemple</a>
                     </div>
 				</div>
             </div>
             
             <div id="Digital" class="tabcontent">
                 <!-- Section Heading -->
-                <section class="header-container">
-                    <h2 class="header-text">Onze newsletters aux choix</h2>
-                    <p class="header-body">De l’information quotidienne au sujets spécialitisés</p>
+                <section id="digital-section" class="header-container">
+                    <h2 pardot-region="title_newsletters" pardot-region-type="simple" class="header-text">Onze newsletters aux choix</h2>
+                    <p pardot-region="subtitle_newsletters" pardot-region-type="simple" class="header-body">De l’information quotidienne au sujets spécialitisés</p>
                 </section>
 
                 <!-- NL Tab Section -->
@@ -287,28 +233,28 @@
                     <div class="nl-grid-container">
 
                         <!-- Newsletter Card 1 -->
-                        <div class="nl-card-template nl-card1">
+                        <div pardot-region="card_nl_pjq" pardot-region-type="html" class="nl-card-template nl-card1">
                             <div class="nl-card-row1">
                                 <div class="digital-img-wrapper">
-                                    <img class="digital-card-img-top" src="https://maison-moderne-pardot.s3.eu-central-1.amazonaws.com/paperjam_delano-ecosystem/assets/newsletter_graphics_landing_page/newsletter_pictures_paperjam_01_daily.jpg" alt="Illustration for the twice daily paperjame newsletter">
+                                    <img class="digital-card-img-top" src="https://maison-moderne-pardot.s3.eu-central-1.amazonaws.com/paperjam_delano-ecosystem/assets/newsletter_graphics_landing_page/newsletter_pictures_paperjam_01_daily.jpg" alt="Illustration for the twice daily Paperjam Newsletter">
                                 </div>
                                 <form>
                                     <input class="sub-checkbox nl-sub-checkbox" id="nl-selector1" type="checkbox">
                                     <label class="checkbox-txt" for="nl-selector1"></label>
                                 </form>
                             </div>
-                            <sub class="nl-freq">Du lundi à vendredi à 8h et à 16h</sub>
+                            <sub class="nl-freq">2 fois par jours</sub>
                             <div class="nl-card-content">
                                 <h5 class="card-title mt-3">Paperjam<br>Biquotidienne</h5>
                             </div>
                             <p class="nl-desc">L’actualité business, place financière et politique du Luxembourg</p>
                             <div class="view-ex">
-                                <a href="https://createsend.paperjam.lu/t/ViewEmail/y/0B99843C1592C40C2540EF23F30FEDED/D97CA39B7124C5C92A1BF84ACBDD178B?alternativeLink=False" target="blank" class="text-grey">Voir un exemple</a>
+                                <a href="https://createsend.paperjam.lu/t/ViewEmail/y/0B99843C1592C40C2540EF23F30FEDED/D97CA39B7124C5C92A1BF84ACBDD178B?alternativeLink=False" target="_blank" class="text-grey">Voir un exemple</a>
                             </div>
                         </div>
 
                         <!-- Newsletter Card 2 -->
-                        <div class="nl-card-template nl-card2">
+                        <div pardot-region="card_nl_pjf" pardot-region-type="html" class="nl-card-template nl-card2">
                             <div class="nl-card-row1">
                                 <div class="digital-img-wrapper">
                                     <img class="digital-card-img-top" src="https://maison-moderne-pardot.s3.eu-central-1.amazonaws.com/paperjam_delano-ecosystem/assets/newsletter_graphics_landing_page/newsletter_pictures_paperjam_06_finance.jpg" alt="Illustration for the Paperjam Finance Newsletter">
@@ -318,39 +264,39 @@
                                     <label class="checkbox-txt" for="nl-selector2"></label>
                                 </form>
                             </div>
-                            <sub class="nl-freq">Mensuelle</sub>
+                            <sub class="nl-freq">hebdomadaire</sub>
                             <div class="nl-card-content">
-                                <h5 class="card-title mt-3">Paperjam<br>Finance</h5>
+                                <h5 class="card-title mt-3">Paperjam + Delano<br>Finance (FR)</h5>
                             </div>
-                            <p class="nl-desc">L’actualité business, place financière</p>
+                            <p class="nl-desc">L’actualité business et place financière en français</p>
                             <div class="view-ex">
-                                <a href="https://createsend.paperjam.lu/t/ViewEmail/y/0FAFA3ADCC4A431E2540EF23F30FEDED/D97CA39B7124C5C92A1BF84ACBDD178B?alternativeLink=False" target="blank" class="text-grey">Voir un exemple</a>
+                                <a href="https://createsend.paperjam.lu/t/ViewEmail/y/0FAFA3ADCC4A431E2540EF23F30FEDED/D97CA39B7124C5C92A1BF84ACBDD178B?alternativeLink=False" target="_blank" class="text-grey">Voir un exemple</a>
                             </div>
                         </div>
 
                         <!-- Newsletter Card 3 -->
-                        <div class="nl-card-template nl-card3">
+                        <div pardot-region="card_nl_dd" pardot-region-type="html" class="nl-card-template nl-card3">
                             <div class="nl-card-row1">
                                 <div class="digital-img-wrapper">
-                                    <img class="digital-card-img-top" src="https://maison-moderne-pardot.s3.eu-central-1.amazonaws.com/paperjam_delano-ecosystem/assets/newsletter_graphics_landing_page/newsletter_pictures_delano_01_daily.jpg" alt="Illustration for Delano Daily Newsletter">
+                                    <img class="digital-card-img-top" src="https://maison-moderne-pardot.s3.eu-central-1.amazonaws.com/paperjam_delano-ecosystem/assets/newsletter_graphics_landing_page/corrected_visual.jpg" alt="Illustration for the Delano Daily Newsletter">
                                 </div>
                                 <form>
                                     <input class="sub-checkbox nl-sub-checkbox" id="nl-selector3" type="checkbox">
                                     <label class="checkbox-txt" for="nl-selector3"></label>
                                 </form>
                             </div>
-                            <sub class="nl-freq">Du lundi à vendredi à 6h45 et à 11h45</sub>
+                            <sub class="nl-freq">2 fois par jours</sub>
                             <div class="nl-card-content">
                                 <h5 class="card-title mt-3">Delano Daily<br>Briefing</h5>
                             </div>
                             <p class="nl-desc">L’actualité business, place financière et politique du Luxembourg</p>
                             <div class="view-ex">
-                                <a href="https://createsend.delano.lu/t/ViewEmail/y/A60FA2716A5DEAA72540EF23F30FEDED/775F4BB6BE793072F7E8006BBCB98688?alternativeLink=False" target="blank" class="text-grey">Voir un exemple</a>
+                                <a href="https://createsend.delano.lu/t/ViewEmail/y/A60FA2716A5DEAA72540EF23F30FEDED/775F4BB6BE793072F7E8006BBCB98688?alternativeLink=False" target="_blank" class="text-grey">Voir un exemple</a>
                             </div>
                         </div>
 
                         <!-- Newsletter Card 4 -->
-                        <div class="nl-card-template nl-card4">
+                        <div pardot-region="card_nl_df" pardot-region-type="html" class="nl-card-template nl-card4">
                             <div class="nl-card-row1">
                                 <div class="digital-img-wrapper">
                                     <img class="digital-card-img-top" src="https://maison-moderne-pardot.s3.eu-central-1.amazonaws.com/paperjam_delano-ecosystem/assets/newsletter_graphics_landing_page/newsletter_pictures_delano_03_finance.jpg" alt="Illustration for Delano Finance Newsletter">
@@ -360,104 +306,104 @@
                                     <label class="checkbox-txt" for="nl-selector4"></label>
                                 </form>
                             </div>
-                            <sub class="nl-freq">Mensuelle</sub>
+                            <sub class="nl-freq">hebdomadaire</sub>
                             <div class="nl-card-content">
-                                <h5 class="card-title mt-3">Delano<br>Finance</h5>
+                                <h5 class="card-title mt-3">Paperjam + Delano<br>Finance (EN)</h5>
                             </div>
-                            <p class="nl-desc">L’actualité de la place financière</p>
+                            <p class="nl-desc">L’actualité business et place financière en anglais</p>
                             <div class="view-ex">
-                                <a href="https://createsend.delano.lu/t/ViewEmail/y/F9DEA132479A13972540EF23F30FEDED/775F4BB6BE793072F7E8006BBCB98688?alternativeLink=False" target="blank" class="text-grey">Voir un exemple</a>
+                                <a href="https://createsend.delano.lu/t/ViewEmail/y/F9DEA132479A13972540EF23F30FEDED/775F4BB6BE793072F7E8006BBCB98688?alternativeLink=False" target="_blank" class="text-grey">Voir un exemple</a>
                             </div>
                         </div>
 
                         <!-- Newsletter Card 5 -->
-                        <div class="nl-card-template nl-card5">
+                        <div pardot-region="card_nl_pjar" pardot-region-type="html" class="nl-card-template nl-card5">
                             <div class="nl-card-row1">
                                 <div class="digital-img-wrapper">
-                                    <img class="digital-card-img-top" src="https://maison-moderne-pardot.s3.eu-central-1.amazonaws.com/paperjam_delano-ecosystem/assets/newsletter_graphics_landing_page/newsletter_pictures_paperjam_04_Architecture.jpg" alt="Illustration for Paperjam Architecture Newsletter">
+                                    <img class="digital-card-img-top" src="https://maison-moderne-pardot.s3.eu-central-1.amazonaws.com/paperjam_delano-ecosystem/assets/newsletter_graphics_landing_page/newsletter_pictures_paperjam_04_Architecture.jpg" alt="Illustration for Paperjam Architecture + Real Estate Newsletter">
                                 </div>
                                 <form>
                                     <input class="sub-checkbox nl-sub-checkbox" id="nl-selector5" type="checkbox">
                                     <label class="checkbox-txt" for="nl-selector5"></label>
                                 </form>
                             </div>
-                            <sub class="nl-freq">Bimensuelle</sub>
+                            <sub class="nl-freq">bi-mensuelle</sub>
                             <div class="nl-card-content">
                                 <h5 class="card-title mt-3">Paperjam Architecture +<br>Real Estate</h5>
                             </div>
                             <p class="nl-desc">Architecture, design, immobilier</p>
                             <div class="view-ex">
-                                <a href="https://createsend.paperjam.lu/t/ViewEmail/y/8BDF979D899E1D722540EF23F30FEDED/D97CA39B7124C5C92A1BF84ACBDD178B?alternativeLink=False" target="blank" class="text-grey">Voir un exemple</a>
+                                <a href="https://createsend.paperjam.lu/t/ViewEmail/y/8BDF979D899E1D722540EF23F30FEDED/D97CA39B7124C5C92A1BF84ACBDD178B?alternativeLink=False" target="_blank" class="text-grey">Voir un exemple</a>
                             </div>
                         </div>
 
                         <!-- Newsletter Card 6 -->
-                        <div class="nl-card-template nl-card6">
+                        <div pardot-region="card_nl_pjt" pardot-region-type="html" class="nl-card-template nl-card6">
                             <div class="nl-card-row1">
                                 <div class="digital-img-wrapper">
-                                    <img class="digital-card-img-top" src="https://maison-moderne-pardot.s3.eu-central-1.amazonaws.com/paperjam_delano-ecosystem/assets/newsletter_graphics_landing_page/newsletter_pictures_paperjam_02_trending.jpg" alt="Illustration for Paperjam Trendin'">
+                                    <img class="digital-card-img-top" src="https://maison-moderne-pardot.s3.eu-central-1.amazonaws.com/paperjam_delano-ecosystem/assets/newsletter_graphics_landing_page/newsletter_pictures_paperjam_02_trending.jpg" alt="Illustration for Paperjam Trendin' Newsletter">
                                 </div>
                                 <form>
                                     <input class="sub-checkbox nl-sub-checkbox" id="nl-selector6" type="checkbox">
                                     <label class="checkbox-txt" for="nl-selector6"></label>
                                 </form>
                             </div>
-                            <sub class="nl-freq">Vendredi à 14h</sub>
+                            <sub class="nl-freq">hebdomadaire</sub>
                             <div class="nl-card-content">
                                 <h5 class="card-title mt-3">Paperjam<br>Trendin’</h5>
                             </div>
                             <p class="nl-desc">L’hebdo innovation & technologies</p>
                             <div class="view-ex">
-                                <a href="https://createsend.paperjam.lu/t/ViewEmail/y/A41C16DF48DE2DAD2540EF23F30FEDED/D97CA39B7124C5C92A1BF84ACBDD178B?alternativeLink=False" target="blank" class="text-grey">Voir un exemple</a>
+                                <a href="https://createsend.paperjam.lu/t/ViewEmail/y/A41C16DF48DE2DAD2540EF23F30FEDED/D97CA39B7124C5C92A1BF84ACBDD178B?alternativeLink=False" target="_blank" class="text-grey">Voir un exemple</a>
                             </div>
                         </div>
 
                         <!-- Newsletter Card 7 -->
-                        <div class="nl-card-template nl-card7">
+                        <div pardot-region="card_nl_pjg" pardot-region-type="html" class="nl-card-template nl-card7">
                             <div class="nl-card-row1">
                                 <div class="digital-img-wrapper">
-                                    <img class="digital-card-img-top" src="https://maison-moderne-pardot.s3.eu-central-1.amazonaws.com/paperjam_delano-ecosystem/assets/newsletter_graphics_landing_page/newsletter_pictures_paperjam_05_green.jpg" alt="Illustration for Paperjam Green Newsletter">
+                                    <img class="digital-card-img-top" src="https://maison-moderne-pardot.s3.eu-central-1.amazonaws.com/paperjam_delano-ecosystem/assets/newsletter_graphics_landing_page/newsletter_pictures_paperjam_05_green.png" alt="Illustration for the Paperjam Green Newsletter">
                                 </div>
                                 <form>
                                     <input class="sub-checkbox nl-sub-checkbox" id="nl-selector7" type="checkbox">
                                     <label class="checkbox-txt" for="nl-selector7"></label>
                                 </form>
                             </div>
-                            <sub class="nl-freq">Vendredi à 14h</sub>
+                            <sub class="nl-freq">mensuelle</sub>
                             <div class="nl-card-content">
                                 <h5 class="card-title mt-3">Paperjam<br>Green</h5>
                             </div>
                             <p class="nl-desc">L’actualité des enjeux de l’environnement</p>
                             <div class="view-ex">
-                                <a href="https://createsend.paperjam.lu/t/ViewEmail/y/6BDE34F9BB270A4D2540EF23F30FEDED/D97CA39B7124C5C92A1BF84ACBDD178B?alternativeLink=False" target="blank" class="text-grey">Voir un exemple</a>
+                                <a href="https://createsend.paperjam.lu/t/ViewEmail/y/6BDE34F9BB270A4D2540EF23F30FEDED/D97CA39B7124C5C92A1BF84ACBDD178B?alternativeLink=False" target="_blank" class="text-grey">Voir un exemple</a>
                             </div>
                         </div>
 
                         <div class="blank-card"></div>
 
                         <!-- Newsletter Card 9 -->
-                        <div class="nl-card-template nl-card9">
+                        <div pardot-region="card_nl_pjf1" pardot-region-type="html" class="nl-card-template nl-card9">
                             <div class="nl-card-row1">
                                 <div class="digital-img-wrapper">
-                                    <img class="digital-card-img-top" src="https://maison-moderne-pardot.s3.eu-central-1.amazonaws.com/paperjam_delano-ecosystem/assets/newsletter_graphics_landing_page/newsletter_pictures_paperjam_03_foodzilla.jpg" alt="Illustration for Paperjam Foodzilla Newletter">
+                                    <img class="digital-card-img-top" src="https://maison-moderne-pardot.s3.eu-central-1.amazonaws.com/paperjam_delano-ecosystem/assets/newsletter_graphics_landing_page/newsletter_pictures_paperjam_03_foodzilla.jpg" alt="Illustration for the Paperjam Foodzilla Newletter">
                                 </div>
                                 <form>
                                     <input class="sub-checkbox nl-sub-checkbox" id="nl-selector9" type="checkbox">
                                     <label class="checkbox-txt" for="nl-selector9"></label>
                                 </form>
                             </div>
-                            <sub class="nl-freq">Jeudi à 11h</sub>
+                            <sub class="nl-freq">hebdomadaire</sub>
                             <div class="nl-card-content">
                                 <h5 class="card-title mt-3">Paperjam<br>Foodzilla</h5>
                             </div>
                             <p class="nl-desc">Restaurants, afterworks et sorties culturelles en mode «coups de cœur»</p>
                             <div class="view-ex">
-                                <a href="https://createsend.paperjam.lu/t/ViewEmail/y/9F57489A923098F92540EF23F30FEDED/D97CA39B7124C5C92A1BF84ACBDD178B?alternativeLink=False" target="blank" class="text-grey">Voir un exemple</a>
+                                <a href="https://createsend.paperjam.lu/t/ViewEmail/y/9F57489A923098F92540EF23F30FEDED/D97CA39B7124C5C92A1BF84ACBDD178B?alternativeLink=False" target="_blank" class="text-grey">Voir un exemple</a>
                             </div>
                         </div>
 
                         <!-- Newsletter Card 10 -->
-                        <div class="nl-card-template nl-card10">
+                        <div pardot-region="card_nl_dw" pardot-region-type="html" class="nl-card-template nl-card10">
                             <div class="nl-card-row1">
                                 <div class="digital-img-wrapper">
                                     <img class="digital-card-img-top" src="https://maison-moderne-pardot.s3.eu-central-1.amazonaws.com/paperjam_delano-ecosystem/assets/newsletter_graphics_landing_page/newsletter_pictures_delano_05_weekend.jpg" alt="Illustration for the Delano Weekend Newsletter">
@@ -467,18 +413,18 @@
                                     <label class="checkbox-txt" for="nl-selector10"></label>
                                 </form>
                             </div>
-                            <sub class="nl-freq">Samedi à 9h</sub>
+                            <sub class="nl-freq">hebdomadaire</sub>
                             <div class="nl-card-content">
                                 <h5 class="card-title mt-3">Delano<br>Weekend</h5>
                             </div>
-                            <p class="nl-desc">«10 things to do», actualité et de l’utile (restaurants, jobs, immobilier)</p>
+                            <p class="nl-desc">«10 things to do», actualité et de reforumler (restaurants, jobs, immobilier)</p>
                             <div class="view-ex">
-                                <a href="https://createsend.delano.lu/t/ViewEmail/y/07B4A3EAAAC9FF622540EF23F30FEDED/775F4BB6BE793072F7E8006BBCB98688?alternativeLink=False" target="blank" class="text-grey">Voir un exemple</a>
+                                <a href="https://createsend.delano.lu/t/ViewEmail/y/07B4A3EAAAC9FF622540EF23F30FEDED/775F4BB6BE793072F7E8006BBCB98688?alternativeLink=False" target="_blank" class="text-grey">Voir un exemple</a>
                             </div>
                         </div>
 
                         <!-- Newsletter Card 11 -->
-                        <div class="nl-card-template nl-card11">
+                        <div pardot-region="card_nl_pjgd" pardot-region-type="html" class="nl-card-template nl-card11">
                             <div class="nl-card-row1">
                                 <div class="digital-img-wrapper">
                                     <img class="digital-card-img-top" src="https://maison-moderne-pardot.s3.eu-central-1.amazonaws.com/paperjam_delano-ecosystem/assets/newsletter_graphics_landing_page/newsletter_pictures_paperjam_07_grand_dossier.jpg" alt="Illustration for the Paperjam Grand Dossier Newsletter">
@@ -488,18 +434,18 @@
                                     <label class="checkbox-txt" for="nl-selector11"></label>
                                 </form>
                             </div>
-                            <sub class="nl-freq">Bimensuelle</sub>
+                            <sub class="nl-freq">bi-mensuelle</sub>
                             <div class="nl-card-content">
                                 <h5 class="card-title mt-3">Paperjam<br>Grands Dossiers</h5>
                             </div>
-                            <p class="nl-desc">Le rendez-vous de l’expertise</p>
+                            <p class="nl-desc">La force de l’expertise</p>
                             <div class="view-ex">
-                                <a href="https://createsend.maisonmoderne.lu/t/ViewEmail/y/D3070833EDA87C872540EF23F30FEDED/775F4BB6BE79307274AF8F7A76570606?alternativeLink=False" target="blank" class="text-grey">Voir un exemple</a>
+                                <a href="https://createsend.maisonmoderne.lu/t/ViewEmail/y/D3070833EDA87C872540EF23F30FEDED/775F4BB6BE79307274AF8F7A76570606?alternativeLink=False" target="_blank" class="text-grey">Voir un exemple</a>
                             </div>
                         </div>
 
                         <!-- Newsletter Card 12 -->
-                        <div class="nl-card-template nl-card12">
+                        <div pardot-region="card_nl_dkh" pardot-region-type="html" class="nl-card-template nl-card12">
                             <div class="nl-card-row1">
                                 <div class="img-wrapper">
                                     <img class="digital-card-img-top" src="https://maison-moderne-pardot.s3.eu-central-1.amazonaws.com/paperjam_delano-ecosystem/assets/newsletter_graphics_landing_page/newsletter_pictures_delano_04_knowhow.jpg" alt="Illustration for the Delano Know-How Newsletter">
@@ -509,13 +455,13 @@
                                     <label class="checkbox-txt" for="nl-selector12"></label>
                                 </form>
                             </div>
-                            <sub class="nl-freq">Mensuelle</sub>
+                            <sub class="nl-freq">mensuelle</sub>
                             <div class="nl-card-content">
-                                <h5 class="card-title mt-3">Delano<br>Know How</h5>
+                                <h5 class="card-title mt-3">Delano<br>Know-How</h5>
                             </div>
-                            <p class="nl-desc">Le rendez-vous de l’expertise</p>
+                            <p class="nl-desc">L’avis des experts<br>(bientôt disponible)</p>
                             <div class="view-ex">
-                                <a href="#" class="text-grey">Voir un exemple</a>
+                                <a href="#" class="text-grey" style="pointer-events: none">Voir un exemple</a>
                             </div>
                         </div>
 
@@ -525,7 +471,7 @@
             
             <div id="Club" class="tabcontent">
                 <!-- Section Heading -->
-                <section class="header-container">
+                <section pardot-region="title_club" pardot-region-type="html" class="header-container">
                     <h2 class="header-text">Découvrez le Paperjam + Delano Club</h2>
                 </section>
 
@@ -540,24 +486,22 @@
                                     <!-- <img class="club-card-img-top" src="https://maison-moderne-pardot.s3.eu-central-1.amazonaws.com/paperjam_delano-ecosystem/assets/club_img-2x.png" alt="Image for the Paperjam + Delano Club"> -->
                                 </div>
                                 <div class="club-card-content">
-                                    <div class="club-card-row1">
+                                    <div pardot-region="card_club_title" pardot-region-type="html" class="club-card-row1">
                                         <h5 class="card-title mt-3">Découverte</h5>
                                         <form>
                                             <input class="sub-checkbox club-sub-checkbox" id="club-selector1" type="checkbox">
                                             <label class="checkbox-txt" for="club-selector1"></label>
                                         </form>
                                     </div>
-                                    <p class="club-desc">Je souhaite recevoir un voucher pour participer à un événement du business club avant de devenir membre.</p>
-                                    <div class="view-ex">
-                                        <a href="https://paperjam.lu/club/agenda?lang=fr" target="blank" class="text-grey">Découvrez le programme du club
-                                            <img class="club-arrow" src="https://maison-moderne-pardot.s3.eu-central-1.amazonaws.com/paperjam_delano-ecosystem/assets/arrow-right.svg" alt="Icon of an arrow pointing right">
-                                        </a>
+                                    <p pardot-region="subtitle_card_club" pardot-region-type="simple" class="club-desc">Je souhaite recevoir un voucher pour participer à un événement du business club avant de devenir membre.</p>
+                                    <div pardot-region="card_club_link" pardot-region-type="html" class="view-ex">
+                                        <a href="https://paperjam.lu/club/agenda?lang=fr" target="_blank" class="text-grey">Découvrez le programme du Club<img class="club-arrow" style="margin-left: 0 !important;" src="https://maison-moderne-pardot.s3.eu-central-1.amazonaws.com/paperjam_delano-ecosystem/assets/arrow-right.svg" alt="Icon of an arrow pointing right"></a>
                                     </div>
                                 </div>
                             </div>
-                            <div class="club-subtext">
+                            <div pardot-region="card_club_detail" pardot-region-type="html" class="club-subtext">
                                 <p class="club-subs text-grey">Cette offre est valable une fois et réservée aux décideurs en entreprises ou institutions.</p>
-                                <p class="club-subs text-grey">Dans sa démarche de responsabilité sociale, Paperjam + Delano Club propose aussi un quota de places aux étudiants, enseignants, demandeurs d’emploi, demandeurs de protection internationale. <a class="text-grey club-link" href="https://go.club.paperjam.lu/fr/pro_bono">C’est par ici</a>.</p>
+                                <p class="club-subs text-grey">Dans sa démarche de responsabilité sociale, le Paperjam + Delano Club propose aussi un quota de places aux étudiants, enseignants, demandeurs d’emploi et demandeurs de protection internationale. <a class="text-grey club-link" target="_blank" href="https://go.club.paperjam.lu/fr/pro_bono">C’est par ici</a>.</p>
                             </div>
                         </div>
                     </div>
@@ -566,7 +510,7 @@
 
             <div id="Communication" class="tabcontent">
                 <!-- Section Heading -->
-                <section class="header-container">
+                <section pardot-region="card_comm_title" pardot-region-type="html" class="header-container">
                     <h2 class="header-text">Pour toucher les lecteurs et membres de Paperjam + Delano</h2>
                 </section>
 
@@ -581,14 +525,14 @@
                                     <!-- <img class="comm-card-img-top" src="https://maison-moderne-pardot.s3.eu-central-1.amazonaws.com/paperjam_delano-ecosystem/assets/comm_img-2x.png" alt="Image for the Paperjam + Delano Media Kit"> -->
                                 </div>
                                 <div class="comm-card-content">
-                                    <div class="comm-card-row1">
+                                    <div pardot-region="title_media" pardot-region-type="html" class="comm-card-row1">
                                         <h5 class="card-title mt-3">Media Kit</h5>
                                         <form>
                                             <input class="sub-checkbox comm-sub-checkbox" id="comm-selector1" type="checkbox">
                                             <label class="checkbox-txt" for="comm-selector1"></label>
                                         </form>
                                     </div>
-                                    <p class="comm-desc">Je souhaite découvrir les solutions de communication dans l’écosystème Paperjam et Delano.  Contactez-moi pour me présenter les solutions en native advertising, publicité, sponsoring, employer branding, recrutement, formation, membership.</p>
+                                    <p pardot-region="subtitle_media" pardot-region-type="simple" class="comm-desc">Je souhaite découvrir les solutions de communication dans l’écosystème Paperjam et Delano.  Contactez-moi pour me présenter les solutions en native advertising, publicité, sponsoring, employer branding, recrutement, formation, membership.</p>
                                 </div>
                             </div>
                         </section>
@@ -597,33 +541,33 @@
                     <!-- Communication Additional Content -->
                     <div class="comm-grid-container2">
                         <!-- Section 2 Card 1 -->
-                        <div class="comm-card-template2">
+                        <div pardot-region="press_releases" pardot-region-type="html" class="comm-card-template2">
                             <div class="img-wrapper2 img-wrapper-bg2">
                                 <!-- <img class="card-img-top2" src="https://maison-moderne-pardot.s3.eu-central-1.amazonaws.com/paperjam_delano-ecosystem/assets/comm_img2-2x.png" alt="Image for Paperjam + Delano Press Releases"> -->
                             </div>
                             <h5 class="card-title mt-3">Press Releases</h5>
                             <p class="comm-desc">Envoyez les communiqués de presse de votre organisation à
                                 <a href="mailto:news@maisonmoderne.com">news@maisonmoderne.com</a> pour contacter la rédaction de
-                                Paperjam + Delano</p>
+                                Paperjam + Delano.</p>
                             <div class="view-ex">
-                                <a href="mailto:news@maisonmoderne.com" class="text-grey">Contactez la rédaction
+                                <a href="mailto:news@delano.lu" class="text-grey">Contactez la rédaction
                                     <img class="club-arrow" src="https://maison-moderne-pardot.s3.eu-central-1.amazonaws.com/paperjam_delano-ecosystem/assets/arrow-right.svg" alt="Icon of an arrow pointing right">
                                 </a>
                             </div>
                         </div>
                         
                         <!-- Section 2 Card 2 -->
-                        <div class="comm-card-template2">
+                        <div pardot-region="business_guide" pardot-region-type="html" class="comm-card-template2">
                             <div class="img-wrapper2 img-wrapper-bg3">
                                 <!-- <img class="card-img-top2" src="https://maison-moderne-pardot.s3.eu-central-1.amazonaws.com/paperjam_delano-ecosystem/assets/comm_img3-2x.png" alt="Couverture du magazine Paperjam"> -->
                             </div>
                             <h5 class="card-title mt-3">Business Guide</h5>
-                            <p class="comm-desc">Publiez ou mettez à jour la fiche de votre entity et/ou votra biographie.</p>
+                            <p class="comm-desc">Publiez ou mettez à jour la fiche de votre entity et/ou votre biographie.</p>
                             <div class="view-ex2">
-                                <a href="https://communities.maisonmoderne.com/guide/s/" target="blank" class="text-grey">Mettez à jour la fiche de votre entity
+                                <a href="https://communities.maisonmoderne.com/guide/s/" target="_blank" class="text-grey">Mettez à jour la fiche de votre entity
                                     <img class="club-arrow" src="https://maison-moderne-pardot.s3.eu-central-1.amazonaws.com/paperjam_delano-ecosystem/assets/arrow-right.svg" alt="Icon of an arrow pointing right">
                                 </a>
-                                <a href="https://communities.maisonmoderne.com/guide/s/?tabset-b7d6b=2" target="blank" class="text-grey">Mettez à jour votre biographie
+                                <a href="https://communities.maisonmoderne.com/guide/s/?tabset-b7d6b=2" target="_blank" class="text-grey">Mettre à jour votre biographie 
                                     <img class="club-arrow" src="https://maison-moderne-pardot.s3.eu-central-1.amazonaws.com/paperjam_delano-ecosystem/assets/arrow-right.svg" alt="Icon of an arrow pointing right">
                                 </a>
                             </div>
@@ -641,36 +585,36 @@
 
             <section class="container-main">
                 <section class="footer-ctas container-lg">
-                    <div class="left-content">
+                    <div pardot-region="redaction_contact" pardot-region-type="html" class="left-content">
                         <h6 class="footer-headings">Pour contacter les rédactions de <span>Paperjam + Delano</span></h6>
                         <a href="mailto:news@maisonmoderne.com" class="btn btn-block footer-btn">Contacter les Rédactions (FR)</a>
                     </div>
-                    <div class="right-content">
+                    <div pardot-region="evolutionnaire_box" pardot-region-type="html" class="right-content">
                         <div class="right-side-left">
                             <h6 class="footer-headings">Découvrez les «Évolutionnaires»</h6>
-                            <a href="https://www.maisonmoderne.com/evolutionnaires" target="blank" class="btn btn-block footer-btn">Les Évolutionnaires</a>
+                            <a href="https://www.maisonmoderne.com/evolutionnaires" target="_blank" class="btn btn-block footer-btn">Les Évolutionnaires</a>
                         </div>
                         <div class="right-side-right">
-                            <a href="https://www.maisonmoderne.com/evolutionnaires" target="blank"><img class="footer-img mt-1" src="https://maison-moderne-pardot.s3.eu-central-1.amazonaws.com/paperjam_delano-ecosystem/assets/evolutionaries.png" alt="An Image Link to the Maison Moderne, Paperjam + Delano Evolutionaries page."></a>
+                            <a href="https://www.maisonmoderne.com/evolutionnaires" target="_blank"><img class="footer-img mt-1" src="https://maison-moderne-pardot.s3.eu-central-1.amazonaws.com/paperjam_delano-ecosystem/assets/evolutionaries.png" alt="An Image Link to the Maison Moderne, Paperjam + Delano Evolutionaries page."></a>
                         </div>
                     </div>
                 </section>
 
                 <section class="footer-fineprint container-lg">
-                    <div class="footer-group">
-                        <a href="index.html"><img class="navbar-brand mm-logo mr-4" src="https://maison-moderne-pardot.s3.eu-central-1.amazonaws.com/paperjam_delano-ecosystem/assets/logo-mm.svg" alt="Logo for Maison Moderne"></a>
-                        <p class="fine-print">Paperjam, Delano et Maison Moderne sont des marques déposées utilisées sous license par MMPublishing and Media S.A. (Luxembourg).</p>
+                    <div pardot-region="copyright_zone" pardot-region-type="html" class="footer-group">
+                        <a href="index.html" target="_blank"><img class="navbar-brand mm-logo mr-4" src="https://maison-moderne-pardot.s3.eu-central-1.amazonaws.com/paperjam_delano-ecosystem/assets/logo-mm.svg" alt="Logo for Maison Moderne"></a>
+                        <p class="fine-print">Paperjam, Delano et Maison Moderne sont des marques déposées utilisées sous licence par MMPublishing and Media S.A. (Luxembourg).</p>
                     </div>
                     <div class="footer-socials">
                         <ul class="socials-list">
-                            <li><a href="https://www.linkedin.com/company/maison-moderne/" target="blank"><img class="li-right" src="https://maison-moderne-pardot.s3.eu-central-1.amazonaws.com/paperjam_delano-ecosystem/assets/icon_linkedin.svg" alt="Icon for the link to the LinkedIn page for Maison Moderne, Paperjam & Delano"></a></li>
+                            <li><a href="https://www.linkedin.com/company/maison-moderne/" target="_blank"><img class="li-right" src="https://maison-moderne-pardot.s3.eu-central-1.amazonaws.com/paperjam_delano-ecosystem/assets/icon_linkedin.svg" alt="Icon for the link to the LinkedIn page for Maison Moderne, Paperjam & Delano"></a></li>
                             <li class="ml-4">
-                                <a href="https://www.facebook.com/MaisonModerne" target="blank">
+                                <a href="https://www.facebook.com/MaisonModerne" target="_blank">
                                     <img src="https://maison-moderne-pardot.s3.eu-central-1.amazonaws.com/paperjam_delano-ecosystem/assets/icon_facebook.svg" alt="Icon for the Facebook page for Maison Moderne, Paperjam & Delano">
                                 </a>
                             </li>
                             <li class="ml-4">
-                                <a href="https://www.instagram.com/maisonmoderneluxembourg/" target="blank">
+                                <a href="https://www.instagram.com/maisonmoderneluxembourg/" target="_blank">
                                     <img class="ig-left" src="https://maison-moderne-pardot.s3.eu-central-1.amazonaws.com/paperjam_delano-ecosystem/assets/icon-instagram.svg" alt="Icon for the Instagram page for Maison Moderne, Paperjam & Delano">
                                 </a>
                             </li>
@@ -687,189 +631,264 @@
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
 		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 		<!-- END BOOTSTRAPS SCRIPTS -->
-		<script src="https://maison-moderne-pardot.s3.eu-central-1.amazonaws.com/paperjam_delano-ecosystem/js/script.js"></script>
-		<!-- <script src="/js/script.js"></script> -->
+		<script src="https://maison-moderne-pardot.s3.eu-central-1.amazonaws.com/paperjam_delano-ecosystem/js/script.js"></script> 
+		<!-- Included for TAB navigation -->
+		<script src="/javascripts/jquery.localscroll.js?1281125099" type="text/javascript"></script>
+        <script src="/javascripts/jquery.scrollTo.js?1281125099" type="text/javascript"></script>
 		
-		<script>
-    // Check Magazines boxes 
-    var clicked_pj = false;
-        $("#mag-selector1").on("click", function() {
-        $("#597371_80740pi_597371_80740_1157122").prop("checked", !clicked_pj);
-        clicked_pj = !clicked_pj;
-        this.innerHTML = clicked_pj ? 'Deselect' : 'Select';
-    });
-
-    var clicked_delano = false;
-        $("#mag-selector2").on("click", function() {
-        $("#597371_80740pi_597371_80740_1157124").prop("checked", !clicked_delano);
-        clicked_delano = !clicked_delano;
-        this.innerHTML = clicked_delano ? 'Deselect' : 'Select';
-    });
-
-
-    // Check Newsletters boxes 
-    var clicked = false;
-        $("#nl-selector1").on("click", function() {
-        $("#597371_80750pi_597371_80750_1157128").prop("checked", !clicked);
-        clicked = !clicked;
-        this.innerHTML = clicked ? 'Deselect' : 'Select';
-    });
-
-    var clicked2 = false;
-        $("#nl-selector2").on("click", function() {
-        $("#597371_80750pi_597371_80750_1167718").prop("checked", !clicked2);
-        clicked2 = !clicked2;
-        this.innerHTML = clicked2 ? 'Deselect' : 'Select';
-    });
-
-    var clicked3 = false;
-        $("#nl-selector3").on("click", function() {
-        $("#597371_80750pi_597371_80750_1157142").prop("checked", !clicked3);
-        clicked3 = !clicked3;
-        this.innerHTML = clicked3 ? 'Deselect' : 'Select';
-    });
-
-    var clicked4 = false;
-        $("#nl-selector4").on("click", function() {
-        $("#597371_80750pi_597371_80750_1157150").prop("checked", !clicked4);
-        clicked4 = !clicked4;
-        this.innerHTML = clicked4 ? 'Deselect' : 'Select';
-    });
-
-    var clicked5 = false;
-        $("#nl-selector5").on("click", function() {
-        $("#597371_80750pi_597371_80750_1157136").prop("checked", !clicked5);
-        clicked5 = !clicked5;
-        this.innerHTML = clicked5 ? 'Deselect' : 'Select';
-    });
-
-    var clicked6 = false;
-        $("#nl-selector6").on("click", function() {
-        $("#597371_80750pi_597371_80750_1157132").prop("checked", !clicked6);
-        clicked6 = !clicked6;
-        this.innerHTML = clicked6 ? 'Deselect' : 'Select';
-    });
-
-    var clicked7 = false;
-        $("#nl-selector7").on("click", function() {
-        $("#597371_80750pi_597371_80750_1157138").prop("checked", !clicked7);
-        clicked7 = !clicked7;
-        this.innerHTML = clicked7 ? 'Deselect' : 'Select';
-    });
-
-    /* var clicked8 = false;
-        $("#nl-selector8").on("click", function() {
-        $("#597371_80750pi_597371_80750_1157134").prop("checked", !clicked8);
-        clicked8 = !clicked8;
-        this.innerHTML = clicked8 ? 'Deselect' : 'Select';
-    }); */
-
-    var clicked9 = false;
-        $("#nl-selector9").on("click", function() {
-        $("#597371_80750pi_597371_80750_1157134").prop("checked", !clicked9);
-        clicked9 = !clicked9;
-        this.innerHTML = clicked9 ? 'Deselect' : 'Select';
-    });
-
-    var clicked10 = false;
-        $("#nl-selector10").on("click", function() {
-        $("#597371_80750pi_597371_80750_1157146").prop("checked", !clicked10);
-        clicked10 = !clicked10;
-        this.innerHTML = clicked10 ? 'Deselect' : 'Select';
-    });
-
-    var clicked11 = false;
-        $("#nl-selector11").on("click", function() {
-        $("#597371_80750pi_597371_80750_1157140").prop("checked", !clicked11);
-        clicked11 = !clicked11;
-        this.innerHTML = clicked11 ? 'Deselect' : 'Select';
-    });
-
-    var clicked12 = false;
-        $("#nl-selector12").on("click", function() {
-        $("#597371_80750pi_597371_80750_1167720").prop("checked", !clicked12);
-        clicked12 = !clicked12;
-        this.innerHTML = clicked12 ? 'Deselect' : 'Select';
-    });
-
-
-    // Check Club boxes 
-    var clicked_club = false;
-        $("#club-selector1").on("click", function() {
-        $("#597371_80752pi_597371_80752_1158662").prop("checked", !clicked_club);
-        clicked_club = !clicked_club;
-        this.innerHTML = clicked_club ? 'Deselect' : 'Select';
-    });
-
-
-    // Check Communications boxes 
-    var clicked_comm = false;
-        $("#comm-selector1").on("click", function() {
-        $("#597371_80754pi_597371_80754_1157154").prop("checked", !clicked_comm);
-        clicked_comm = !clicked_comm;
-        this.innerHTML = clicked_comm ? 'Deselect' : 'Select';
-    });
+	<script>
+	
+        // Check Magazines boxes 
+        var clicked_pj = false;
+            $("#mag-selector1").on("click", function() {
+            $("#597371_80740pi_597371_80740_1157122").prop("checked", !clicked_pj);
+            clicked_pj = !clicked_pj;
+            this.innerHTML = clicked_pj ? 'Deselect' : 'Select';
+        });
     
-    // Target placeholders, re-style.
-    // Telephone
-    // remove "optionnel" from telephone label
-    $('label[for="597371_80734pi_597371_80734"]').html('Téléphone');
-
-    // add "optionnel" placeholder to telephone input
-    document.getElementById("597371_80734pi_597371_80734").placeholder = "optionnel";
+        var clicked_delano = false;
+            $("#mag-selector2").on("click", function() {
+            $("#597371_80740pi_597371_80740_1157124").prop("checked", !clicked_delano);
+            clicked_delano = !clicked_delano;
+            this.innerHTML = clicked_delano ? 'Deselect' : 'Select';
+        });
     
-    // Company
-    // remove "nécessaire pour les abonnements aux magazines" from société label
-    $('label[for="597371_80730pi_597371_80730"]').html("Société");
-
-    // add "nécessaire pour les abonnements aux magazines" placeholder to société input
-    document.getElementById("597371_80730pi_597371_80730").placeholder = "nécessaire pour les abonnements aux magazines";
+        // Check Newsletters boxes 
+        var clicked = false;
+            $("#nl-selector1").on("click", function() {
+            $("#597371_80750pi_597371_80750_1157128").prop("checked", !clicked);
+            clicked = !clicked;
+            this.innerHTML = clicked ? 'Deselect' : 'Select';
+        });
     
-    // Position
-    // remove "nécessaire pour les abonnements aux magazines" from Fonction label
-    $('label[for="597371_80738pi_597371_80738"]').html("Fonction");
-
-    // add "nécessaire pour les abonnements aux magazines" placeholder to Fonction input
-    document.getElementById("597371_80738pi_597371_80738").placeholder = "nécessaire pour les abonnements aux magazines";
+        var clicked2 = false;
+            $("#nl-selector2").on("click", function() {
+            $("#597371_80750pi_597371_80750_1167718").prop("checked", !clicked2);
+            clicked2 = !clicked2;
+            this.innerHTML = clicked2 ? 'Deselect' : 'Select';
+        });
     
-    // Address
-    // remove "nécessaire pour les abonnements aux magazines" from N° et rue label
-    $('label[for="597371_80742pi_597371_80742"]').html("N° et rue");
-
-    // add "nécessaire pour les abonnements aux magazines" placeholder to N° et rue input
-    document.getElementById("597371_80742pi_597371_80742").placeholder = "nécessaire pour les abonnements aux magazines";
+        var clicked3 = false;
+            $("#nl-selector3").on("click", function() {
+            $("#597371_80750pi_597371_80750_1157142").prop("checked", !clicked3);
+            clicked3 = !clicked3;
+            this.innerHTML = clicked3 ? 'Deselect' : 'Select';
+        });
     
-    // Zipcode
-    // remove "nécessaire pour les abonnements aux magazines" from Code postal label
-    $('label[for="597371_80744pi_597371_80744"]').html("Code postal");
-
-    // add "nécessaire pour les abonnements aux magazines" placeholder to Code postal input
-    document.getElementById("597371_80744pi_597371_80744").placeholder = "nécessaire pour les abonnements aux magazines";
+        var clicked4 = false;
+            $("#nl-selector4").on("click", function() {
+            $("#597371_80750pi_597371_80750_1157150").prop("checked", !clicked4);
+            clicked4 = !clicked4;
+            this.innerHTML = clicked4 ? 'Deselect' : 'Select';
+        });
     
-    // City
-    // remove "nécessaire pour les abonnements aux magazines" from Localité label
-    $('label[for="597371_80746pi_597371_80746"]').html("Localité");
-
-    // add "nécessaire pour les abonnements aux magazines" placeholder to Localité input
-    document.getElementById("597371_80746pi_597371_80746").placeholder = "nécessaire pour les abonnements aux magazines";
+        var clicked5 = false;
+            $("#nl-selector5").on("click", function() {
+            $("#597371_80750pi_597371_80750_1157136").prop("checked", !clicked5);
+            clicked5 = !clicked5;
+            this.innerHTML = clicked5 ? 'Deselect' : 'Select';
+        });
     
-    // Country
-    // remove "nécessaire pour les abonnements aux magazines" from Pays label
-    $('label[for="597371_80748pi_597371_80748"]').html("Pays (nécessaire pour les abonnements aux magazines)");
-
-</script>
+        var clicked6 = false;
+            $("#nl-selector6").on("click", function() {
+            $("#597371_80750pi_597371_80750_1157132").prop("checked", !clicked6);
+            clicked6 = !clicked6;
+            this.innerHTML = clicked6 ? 'Deselect' : 'Select';
+        });
+    
+        var clicked7 = false;
+            $("#nl-selector7").on("click", function() {
+            $("#597371_80750pi_597371_80750_1157138").prop("checked", !clicked7);
+            clicked7 = !clicked7;
+            this.innerHTML = clicked7 ? 'Deselect' : 'Select';
+        });
+    
+        /* var clicked8 = false;
+            $("#nl-selector8").on("click", function() {
+            $("#597371_80750pi_597371_80750_1157134").prop("checked", !clicked8);
+            clicked8 = !clicked8;
+            this.innerHTML = clicked8 ? 'Deselect' : 'Select';
+        }); */
+    
+        var clicked9 = false;
+            $("#nl-selector9").on("click", function() {
+            $("#597371_80750pi_597371_80750_1157134").prop("checked", !clicked9);
+            clicked9 = !clicked9;
+            this.innerHTML = clicked9 ? 'Deselect' : 'Select';
+        });
+    
+        var clicked10 = false;
+            $("#nl-selector10").on("click", function() {
+            $("#597371_80750pi_597371_80750_1157146").prop("checked", !clicked10);
+            clicked10 = !clicked10;
+            this.innerHTML = clicked10 ? 'Deselect' : 'Select';
+        });
+    
+        var clicked11 = false;
+            $("#nl-selector11").on("click", function() {
+            $("#597371_80750pi_597371_80750_1157140").prop("checked", !clicked11);
+            clicked11 = !clicked11;
+            this.innerHTML = clicked11 ? 'Deselect' : 'Select';
+        });
+    
+        var clicked12 = false;
+            $("#nl-selector12").on("click", function() {
+            $("#597371_80750pi_597371_80750_1167720").prop("checked", !clicked12);
+            clicked12 = !clicked12;
+            this.innerHTML = clicked12 ? 'Deselect' : 'Select';
+        });
+    
+        // Check Club boxes 
+        var clicked_club = false;
+            $("#club-selector1").on("click", function() {
+            $("#597371_80752pi_597371_80752_1158662").prop("checked", !clicked_club);
+            clicked_club = !clicked_club;
+            this.innerHTML = clicked_club ? 'Deselect' : 'Select';
+        });
+    
+        // Check Communications boxes 
+        var clicked_comm = false;
+            $("#comm-selector1").on("click", function() {
+            $("#597371_80754pi_597371_80754_1157154").prop("checked", !clicked_comm);
+            clicked_comm = !clicked_comm;
+            this.innerHTML = clicked_comm ? 'Deselect' : 'Select';
+        });
+        
+    </script>
 
     <script>
-    $(document).ready(function() {
-        $("#597371_80740pi_597371_80740_1157122").change(function() {
-            if ($("#597371_80730pi_597371_80730").attr('required')) {
-               $("#597371_80730pi_597371_80730").removeAttr('required');
-            } 
-            else {  
-               $("#597371_80730pi_597371_80730").attr('required','required');
-            }
+        // Target placeholders, re-style.
+        // Email privée
+        // add "optionnel" placeholder to email privée input
+        document.getElementById("597371_81984pi_597371_81984").placeholder = "Optionnel";
+                
+        // Telephone
+        // remove "optionnel" from telephone label
+        $('label[for="597371_80734pi_597371_80734"]').html("Téléphone");
+        
+        // add "optionnel" placeholder to telephone input
+        document.getElementById("597371_80734pi_597371_80734").placeholder = "Optionnel";
+        
+        // Company
+        // remove "requis pour les abonnements aux magazines" from société label
+        $('label[for="597371_80730pi_597371_80730"]').html("Société");
+        
+        // add "requis pour les abonnements aux magazines" placeholder to société input
+        // add 'required' attribute to input
+        document.getElementById("597371_80730pi_597371_80730").placeholder = "Requis pour les abonnements aux magazines";
+        
+        // Position
+        // remove "requis pour les abonnements aux magazines" from Fonction label
+        $('label[for="597371_80738pi_597371_80738"]').html("Fonction");
+        
+        // add "requis pour les abonnements aux magazines" placeholder to Fonction input
+        document.getElementById("597371_80738pi_597371_80738").placeholder = "Requis pour les abonnements aux magazines";
+        
+        // Address
+        // remove "requis pour les abonnements aux magazines" from N° et rue label
+        $('label[for="597371_80742pi_597371_80742"]').html("N° et rue");
+        
+        // add "requis pour les abonnements aux magazines" placeholder to N° et rue input
+        document.getElementById("597371_80742pi_597371_80742").placeholder = "Requis pour les abonnements aux magazines";
+        
+        // Zipcode
+        // remove "requis pour les abonnements aux magazines" from Code postal label
+        $('label[for="597371_80744pi_597371_80744"]').html("Code postal");
+        
+        // add "requis pour les abonnements aux magazines" placeholder to Code postal input
+        document.getElementById("597371_80744pi_597371_80744").placeholder = "Requis pour les abonnements aux magazines";
+        
+        // City
+        // remove "requis pour les abonnements aux magazines" from Localité label
+        $('label[for="597371_80746pi_597371_80746"]').html("Localité");
+        
+        // add "requis pour les abonnements aux magazines" placeholder to Localité input
+        document.getElementById("597371_80746pi_597371_80746").placeholder = "Requis pour les abonnements aux magazines";
+        
+        // Country
+        // remove "requis pour les abonnements aux magazines" from Pays label
+        $('label[for="597371_80748pi_597371_80748"]').html("Pays (Requis pour les abonnements aux magazines)");
+        
+        // Target error messages, add unique class.
+        // $(".submit").click(function() {
+        //   alert( "Working." );
+        //     $( ".email" ).children(".error").style.position = 'initial';
+        // });
+            
+    </script>
+    
+    <script>
+        
+        // Target placeholders, re-style.
+        // remove "email" from Business email, replace with "Email"
+        $('label[for="597371_82392pi_597371_82392"]').html("Business email");
+        
+        // add "optionnel" placeholder to private email input
+        document.getElementById("597371_82394pi_597371_82394").placeholder = "Optional";
+        
+        // Telephone
+        // remove "optionnel" from telephone label
+        $('label[for="597371_82396pi_597371_82396"]').html("Phone");
+    
+        // add "optionnel" placeholder to telephone input
+        document.getElementById("597371_82396pi_597371_82396").placeholder = "Optional";
+        
+        // Last Name
+        // change lable to say "Last Name"
+        $('label[for="597371_82398pi_597371_82398"]').html("Last name");
+        
+        // Company
+        // remove "nécessaire pour les abonnements aux magazines" from société label
+        $('label[for="597371_82402pi_597371_82402"]').html("Company");
+    
+        // add "nécessaire pour les abonnements aux magazines" placeholder to société input
+        document.getElementById("597371_82402pi_597371_82402").placeholder = "Required for magazine subscriptions";
+        
+        // Position
+        // remove "nécessaire pour les abonnements aux magazines" from Fonction label
+        $('label[for="597371_82404pi_597371_82404"]').html("Function");
+    
+        // add "nécessaire pour les abonnements aux magazines" placeholder to Fonction input
+        document.getElementById("597371_82404pi_597371_82404").placeholder = "Required for magazine subscription";
+        
+        // Address
+        // remove "nécessaire pour les abonnements aux magazines" from N° et rue label
+        $('label[for="597371_82406pi_597371_82406"]').html("Number and street name");
+    
+        // add "nécessaire pour les abonnements aux magazines" placeholder to N° et rue input
+        document.getElementById("597371_82406pi_597371_82406").placeholder = "Required for magazine subscription";
+        
+        // Zipcode
+        // remove "nécessaire pour les abonnements aux magazines" from Code postal label
+        $('label[for="597371_82408pi_597371_82408"]').html("Postcode");
+    
+        // add "nécessaire pour les abonnements aux magazines" placeholder to Code postal input
+        document.getElementById("597371_82408pi_597371_82408").placeholder = "Required for magazine subscription";
+        
+        // City
+        // remove "nécessaire pour les abonnements aux magazines" from Localité label
+        $('label[for="597371_82410pi_597371_82410"]').html("Locality");
+    
+        // add "nécessaire pour les abonnements aux magazines" placeholder to Localité input
+        document.getElementById("597371_82410pi_597371_82410").placeholder = "Required for magazine subscription";
+        
+        // Country
+        // remove "nécessaire pour les abonnements aux magazines" from Pays label
+        $('label[for="597371_82412pi_597371_82412"]').html("Country (Required for magazine subscription)");
+    
+    </script>
+    
+    <script>
+        $(document).ready(function() {
+            $("#597371_80740pi_597371_80740_1157122").change(function() {
+                if ($("#597371_80730pi_597371_80730").attr('required')) {
+                    $("#597371_80730pi_597371_80730").removeAttr('required');
+                } 
+                else {  
+                    $("#597371_80730pi_597371_80730").attr('required','required');
+                }
+            });
         });
-    });
     </script>
     
     <script>
@@ -886,6 +905,14 @@
                     $('#597371_80744pi_597371_80744').attr('required', '');
                     $('#597371_80746pi_597371_80746').attr('required', '');
                     $('#597371_80748pi_597371_80748_1157126').attr('required', '');
+                    
+                    //EN page IDs
+                    $('#597371_82402pi_597371_82402').attr('required', '');
+                    $('#597371_82404pi_597371_82404').attr('required', '');
+                    $('#597371_82406pi_597371_82406').attr('required', '');
+                    $('#597371_82408pi_597371_82408').attr('required', '');
+                    $('#597371_82410pi_597371_82410').attr('required', '');
+                    $('#597371_82412pi_597371_82412_1170012').attr('required', '');
                 } else {
                     // If it isn't checked, remove the required attribute
                     $('#597371_80730pi_597371_80730').removeAttr('required');
@@ -894,6 +921,14 @@
                     $('#597371_80744pi_597371_80744').removeAttr('required', '');
                     $('#597371_80746pi_597371_80746').removeAttr('required', '');
                     $('#597371_80748pi_597371_80748_1157126').removeAttr('required', '');
+                    
+                    //EN page IDs
+                    $('#597371_82402pi_597371_82402').removeAttr('required', '');
+                    $('#597371_82404pi_597371_82404').removeAttr('required', '');
+                    $('#597371_82406pi_597371_82406').removeAttr('required', '');
+                    $('#597371_82408pi_597371_82408').removeAttr('required', '');
+                    $('#597371_82410pi_597371_82410').removeAttr('required', '');
+                    $('#597371_82412pi_597371_82412_1170012').removeAttr('required', '');
                 }
             });
             
@@ -908,6 +943,14 @@
                     $('#597371_80744pi_597371_80744').attr('required', '');
                     $('#597371_80746pi_597371_80746').attr('required', '');
                     $('#597371_80748pi_597371_80748_1157126').attr('required', '');
+                    
+                    //EN page IDs
+                    $('#597371_82402pi_597371_82402').attr('required', '');
+                    $('#597371_82404pi_597371_82404').attr('required', '');
+                    $('#597371_82406pi_597371_82406').attr('required', '');
+                    $('#597371_82408pi_597371_82408').attr('required', '');
+                    $('#597371_82410pi_597371_82410').attr('required', '');
+                    $('#597371_82412pi_597371_82412_1170012').attr('required', '');
                 } else {
                     // If it isn't checked, remove the required attribute
                     $('#597371_80730pi_597371_80730').removeAttr('required');
@@ -916,9 +959,54 @@
                     $('#597371_80744pi_597371_80744').removeAttr('required', '');
                     $('#597371_80746pi_597371_80746').removeAttr('required', '');
                     $('#597371_80748pi_597371_80748_1157126').removeAttr('required', '');
+                    
+                    //EN page IDs
+                    $('#597371_82402pi_597371_82402').removeAttr('required', '');
+                    $('#597371_82404pi_597371_82404').removeAttr('required', '');
+                    $('#597371_82406pi_597371_82406').removeAttr('required', '');
+                    $('#597371_82408pi_597371_82408').removeAttr('required', '');
+                    $('#597371_82410pi_597371_82410').removeAttr('required', '');
+                    $('#597371_82412pi_597371_82412_1170012').removeAttr('required', '');
                 }
             });
+            
+            // If ANY other inout is checked
+            $('.sub-checkbox').click(function(event) {
+                // Check if it's checked
+                if ($(this).prop('checked')) {
+                    // Add the required attribute to the text input
+                    $('#597371_80732pi_597371_80732').attr('required', '');
+                    //$('#597371_81984pi_597371_81984').attr('required', '');
+                    $('#597371_80728pi_597371_80728').attr('required', '');
+                    $('#597371_80726pi_597371_80726').attr('required', '');
+                    
+                    // EN page IDs
+                    $('#597371_82392pi_597371_82392').attr('required', '');
+                    //$('#597371_82394pi_597371_82394').attr('required', '');
+                    $('#597371_82396pi_597371_82396').attr('required', '');
+                    $('#597371_82398pi_597371_82398').attr('required', '');
+                } else {
+                    // If it isn't checked, remove the required attribute
+                    $('#597371_80732pi_597371_80732').removeAttr('required', '');
+                    //$('#597371_81984pi_597371_81984').removeAttr('required', '');
+                    $('#597371_80728pi_597371_80728').removeAttr('required', '');
+                    $('#597371_80726pi_597371_80726').removeAttr('required', '');
+                    
+                    // EN page IDs
+                    $('#597371_82392pi_597371_82392').removeAttr('required', '');
+                    //$('#597371_82394pi_597371_82394').removeAttr('required', '');
+                    $('#597371_82396pi_597371_82396').removeAttr('required', '');
+                    $('#597371_82398pi_597371_82398').removeAttr('required', '');
+                }
+            });
+            
         });
     </script>
+
+    <script>
+
+
+    </script>
+    
 	</body>
 </html>
