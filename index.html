@@ -999,6 +999,13 @@
                     $('#597371_82398pi_597371_82398').removeAttr('required', '');
                 }
             });
+
+            // To handle direct links to specific tabs
+            if(window.location.hash) {
+                hash = window.location.hash.substring(1).toLowerCase(); //Puts hash in variable, and removes the # character
+                $('#'+hash+'-tab').click();
+                $('#'+hash+'-tab li').click();
+            }
             
         });
     </script>

@@ -217,3 +217,5 @@ function openPage(evt, pageName) {
     document.getElementById(pageName).style.display = "block";
     evt.currentTarget.className += " active";
     }
+
+    // JS for Tab navigation with #hash
