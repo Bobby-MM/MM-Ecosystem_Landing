@@ -366,14 +366,14 @@ select {
         flex-direction: column;
     }
 
-    .collapse-arrow {
+    /* .collapse-arrow {
         position: absolute;
         margin-top: 35px;
         right: 30px;
-    }
+    } */
 
     .dropup-heading {
-        margin-bottom: 25px;
+        margin-top: 35px!important;
     }
 
 }
