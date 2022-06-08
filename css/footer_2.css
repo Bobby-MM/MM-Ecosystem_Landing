@@ -273,6 +273,10 @@ footer {
 }
 
 @media screen and (max-width: 500px) {
+    /* footer {
+        height: 675px;
+    } */
+    
     .footer-group {
         margin: 0 auto;
     }

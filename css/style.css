@@ -149,6 +149,11 @@ body {
   font-family: 'Larsseit-italic';
 }
 
+/* .container-main {
+  max-width: 80% !important;
+  margin: 0 auto;
+} */
+
 /* Changing the focus color on inputs */
 input[type=text]:focus { 
   border: none !important;
@@ -196,7 +201,7 @@ button:focus {
 /* ! CHECKBOX STYLING */
 /* hide original checkbox */
 .sub-checkbox{
-  opacity:0;
+  opacity: 0;
 }
 
 .checkbox-txt {

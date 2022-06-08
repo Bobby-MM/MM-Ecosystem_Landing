@@ -1,0 +1,665 @@
+/* !!!!! ***** TAB STYLING ***** !!!!! */
+  /* Style the tab content */
+  .tabcontent {
+    display: none;
+}
+
+/* ** Custom Styling for TAB ** */
+.tab-container {
+    max-width: 80%;
+    margin: 0 auto;
+    background-color:transparent !important;
+    border: none;
+    border-bottom: 1px solid #ccc;
+}
+
+.subnav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 25px;
+    list-style: none;
+    padding: 0;
+    width: 100%;
+    height: 45px;
+}
+
+.subnav li {
+    cursor: pointer;
+}
+
+.subnav-tab {
+    position: relative;
+    text-align: center;
+    width: 220px;
+    margin-top: 5px;
+}
+
+.subnav-tab:hover {
+    color: #e5003c;
+    transition: 0.3s;
+}
+
+.short-txt {
+    display: none;
+}
+
+/* Brand circles around focused TAB */
+.focus-print {
+    background-image: url(https://maison-moderne-pardot.s3.eu-central-1.amazonaws.com/paperjam_delano-ecosystem/assets/circle_magazine.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.focus-digital {
+    background-image: url(https://maison-moderne-pardot.s3.eu-central-1.amazonaws.com/paperjam_delano-ecosystem/assets/circle_digital.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.focus-club {
+    background-image: url(https://maison-moderne-pardot.s3.eu-central-1.amazonaws.com/paperjam_delano-ecosystem/assets/circle_club.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.focus-comm {
+    background-image: url(https://maison-moderne-pardot.s3.eu-central-1.amazonaws.com/paperjam_delano-ecosystem/assets/circle_digital.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.focus-communication {
+    background-image: url(https://maison-moderne-pardot.s3.eu-central-1.amazonaws.com/paperjam_delano-ecosystem/assets/circle_comm.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/* End Brand circles */
+/* End main TAB styling */
+
+/* !!!!! ***** TAB CONTENT STYLING ***** !!!!! */
+.header-container {
+    max-width: 80% !important;
+    margin: 0 auto;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+/* ***** \\\\\ PRINT STYLING ///// ***** */
+.mag-grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 2fr;
+    grid-template-rows: 1fr;
+    grid-column-gap: 20px;
+    max-width: 80% !important;
+    margin: 0 auto;
+}
+
+.mag-card-template {
+    height: 276px;
+    width: 276px;
+    padding: 20px;
+    outline: 2px solid #333;
+    display: flex;
+    flex-direction: column;
+}
+
+.mag-card-row1 {
+    display: flex;
+}
+
+/* thumbnail img styling */
+.mag-img-wrapper {
+    height: 150px;
+    width: 150px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+}
+
+.mag-card-img-top {
+    height: 150px;
+    width: auto;
+}
+/* end img styling */
+
+/* style & position checkbox */
+.mag-sub-checkbox + label::before{
+    right: 0;
+    top: -25px;
+}
+
+/* change checkbox on checked */
+.mag-sub-checkbox:checked + label::before{
+    right: 0;
+    top: -25px;
+}
+/* ***** ///// End PRINT Styling \\\\\ ***** */
+
+/* ***** ///// DIGITAL STYLING \\\\\ ***** */
+/* Card Styling */
+.nl-grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 2fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 20px;
+    max-width: 80% !important;
+    margin: 0 auto;
+}
+
+.nl-card-template {
+    height: 357px;
+    width: 275px;
+    padding: 20px;
+    outline: 2px solid #333;
+    display: flex;
+    flex-direction: column;
+    padding: 20px 20px 10px 20px;
+}
+
+.nl-card-row1 {
+    display: flex;
+}
+
+/* thumbnail img styling */
+.digital-img-wrapper {
+    height: 96px;
+    width: 96px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+}
+
+.digital-card-img-top {
+    height: 96px;
+    width: auto;
+}
+
+.nl-sub-checkbox + label::before{
+    right: -20px;
+    top: 0px;
+}
+
+/* change checkbox on checked */
+.nl-sub-checkbox:checked + label::before{
+    right: -20px;
+    top: 0px;
+}
+
+.nl-freq {
+    font-family: Larsseit-Light;
+    color: #7c7c7c;
+    margin-top: 10px;
+}
+
+.nl-desc {
+    margin: 0;
+}
+/* ***** ///// End DIGITAL Styling \\\\\ ***** */
+
+/* ***** ///// CLUB STYLING \\\\\ ***** */
+.club-grid-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-column-gap: 0;
+    max-width: 80% !important;
+    margin: 0 auto;
+}
+
+.club-card-template-parent {
+    display: flex;
+    flex-direction: column;
+}
+
+.club-card-template {
+    height: 100%;
+    max-width: 100%;
+    outline: 2px solid #333;
+    display: flex;
+}
+
+.club-bg-img {
+    background-image: url(https://maison-moderne-pardot.s3.eu-central-1.amazonaws.com/paperjam_delano-ecosystem/assets/club_img-2x.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* thumbnail img styling */
+.club-img-wrapper {
+    height: 229px;
+    width: 470px;
+}
+
+/* .club-card-img-top {
+    height: 229px;
+    width: 333px;
+    border-radius: 0;
+} */
+  /* end img styling */
+
+.club-card-content {
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.club-card-row1 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.club-sub-checkbox + label::before{
+    right: 0px;
+    top: 0px;
+}
+
+/* change checkbox on checked */
+.club-sub-checkbox:checked + label::before{
+right: 0px;
+top: 0px;
+}
+
+.club-subtext {
+    max-width: 80%;
+    margin-top: 25px;
+} 
+
+.club-subs {
+    font-family: Larsseit-Light;
+    font-size: 14px;
+}
+
+.club-link {
+    text-decoration: underline;
+}
+
+.club-arrow {
+    margin-left: 5px;
+}
+/* ***** ///// End CLUB Styling \\\\\ ***** */
+
+/* ***** ///// COMMUNICATION STYLING \\\\\ ***** */
+.comm-grid-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-column-gap: 0;
+    max-width: 80% !important;
+    margin: 0 auto;
+}
+
+.comm-card-template {
+    height: 100%;
+    max-width: 100%;
+    outline: 2px solid #333;
+    display: flex;
+}
+
+.comm-img-bg {
+    background-image: url(https://maison-moderne-pardot.s3.eu-central-1.amazonaws.com/paperjam_delano-ecosystem/assets/comm_img-2x.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* thumbnail img styling */
+.comm-img-wrapper {
+    height: 229px;
+    width: 470px;
+}
+
+/* .comm-card-img-top {
+    height: 229px;
+    width: 333px;
+    border-radius: 0;
+} */
+  /* end img styling */
+
+.comm-card-content {
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.comm-card-row1 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.comm-sub-checkbox + label::before{
+    right: 0px;
+    top: 0px;
+}
+
+/* change checkbox on checked */
+.comm-sub-checkbox:checked + label::before{
+    right: 0px;
+    top: 0px;
+}
+
+.comm-grid-container2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 2fr;
+    grid-template-rows: 1fr;
+    grid-column-gap: 20px;
+    max-width: 80% !important;
+    margin: 0 auto;
+    margin-top: 40px;
+}
+
+.comm-card-template2 {
+    height: 400px;
+    width: 275px;
+    display: flex;
+    flex-direction: column;
+}
+
+/* thumbnail img styling */
+.img-wrapper2 {
+    min-height: 40%;
+}
+
+.img-wrapper-bg2 {
+    background-image: url(https://maison-moderne-pardot.s3.eu-central-1.amazonaws.com/paperjam_delano-ecosystem/assets/comm_img2-2x.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.img-wrapper-bg3 {
+    background-image: url(https://maison-moderne-pardot.s3.eu-central-1.amazonaws.com/paperjam_delano-ecosystem/assets/comm_img3-2x.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.comm2-card-template {
+    height: 357px;
+    width: 275px;
+    display: flex;
+    flex-direction: column;
+}
+
+/* .card-img-top2 {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    border-radius: 0;
+} */
+  /* end img styling */
+
+.view-ex2 {
+    display: flex;
+    flex-direction: column;
+    margin-top: auto;
+}
+
+.view-ex2 a {
+    font-size: 14px;
+    text-decoration: underline;
+}
+
+/* ***** ///// End COMMUNICATION Styling \\\\\ ***** */
+
+/* Global Overrides */
+.view-ex {
+    margin-top: auto;
+    text-decoration: underline;
+    font-size: 14px;
+}
+
+.view-ex a {
+    font-size: 14px;
+}
+
+.added {
+    outline: 3px solid #E5003C;
+}
+
+/* ***** ///// ***** \\\\\ MEDIA QUERIES ///// ***** \\\\\ ***** */
+@media screen and (min-width: 901px) {
+    .short-txt {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1350px) {
+    .nl-grid-container {
+        grid-template-columns: 1fr 1fr 2fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+    }
+}
+
+@media screen and (max-width: 1300px) {
+    .tab-container {
+        max-width: 90% !important;
+    }
+
+    .header-container {
+        max-width: 90% !important;
+    }
+
+    .mag-grid-container {
+        max-width: 90% !important;
+    }
+
+    .nl-grid-container {
+        max-width: 90% !important;
+    }
+
+    .club-grid-container {
+        max-width: 90% !important;
+    }
+
+    .comm-grid-container {
+        max-width: 90% !important;
+    }
+
+    .comm-grid-container2 {
+        max-width: 90% !important;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .tab-container {
+        max-width: 95%;
+    }
+
+    .mag-grid-container {
+        max-width: 90% !important;
+    }
+
+    .nl-grid-container {
+        max-width: 95%;
+    }
+
+    .club-grid-container {
+        max-width: 95% !important;
+    }
+
+    .comm-grid-container {
+        max-width: 95% !important;
+    }
+
+    .comm-grid-container2 {
+        max-width: 95% !important;
+    }
+}
+
+@media screen and (max-width: 950px) {
+    .nl-grid-container {
+        grid-template-columns: 1fr 2fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    }
+}
+
+@media screen and (max-width: 925px) {
+    .img-wrapper {
+        height: 100%;
+        width: auto;
+        overflow: auto;
+    }
+    
+    .card-img-top {
+        height: 100%;
+        margin-left: 50%;
+        transform: translateX(-50%);
+    }
+}
+
+@media screen and (max-width: 900px) {
+
+    .subnav div {
+        width: 100px;
+    }
+
+    .subnav-tab {
+        width: auto;
+    }
+
+    .club-img-wrapper {
+        width: 100%;
+    }
+    
+    .club-card-img-top {
+        width: 100%;
+        height: auto;
+    }
+
+    .comm-img-wrapper {
+        width: 100%;
+    }
+    
+    .comm-card-img-top {
+        width: 100%;
+        height: auto;
+    }
+
+    .short-txt {
+        display: inline;
+    }
+    
+    .long-txt {
+        display: none;
+    }
+
+    .subnav {
+        font-size: 21px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+
+    .tab-container {
+        max-width: 95% !important;
+    }
+
+    .header-container {
+        max-width: 95% !important;
+    }
+
+    .mag-grid-container {
+        max-width: 95% !important;
+    }
+}
+
+@media screen and (max-width: 670px) {
+    .subnav-tab {
+        font-size: 21px;
+    }
+}
+
+@media screen and (max-width: 620px) {
+    .mag-grid-container {
+        grid-template-columns: 1fr;
+        grid-row-gap: 20px;
+    }
+
+    .nl-grid-container {
+        grid-template-columns: 1fr;
+    }
+
+    .club-card-template {
+        flex-direction: column;
+    }
+
+    .comm-card-template {
+        flex-direction: column;
+    }
+
+    .comm-grid-container2 {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        row-gap: 40px;
+    }
+}
+
+@media screen and (max-width: 500px) {    
+    .comm-grid-container2 {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media screen and (max-width: 428px) {
+    .mag-grid-container {
+        justify-items: center;
+    }
+
+    .nl-grid-container {
+        justify-items: center;
+    }
+
+    .comm-grid-container2 {
+        justify-items: center;
+    }
+
+    .tab-container {
+        margin-top: 20px;
+    }
+
+    .subnav-tab {
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 280px) {
+    .subnav-tab {
+        font-size: 18px;
+    }
+
+    .header-container {
+        max-width: 90% !important;
+        margin-top: 20px;
+        margin-bottom: 10px;
+    }
+
+    .mag-grid-container {
+        justify-items: center;
+    }
+
+    .mag-card-template {
+        height: 250px;
+        width: 250px;
+        padding: 10px;
+    }
+
+    .nl-card-template {
+        height: 332px;
+        width: 250px;
+        padding: 10px;
+    }
+
+    .club-card-template {
+        height: 100%;
+        max-width: 100%;
+        outline: 2px solid #333;
+        display: flex;
+    }
+}

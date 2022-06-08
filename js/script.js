@@ -180,8 +180,18 @@ $(document).ready(function () {
         $("#comm-tab").removeClass("focus-communication");
     });
 
+    // Communication
+    // $("#comm-tab").click(function(){
+    //     $(this).addClass("focus-comm");
+    //     $("#print-tab").removeClass("focus-print");
+    //     $("#digital-tab").removeClass("focus-digital");
+    //     $("#club-tab").removeClass("focus-club");
+    // });
+
     // ? If hasClass .short-txt -> removeClass (.focus-communication/focus-print/focus-digital/focus-club) addClass .focus-comm
     // ? ELSE If hasClass .long-txt -> removeClass (.focus-comm/focus-print/focus-digital/focus-club) addClass .focus-communication
+    
+
     $("#comm-tab").click(function(){
         $("#print-tab").removeClass("focus-print");
         $("#digital-tab").removeClass("focus-digital");
@@ -218,4 +228,5 @@ function openPage(evt, pageName) {
     evt.currentTarget.className += " active";
     }
 
-    // JS for Tab navigation with #hash
+
+    
