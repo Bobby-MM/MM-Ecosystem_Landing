@@ -196,7 +196,7 @@ button:focus {
 /* ! CHECKBOX STYLING */
 /* hide original checkbox */
 .sub-checkbox{
-  opacity: 0;
+  opacity:0;
 }
 
 .checkbox-txt {
