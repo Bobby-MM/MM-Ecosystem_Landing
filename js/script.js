@@ -158,6 +158,7 @@ $(document).ready(function () {
         $(this).addClass("focus-print");
         $("#digital-tab").removeClass("focus-digital");
         $("#club-tab").removeClass("focus-club");
+                $("#club-tab").removeClass("focus-business-club");
         $("#comm-tab").removeClass("focus-comm");
         $("#comm-tab").removeClass("focus-communication");
     });
@@ -167,35 +168,33 @@ $(document).ready(function () {
         $(this).addClass("focus-digital");
         $("#print-tab").removeClass("focus-print");
         $("#club-tab").removeClass("focus-club");
+                $("#club-tab").removeClass("focus-business-club");
         $("#comm-tab").removeClass("focus-comm");
         $("#comm-tab").removeClass("focus-communication");
     });
 
     // Club
     $("#club-tab").click(function(){
-        $(this).addClass("focus-club");
         $("#print-tab").removeClass("focus-print");
         $("#digital-tab").removeClass("focus-digital");
         $("#comm-tab").removeClass("focus-comm");
         $("#comm-tab").removeClass("focus-communication");
-    });
 
-    // Communication
-    // $("#comm-tab").click(function(){
-    //     $(this).addClass("focus-comm");
-    //     $("#print-tab").removeClass("focus-print");
-    //     $("#digital-tab").removeClass("focus-digital");
-    //     $("#club-tab").removeClass("focus-club");
-    // });
+        if(window.innerWidth <= 900){       
+            $(this).addClass("focus-club");
+        } else {
+            $(this).addClass("focus-business-club");
+        }
+    });
 
     // ? If hasClass .short-txt -> removeClass (.focus-communication/focus-print/focus-digital/focus-club) addClass .focus-comm
     // ? ELSE If hasClass .long-txt -> removeClass (.focus-comm/focus-print/focus-digital/focus-club) addClass .focus-communication
     
-
     $("#comm-tab").click(function(){
         $("#print-tab").removeClass("focus-print");
         $("#digital-tab").removeClass("focus-digital");
         $("#club-tab").removeClass("focus-club");
+                $("#club-tab").removeClass("focus-business-club");
 
         if(window.innerWidth <= 900){       
             $(this).addClass("focus-comm");

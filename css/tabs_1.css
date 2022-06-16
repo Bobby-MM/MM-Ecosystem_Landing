@@ -59,6 +59,14 @@
     background-size: contain;
 }
 
+/* ! Add new circle to handle the size of "business club" */
+.focus-business-club {
+    background-image: url(https://maison-moderne-pardot.s3.eu-central-1.amazonaws.com/paperjam_delano-ecosystem/assets/circle_business.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
 .focus-club {
     background-image: url(https://maison-moderne-pardot.s3.eu-central-1.amazonaws.com/paperjam_delano-ecosystem/assets/circle_club.svg);
     background-position: center;
@@ -83,6 +91,13 @@
 /* End main TAB styling */
 
 /* !!!!! ***** TAB CONTENT STYLING ***** !!!!! */
+/* Hide "Business" on small widths */
+@media only screen and (max-width: 900px){
+    .business-long {
+        display: none;
+    }
+}
+
 .header-container {
     max-width: 80% !important;
     margin: 0 auto;
